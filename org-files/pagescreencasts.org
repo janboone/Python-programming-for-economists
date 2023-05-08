@@ -1,12 +1,10 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-#+Title: Screencasts for Applied Economic Analysis
+#+Title: Screencasts for Python programming for economists
 #+Author: Jan Boone
 #+OPTIONS: toc:2 timestamp:nil toc:nil
 
-*Under construction*
 
-
-This page contains the screencasts for the course [[file:index.org::#python_track_AEA][AEA]]
+This page contains the screencasts for the course [[file:index.org][Python programming]]. Note that the screencasts were developed when the course was called "Applied Economic Analysis". The content of that course is the same as for the renamed course Python programming for economists.
 
 #+TOC: headlines 2
 
@@ -15,15 +13,11 @@ This page contains the screencasts for the course [[file:index.org::#python_trac
   :ID:       how_are_screencasts_supposed_to_help
   :END:
 
-We use [[https://github.com/janboone/applied-economics][this notebook]] for the course. The notebook is fairly self-explanatory, but you may get stuck with some of the questions. The screencasts are meant to help you along if you do not know how to proceed.
+We use [[https://github.com/janboone/Python-programming-for-economists/blob/master/economics_notebook.ipynb][this notebook]] for the course. The notebook is fairly self-explanatory, but you may get stuck with some of the questions. The screencasts are meant to help you along if you do not know how to proceed.
 
 For students without a programming background (like most economics students) it can be intimidating or frustrating to start typing code. Reasons include not knowing how to do it perfectly or getting scared when there is an error message. Obviously, this is not necessary nor helpful when trying to learn a programming language. But the upshot is that some students do not try anything, sit back and type the correct answers when given to them. Needless to say, you do not learn how to program in Python by typing in the correct answers given in class.
 
 Hence, the screencasts give you hints on how to finish the notebook but they do not give you step-by-step answers for each question. If you get stuck, ask us during the tutorials.
-
-** Why are there screencasts?
-
-The screencasts were initially developed because of the 2020 corona crisis where students were no longer able to come to the campus of Tilburg University. Now that we have them, we use them as complements to the classes taught.
 
 ** Suggested use of the screencasts
 
@@ -44,8 +38,7 @@ Python error messages:
 
 ** Prerequisite knowledge
 
-*Economics*: this introduction to python is part of an MSc degree in Economics. Hence, we assume that you know what utility is and how utility (and producer surplus, if relevant)
-adds up to welfare. You know how demand and supply curves are derived. What market power is, how a Cournot model is solved. Concepts like asymmetric information, adverse selection and moral hazard ring a bell. You know what risk is and how it can be measured. You know what the [[https://www.worldbank.org/][World Bank]] is, as later on we will use their data. You have done introductions to statistics and econometrics. Generally speaking, you understand the economics parts of the notebooks, though not necessarily their Python implementation.
+*Economics*: this introduction to python is part of an MSc degree in Economics. Hence, we assume that you know what utility is and how utility (and producer surplus, if relevant) adds up to welfare. You know how demand and supply curves are derived. What market power is, how a Cournot model is solved. Concepts like asymmetric information, adverse selection and moral hazard ring a bell. You know what risk is and how it can be measured. You know what the [[https://www.worldbank.org/][World Bank]] is, as later on we will use their data. You have done introductions to statistics and econometrics. Generally speaking, you understand the economics parts of the notebooks, though not necessarily their Python implementation.
 
 *Python*: before you start with the notebook and the screencasts you need some basic knowledge of Python. You can use [[https://www.datacamp.com/][Datacamp]], [[https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-][Socratica]], or introduction videos to Python, numpy etc. from one of the big python conferences, like [[https://www.youtube.com/playlist?list=PLYx7XA2nY5GcDQblpQ_M1V3PQPoLWiDAC][SciPy 2019]] or [[https://www.youtube.com/playlist?list=PLPbTDk1hBo3xof51R8pk3kP1BVBuMYP9c][PyCon 2019]] or more recent events.
 
@@ -73,14 +66,14 @@ The goal of this video is to give you an introduction to JupyterLab; not an intr
 [[yt:EFOmmjnYGHs][Introduction to JupyterLab]]
 
 Topics we cover in this video:
-+ using ~git~ to "clone" the ~applied-economics~ repository on JupyterLab;
++ using ~git~ to "clone" the ~Python-programming-for-economists~ repository on JupyterLab;
 + difference between a code cell and a markdown cell in a jupyter notebook;
 + you can use the menu at the top to switch between Markdown and Code;
 + you evaluate both a code cell and a markdown cell by pressing the SHIFT and ENTER keys at the same time;
 + if you want to edit an evaluated markdown cell, go to the cell and press ENTER; or double click on the cell with your mouse;
 + how to create headings (using ~#~) and bullet lists (using ~*~) in markdown;
 + create a link in markdown;
-+ how to type math in markdown using [[https://www.latex-project.org/][latex]] and the delimiters ~$ $~
++ how to type math in markdown using [[https://www.latex-project.org/][$\LaTeX$]] and the delimiters ~$ $~
 + in a code cell, you can type Python code:
   + this can be useful if you want to make notes on your datacamp courses
   + type and evaluate the Python code (from datacamp) and explain what the code does in a markdown cell;
@@ -93,7 +86,7 @@ Topics we cover in this video:
   + if you have too many kernel sessions running, you can run out of memory on the server meaning you cannot evaluate Python code anymore.
 
 Questions you can try before continuing:
-+ in a markdown cell, we can create $\alpha$ by typing latex ~$\alpha$~; now in a code cell type ~\alpha~ and then the TAB key; this gives you the /variable/ $\alpha$;
++ in a markdown cell, we can create $\alpha$ by typing $\LaTeX$ ~$\alpha$~; now in a code cell type =\alpha= and then the TAB key; this gives you the /variable/ $\alpha$;
 + typing in a code cell $\alpha = 5$ gives this variable $\alpha$ the value 5;
 + plot the function $f(x)=x^3$ on the interval $[-1,1]$.
 
@@ -103,13 +96,14 @@ You can also google "jupyterlab introduction" and the [[https://jupyterlab.readt
 
 ** getting the repository in colab
 
-If for some reason you would like to use the notebook on [[https://colab.research.google.com/notebooks/intro.ipynb#recent=true][google colab]] (e.g. because the university server is temporarily down), the following video shows how to import the applied economics repository into colab.
+If for some reason you would like to use the notebook on [[https://colab.research.google.com/notebooks/intro.ipynb#recent=true][google colab]] (e.g. because the university server is temporarily down), the following video shows how to import the Python-programming-for-economists repository into colab.
 
 [[yt:LVt0yagCwD8]]
 
 Topics we cover in the video:
 + go to google colab; then from the menu: File => Upload notebook
-+ in pop-up window click on the GitHub tab and copy/paste the web address of the github repository that you would like to upload; in our case ~https://github.com/janboone/applied-economics~
++ in pop-up window click on the GitHub tab and copy/paste the web address of the github repository that you would like to upload; in the video this is ~https://github.com/janboone/applied-economics~
+  + but this repository has been updated to ~https://github.com/janboone/Python-programming-for-economists~
 + if you want to install a new library in colab, e.g. wbdata, type ~!pip install wbdata~
 + install all libraries such that you can run the cell with import statements without errors
 
@@ -119,7 +113,7 @@ Topics we cover in the video:
 
 As explained [[id:how_are_screencasts_supposed_to_help][above]], one of the worries is that students sit back and copy/paste whatever is done in the videos. To force them to make more of an effort, I do not use jupyter notebooks in the screencasts. Hence, a bit more "mental processing" is needed to follow along. This is also the reason that we do not publish the notebooks from the videos. Students need to type along with the video; not copy/paste from the final file.
 
-Further, Emacs makes it easier to give a presentation in the screencast than jupyter notebooks, e.g. by folding sections that are finished and by giving completion on latex snippets.
+Further, Emacs makes it easier to give a presentation in the screencast than jupyter notebooks, e.g. by folding sections that are finished and by giving completion on $\LaTeX$ snippets.
 
 ** Jupyter vs Emacs
 
@@ -129,7 +123,7 @@ When you see me use Emacs in the videos, you can spot some differences with Jupy
 + to type text in a jupyter notebook, turn a code-cell into a Markdown cell; in Emacs you can simply type text
 + to create a new code cell in jupyter: press "a" (new cell above) or "b" (new cell below) when you do not have a cursor in the current cell (if you do have a cursor, first press the ESC key); in Emacs (and org-mode version >= 9.2) type C-c C-, and a menu will appear of block types (python, ipython, elisp etc.)
 + use the TAB key to complete function, variable etc. names. Works both in jupyter and Emacs
-+ to get greek letters in a code block of a jupyter notebook, use the latex expression for the greek letter (without the delimiters ~$ $~) and type TAB; e.g.type ~\alpha~ and then press TAB
++ to get greek letters in a code block of a jupyter notebook, use the $\LaTeX$ expression for the greek letter (without the delimiters ~$ $~) and type TAB; e.g.type ~\alpha~ and then press TAB
 + add ~%matplotlib inline~ after importing ~matplotlib.pyplot~ to get the figures in the notebook/file itself
 
 * The market

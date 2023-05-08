@@ -1,35 +1,26 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-#+Title: Applied Economic Analysis
+#+Title: Methods: Python programming for economists
 #+Author: Jan Boone
 #+OPTIONS: toc:2 timestamp:nil toc:nil todo:nil
 #+EXPORT_EXCLUDE_TAGS: noexport
 
-This website contains the material for the MSc course Applied Economics 1.
+This website contains the material for the MSc course Methods: Python programming for economists.
 
-**This website is under construction for 2022/2023**
+**This website is under construction for 2023/2024**
 
 This year the course is taught by:
 + Jan Boone
 + Mery Ferrando
 + Joyce Ladenstein
-+ Barbora Písecká
 
-
-* Python in AEA
-  :PROPERTIES:
-  :CUSTOM_ID:       python_track_AEA
-  :END:
-
-For this course we use the following resources:
-
-+ Jean Tirole, [[https://press.princeton.edu/titles/10919.html][Economics for the Common Good]],
-+ [[https://www.datacamp.com/about][Datacamp]]
-
+------------
 #+TOC: headlines 2
+
+-------
 
 * Screencasts
   :PROPERTIES:
-  :CUSTOM_ID:       screencasts_AEA
+  :CUSTOM_ID:       screencasts
   :END:
 
 For this course a series of screencasts is available. The screencasts can be found on this [[file:./pagescreencasts.org][webpage.]]
@@ -41,8 +32,8 @@ Since we have recorded screencasts, we will not repeat these during the lectures
 
 ** we will use the following format:
 
-+ in the python lectures we will answer questions that you ask us
-+ in order to prepare these answers, it is useful if you create an issue via [[https://github.com/janboone/applied-economics/issues][this link]]
++ in the python lectures we focus on answering your questions;
++ in order to prepare these answers, it is useful if you create an issue via [[https://github.com/janboone/Python-programming-for-economists/issues][this link]];
   + using the link, create an "issue" where you explain what your question is: what did you try and why did it not work?
     + hence not a something like "I do not know the answer to: *Question* Calculate the total welfare that this planner can achieve. Denote this value ~max_welfare~."
     + but "I tried to calculate total welfare in the following way ... but then I get the following error ..."
@@ -61,18 +52,20 @@ A suggested workflow to learn programming efficiently is:
 + if you still cannot figure it out, create an issue on github to ask us
 + we will answer your questions in class
 
-Two weeks in November will be focused on gender economics. In the lectures Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. These notebooks are then discussed at the end of the week. The notebooks will teach you something about gender economics and Python. At the same time, they show you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
+In November there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. These notebooks are then discussed in a following lecture. The notebooks will teach you something about gender economics and Python. At the same time, they show you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
 
-We highly recommend that you read the book by Jean Tirole to get an idea how you can communicate economic models to a non-economic audience. This will be useful both for your final assignment and for writing your MSc thesis.
-
-*Remark:* We have been teaching this course for a couple of years now. Every year there are a number of students who attend the lectures without preparing anything and watch the screencasts without trying to program themselves. We live in a free country and you choose how to spend your time. However, this strategy does not work well. You actually end up spending far more time on finishing the course than when you follow the planning we suggest below. The reason is as follows: learning a programming language is frustrating. You learn by making mistakes and then trying to figure out what goes wrong. When you make these mistakes during the semester, you are well covered: we are there to help you. When you make these mistakes for the first time when trying to finish your assignment before the deadline, you are in trouble. We will try to help you but not within an hour, or within a day. And because you need to finish before the deadline, you have to figure everything out by yourself under time pressure. Not a pleasant experience and one you can easily avoid. But the choice is yours.
+*Remark:* We have been teaching this course for a couple of years now. Every year there are a number of students who attend the lectures without preparing anything and watch the screencasts without trying to program themselves. We live in a free country and you choose how to spend your time. However, we do feel the need to warn you that this strategy does not work well. You actually end up spending far more time on finishing the course than when you follow the planning we suggest below. The reason is as follows: learning a programming language is frustrating. You learn by making mistakes and then trying to figure out what goes wrong. When you make these mistakes during the semester, you are well covered: we are there to help you. When you make these mistakes for the first time when trying to finish your assignment before the deadline, you are in trouble. We will try to help you but not within an hour, or within a day. And because you need to finish before the deadline, you have to figure everything out by yourself under time pressure. Not a pleasant experience and one you can easily avoid. But the choice is yours.
 
 ** Lecture schedule
    :PROPERTIES:
-   :CUSTOM_ID:       lecture_schedule_AEA
+   :CUSTOM_ID:       lecture_schedule
    :END:
 
-At the moment, we believe that the all lectures will be on campus. If we would need to switch to on-line lectures, we will let you know via Canvas
+TBA
+
+#+begin_comment
+- TODO add deadlines assignments 1 and 2
+
 
 | day |       date |        time | staff          | room    | Topic                                          | Datacamp             |
 |-----+------------+-------------+----------------+---------+------------------------------------------------+----------------------|
@@ -94,38 +87,43 @@ At the moment, we believe that the all lectures will be on campus. If we would n
 | Wed | 2022-12-07 | 12:45-14:30 | Boone, J.      | CZ 7    | Q&A                                            |                      |
 
 
+#+end_comment
+
 
 
 ** First Lecture
 
 [[file:./Introduction_Lecture.org::#introduction][Introduction Lecture]]
 
-*** Assignment 1
+*** Initial Assignment
     :PROPERTIES:
-    :CUSTOM_ID:       assignment_1_AEA
+    :CUSTOM_ID:       initial_assignment
     :END:
 
 Do the following three steps:
 + create a github account on [[https://github.com/][github]] (you need this account to submit your final assignment)
-  + we advise you to do this before **Friday September 16, 2022**
+  + we advise you to do this before **Friday September 15, 2023**
 + go to
   + [[https://jupyterlab.uvt.nl/][jupyter lab]]
     + IT suggests that you use the Firefox browser to access jupyter lab
     + sometimes it helps to access jupyter lab with an incognito/private window
     + or --if all else fails-- you can use [[https://colab.research.google.com/][google's colab]]
 + create a new python notebook and type the following code in the first cell:
-#+BEGIN_SRC python
+#+BEGIN_SRC shell
 %%bash
 
-git clone https://github.com/janboone/applied-economics
+git clone https://github.com/janboone/Python-programming-for-economists.git
 #+END_SRC
 + then press the Shift key and Enter key at the same time
-+ this creates a folder on the server `applied-economics` that contains the material for the course.
++ this creates a folder on the server `Python-programming-for-economists` that contains the material for the course.
 + Note: you can only run this command once. If you run it again, you get an error since the folder already exists.
 
-*** Final assignment
+*** Assignments
 
-+ instructions for the final assignment can be found below.
+For this course there are three assignments: two of these are voluntary (assignments 1 and 2), the final assignment is mandatory.
+
+- you can view the assignments in this repository: https://github.com/janboone/python_assignments
+- instructions for the assignments can be found below.
 
 ** Datacamp
 
@@ -143,19 +141,22 @@ It is up to you how to combine the Datacamp courses with the [[file:./pagescreen
 
 ** Deadlines
    :PROPERTIES:
-   :CUSTOM_ID: deadlines_AEA
+   :CUSTOM_ID: Deadlines
    :END:
 
-- The deadline for the *final python assignment* is: Monday January 9th, 2023. Your grade is determined by this final assignment (only).
-- The resit deadline for the python assignment is: Monday May 15th, 2023. Let us know by email that you have submitted your assignment for the resit.
+- The deadlines for assignments 1 and 2 are in the lecture schedule above.
+- The deadline for the *final python assignment* is: Monday January 8th, 2024. Your grade is determined by this final assignment and a bonus point if you get a "pass" on assignments 1 and 2.
+- The resit deadline for the python assignment is: Monday May 13th, 2024. Let us know by email that you have submitted your assignment for the resit.
 
 Follow the instructions below on how to submit an assignment on github and fill in the google form etc.
 
-Also note the rules for the resit assignment in case you submitted an assignment for the first exam opportunity (you cannot discuss/program the same paper twice for your assignment).
+Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot discuss/program the same paper twice for your assignment).
+
+
 
 ** Questions
 
- If you have questions/comments about this course, go to the [[https://github.com/janboone/applied-economics/issues][issues page]]
+ If you have questions/comments about this course, go to the [[https://github.com/janboone/Python-programming-for-economists/issues][issues page]]
  open a new issue (with the green "New issue" button) and type your
  question. Use a title that is informative (e.g. not "question", but
  "question about the second assignment"). Go to the next box ("Leave a comment")
@@ -180,66 +181,112 @@ Also note the rules for the resit assignment in case you submitted an assignment
  Note that if your question is related to another issue, you can react
  to the earlier issue and leave a comment in that "conversation".
 
+* Assignments
+
+For this course there are three assignments. The first two assignments are relatively small programming assignments. You can find them in this repository: https://github.com/janboone/python_assignments: =assignment_1.ipynb, assignment_2.ipynb=. If you finish both assignments before their deadlines and done a good job (get a pass on both assignments), you earn one bonus point for the final assignment. You get either no bonus point or one point (we do not grade 0.38 bonus point...).
+
+Note that github records the time at which you submit your assignment.
+
+Each assignment is submitted two times. In particular, to get a pass on assignments 1 and 2, you need to do the following for each assignment:
+- finish and submit the assignment before the deadline:
+  - present and explain the python code that you use;
+  - you do not necessarily fail if you cannot solve the problem (completely);
+  - use the notebook to report what you tried, what you googled, what worked and what did not work and explain why;
+  - submit the assignment on your team's github classroom page;
+- after the assignment is discussed in class:
+  - complete the sections:
+    - What did you get wrong the first time and why?
+    - What did you learn from this assignment?
+  - and submit the assignment again on github.
+- we grade both assignments after assignment 2 has been discussed in class and submitted by you again.
 
 
-* Final Assignment
-  :PROPERTIES:
-  :CUSTOM_ID: final_assignment_AEA
-  :END:
+The idea of assignments 1 and 2 is the following. These are challenging programming assignments. You need to think about the problem, google for the relevant python code and explain the code that you use. Even if you do not succeed, you can still explain to us what you tried and why it did (or did not) work. Give us the code that you have and explain to us what the code does or is supposed to do.
 
-+ The python assignment you can do alone or with at max. one other student (i.e. max group size is 2).
-+ for the deadline of the python assignment, see [[Deadlines]] above
-+ on Canvas we will give you the link to the github repos. with the ~assignment_template.ipynb~
-+ once you have "cloned" the applied-economics repository, you can see there the ~assignment_template.ipynb~ notebook. This gives you an idea of the template for the final assignment
-+ to submit your final assignment:
-  + do not change the name of the ~assignment_template.ipynb~ notebook
-  + fill in this [[https://forms.gle/Fri5MZc9J2wbzhim7][google form]]
-  + push the final notebook on the github classroom repository
+This resembles the way you will use python in practice. There will not be a step-by-step guide of the things you need to do. Mostly you will face a (sometimes vague) problem, and need to figure out how programming can help you to solve this.
+
+The =assignment_1.ipynb= notebook starts with an example assignment that we solve for you to give you an idea of what we expect.
+
+The final assignment is more involved as we explain below.
+
+Note that you can do the assignments alone or with at max. one other student (i.e. max group size is 2). Further, the assignments that you do, you do with the same team (i.e. either alone or with the *same* fellow student).
+
+** Submitting assignments
+
+Assignment 1 and 2 and the final assignment are all submitted using github classroom:
+- on Canvas we will give you the link to the github repos. with the assignment notebooks;
+- instructions on how to work with github classroom can be found [[file:./Manual_students.pdf][here]]
+- to submit your assignments:
+  + do not change the name of the assignment notebooks
+  + when you submit your first assignment, fill in the google form where the link to the form is on Canvas
+  + push the assignment notebook to your team's github classroom repository
 
 
 ** TODO Instructions for submitting final assignment to be put on Canvas :noexport:
+*** relevant links:
 
-- [ ] create assignment on github classroom with the AEA/datascience template/notebook: https://github.com/janboone/AEA_final_assignment or https://github.com/janboone/datascience_assignment_template
-- [ ] my link for 2022/3 is https://classroom.github.com/classrooms/16413080-tisem-aea/assignments/assignment-2022-2023
-- within classroom TiSEM-AEA: https://classroom.github.com/classrooms/16413080-tisem-aea
+**** TODO each year renew classroom links for the new year
+- [ ] each year change notebooks for assignments 1 and 2 in repos.
+  - https://github.com/janboone/python_assignments
 - [ ] set deadline in github classroom
-- [ ] create google form for students to fill in once they finish assignment: replace link above (is for 2022/2023)
-- [ ] change link to the classroom assignment below
+- [ ] add github classroom assignment with the template repos. for 2023/4:
+  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2023-2024
+  - https://classroom.github.com/a/f1Q9zG5b
+  - My team_jb repos. in 2023/4: https://github.com/TiSEM/assignments-2023-2024-team_jb
 
-- attach instructions: [[file:~/Google Drive/repositories/github/websites/github_classroom_assignments/how_to_use_nbgrader_github_classroom/Manual_students.pdf]]
-- create and post screencast where notebook is downloaded and uploaded on github
-- show previous step during lecture
 
+**** TODO google form
+- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/Z592VroMaWyGW73YA (this is the link for 2023/2024)
+- [ ] in the google form adjust the format of the assignment address for the new year
+- [ ] change link to the classroom assignment and google form below
+
+- instructions are attached to website (no need to repeat on Canvas): [[file:~/Google Drive/repositories/github/websites/github_classroom_assignments/how_to_use_nbgrader_github_classroom/Manual_students.pdf]]
+- show uploading assignment to github classroom during lecture
+
+*** Canvas
+
+**** TODO copy/paste on Canvas
 
 Dear students,
 
-The link for the final AEA python assignment (template) is: https://classroom.github.com/a/xvoMJs8z (this is the link for 2022/2023)
+The link for the python assignments (template) is: https://classroom.github.com/a/f1Q9zG5b (this is the link for 2023/2024)
 
-You can do the assignment on your own or with (at max.) one other student. When you use the link to the assignment, you will be asked for your team's name. Choose your favorite name!
+You can do the assignments on your own or with (at max.) one other student. You make all three assignments with the same team (either all 3 on your own or with the same fellow student).
+
+When you use the link to the assignment, you will be asked for your team's name. Choose your favorite name!
 
 When you finish your assignment:
 
 1. download your assignment (jupyter notebook) from jupyter lab (or google colabs; or check where it is on your computer when using anaconda) to your computer (e.g. in the folder Downloads)
 
-2. push it onto your assignment's github repository
+2. push it onto your assignment's github repository using github classroom web interface
 
-3. fill in the google form where the link to the form is on the website: https://janboone.github.io/applied-economics/index.html#final_assignment_AEA
+3. fill in the following google form: https://forms.gle/Z592VroMaWyGW73YA (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once; if you give us your details for the first assignment, there is not need to do this again for the second or final assignment).
 
 We need the information from the google form to link your assignment to your student number which is needed for the exam administration.
 
-If you have questions about the assignment or the procedure described above, create an issue on the webpage at: https://github.com/janboone/applied-economics/issues
+If you have questions about the assignment or the procedure described above, create an issue on the webpage at: https://github.com/janboone/Python-programming-for-economists/issues
 
 Then you can see whether other students had the same question (which was already answered) or fellow-students can learn from your question. These issues can be read by anyone, so do not provide any privacy related information.
 
-Good luck with the assignment,
+Good luck with the assignments,
 
 Jan.
 
+
+** Final Assignment
+  :PROPERTIES:
+  :CUSTOM_ID: final_assignment
+  :END:
+
+
+- for the deadlines of the final assignment, see [[Deadlines]] above
+
 ** what we are looking for
 
-The idea of the assignment is that you report your findings in a transparent way that can easily be verified/reproduced by others. The intended audience is your fellow students. They should be able to understand the code you write together with the explanations that you give for this code.
+The idea of the final assignment is that you report your findings in a transparent way that can easily be verified/reproduced by others. The intended audience is your fellow students. They should be able to understand the code you write together with the explanations that you give for this code.
 
-The following ingredients will be important when we evaluate your assignment:
+The following ingredients will be important when we evaluate your final assignment:
 
 + Start from a theory paper; e.g. one you have read for another course.
 + Briefly describe what the paper does and what the main results are.
@@ -250,7 +297,7 @@ The following ingredients will be important when we evaluate your assignment:
 + Briefly *motivate* why this question is interesting.
 + Give the *answer* that you find (as a preview).
 + Mention the main *assumptions* that you need to get this answer.
-+ Use latex to introduce and explain the model of the paper. Describe the main equations (using latex) of the model.
++ Use $\LaTeX$ to introduce and explain the model of the paper. Describe the main equations (using $\LaTeX$) of the model.
 + When you use information (e.g. a literature reference), create a link to this information. The reader then only needs to click to find the relevant information.
 + Describe your (small) extension of the model.
 + Explain how you move from the analytical equations of the paper to Python code.
@@ -272,7 +319,7 @@ Remark:
 
 The resit of the final assignment needs to start from a new paper compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
 
-Otherwise, follow the procedure above on how to submit the assignment and fill in the google form.
+Otherwise, follow the procedure above on how to submit the assignment and fill in the google form (if you have not done so before). Also send us an email that you submitted the assignment for the resit.
 
 
 * Python as programming language
@@ -280,23 +327,12 @@ Otherwise, follow the procedure above on how to submit the assignment and fill i
 We use Python as programming language. A fair question is:
 why Python? The non-scientific answer is: because we like it a lot.
 
-Other answers, better motivated than this, include:
-
+You can also check the following links:
 - https://www.datacamp.com/community/blog/python-scientific-computing-case
-- https://developer.ibm.com/blogs/use-python-for-scientific-research/
-- google the question if you want more answers.
-
-We will program Python using the jupyter notebook. One motivation to use the jupyter notebook is based on a paper in the AER:
-
-[[yt:oP9Qcjq8UVI]]
-
-Note that this is a presentation on a Python conference having nothing to do with economics. The fact that this presentation uses an AER paper to motivate using the notebook (instead of an excel file), may induce a pause in which you ponder the state of our discipline.
-
-After this pause, take a look at some notebooks:
 - https://github.com/jupyter/jupyter/wiki
 
 
-Links and resources for python:
+Resources for python:
 
 + [[https://scipy-lectures.github.io/]]
 + [[http://www.physics.nyu.edu/pine/pymanual/html/pymanMaster.html]]
@@ -315,10 +351,10 @@ either google "markdown tutorial" or use one of the following websites:
 + [[http://daringfireball.net/projects/markdown/]]
 + [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]]
 
-*** Latex
+*** $\LaTeX$
 
 For the python assignment it is useful to familiarize yourself with
-latex. Note that you do not need to type a whole document in latex (so
+$\LaTeX$. Note that you do not need to type a whole document in $\LaTeX$ (so
 don't worry about preambles etc.), you just need to know how to type
 $x^2$, $\alpha,\beta$ or have math displayed like
 
