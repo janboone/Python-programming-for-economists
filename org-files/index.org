@@ -61,33 +61,32 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
    :CUSTOM_ID:       lecture_schedule
    :END:
 
-TBA
 
-#+begin_comment
-- TODO add deadlines assignments 1 and 2
+| day |       date |        time | staff         | room     | Topic                                          | Datacamp             | assignment                 |
+|-----+------------+-------------+---------------+----------+------------------------------------------------+----------------------+----------------------------|
+| Fri | 2023-09-01 | 10:45-12:30 | Jan           | Cube 217 | Intro python, markdown, github, jupyterlab     |                      |                            |
+| Fri | 2023-09-08 | 10:45-12:30 | Jan           | Cube 217 | Lists, functions and numpy                     | Intro (1-4)          |                            |
+| Mon | 2023-09-11 | 12:45-14:30 | Joyce and Ben | Cube 218 | Plenary Career Session: see Canvas for details |                      |                            |
+| Fri | 2023-09-15 | 10:45-12:30 | Jan           | Cube 217 | Matplotlib, dictionaries, Pandas               | Intermediate (1,2)   |                            |
+| Mon | 2023-09-18 | 12:45-16:30 | workshops     | MDZ 16   | Career workshops: see Canvas for details       |                      |                            |
+| Mon | 2023-09-18 | 12:45-16:30 | workshops     | MDZ 106  | Career workshops: see Canvas for details       |                      |                            |
+| Tue | 2023-09-19 | 14:45-18:30 | workshops     | MDZ 10   | Career workshops: see Canvas for details       |                      |                            |
+| Tue | 2023-09-19 | 14:45-18:30 | workshops     | MDZ 110  | Career workshops: see Canvas for details       |                      |                            |
+| Thu | 2023-09-21 | 12:45-16:30 | workshops     | MDZ 112  | Career workshops: see Canvas for details       |                      |                            |
+| Thu | 2023-09-21 | 12:45-16:30 | workshops     | MDZ 106  | Career workshops: see Canvas for details       |                      |                            |
+| Fri | 2023-09-22 | 10:45-12:30 | Jan           | CZ 114   | Booleans, if statements, loops                 | Intermediate (3,4,5) | assignment 1 (first time)  |
+| Fri | 2023-09-29 | 10:45-12:30 | Mery          | Cube 217 | gender economics                               | pandas (1,2)         | assignment 1 (second time) |
+| Fri | 2023-10-13 | 10:45-12:30 |               |          | canceled                                       | pandas (3,4)         |                            |
+| Fri | 2023-10-20 | 10:45-12:30 | Jan           | AZ 201   | pandas: DataFrame, groupby, selection          |                      |                            |
+| Fri | 2023-10-27 | 10:45-12:30 | Jan           | Cube 217 | The market and Asymmetric information          |                      |                            |
+| Fri | 2023-11-03 | 10:45-12:30 |               |          | canceled                                       |                      |                            |
+| Fri | 2023-11-10 | 10:45-12:30 | Jan           | Cube 217 | Financial crisis                               |                      |                            |
+| Fri | 2023-11-17 | 10:45-12:30 | Jan           | Cube 217 | Empirical research                             |                      | assignment 2 (first time)  |
+| Fri | 2023-11-24 | 10:45-12:30 | Jan           | Cube 217 | Healthcare and regulation                      |                      | assignment 2 (second time) |
+| Fri | 2023-12-01 | 10:45-12:30 | Jan           | Cube 217 | Notebook gender economics and Q&A              |                      |                            |
+| Fri | 2023-12-08 | 10:45-12:30 | Jan           | Cube 217 | Reserve                                        |                      |                            |
 
 
-| day |       date |        time | staff          | room    | Topic                                          | Datacamp             |
-|-----+------------+-------------+----------------+---------+------------------------------------------------+----------------------|
-| Tue | 2022-08-30 | 14:45-16:30 | Boone, J.      | CZ 114  | Intro python, markdown, github, jupyterlab     |                      |
-| Wed | 2022-09-07 | 16:45-18:30 | Ladenstein, J  | CZ 7    | Plenary Career Session: see Canvas for details | Intro (3,4)          |
-| Mon | 2022-09-12 | 14:45-18:30 | Ladenstein, J. | RTZ 202 | Career workshops: see Canvas for details       | Intermediate (1,2)   |
-| Mon | 2022-09-12 | 14:45-18:30 | Boomaars, J.   | RTZ 203 | Career workshops: see Canvas for details       |                      |
-| Tue | 2022-09-13 | 12:45-16:30 | Ladenstein, J. | RTZ 103 | Career workshops: see Canvas for details       | Intermediate (3,4,5) |
-| Tue | 2022-09-13 | 12:45-16:30 | Boomaars, J.   | RTZ 501 | Career workshops: see Canvas for details       |                      |
-| Wed | 2022-09-21 | 12:45-14:30 | CANCELLED      |         |                                                | Pandas (1,2)         |
-| Thu | 2022-09-29 | 12:45-14:30 | Boone, J.      | CZ 7    | The market and Asymmetric information          | Pandas (3,4)         |
-| Tue | 2022-10-11 | 10:45-12:30 | Boone, J.      | CZ 9    | Financial crisis                               |                      |
-| Tue | 2022-11-08 | 10:45-12:30 | Boone, J.      | CZ 9    | Empirical research                             |                      |
-| Wed | 2022-11-16 | 10:45-12:30 | Boone, J.      | AZ 201  | Healthcare and regulation                      |                      |
-| Mon | 2022-11-21 | 10:45-12:30 | Ferrando, M.   | AZ 201  | Lecture gender economics                       |                      |
-| Fri | 2022-11-25 | 12:45-14:30 | CANCELLED      | CZ 7    |                                                |                      |
-| Mon | 2022-11-28 | 10:45-12:30 | CANCELLED      | AZ 201  |                                                |                      |
-| Fri | 2022-12-02 | 12:45-14:30 | Boone, J.      | CZ 7    | notebook gender economics                      |                      |
-| Wed | 2022-12-07 | 12:45-14:30 | Boone, J.      | CZ 7    | Q&A                                            |                      |
-
-
-#+end_comment
 
 
 
@@ -117,6 +116,14 @@ git clone https://github.com/janboone/Python-programming-for-economists.git
 + then press the Shift key and Enter key at the same time
 + this creates a folder on the server `Python-programming-for-economists` that contains the material for the course.
 + Note: you can only run this command once. If you run it again, you get an error since the folder already exists.
++ If you want to see the assignments in jupyter lab, you can also type:
+#+BEGIN_SRC shell
+%%bash
+
+git clone https://github.com/janboone/python_assignments
+#+END_SRC
+
+  
 
 *** Assignments
 
@@ -148,7 +155,7 @@ It is up to you how to combine the Datacamp courses with the [[file:./pagescreen
 - The deadline for the *final python assignment* is: Monday January 8th, 2024. Your grade is determined by this final assignment and a bonus point if you get a "pass" on assignments 1 and 2.
 - The resit deadline for the python assignment is: Monday May 13th, 2024. Let us know by email that you have submitted your assignment for the resit.
 
-Follow the instructions below on how to submit an assignment on github and fill in the google form etc.
+Follow the instructions below and on Canvas explaining how to submit an assignment on github and fill in the google form etc.
 
 Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot discuss/program the same paper twice for your assignment).
 
@@ -188,7 +195,7 @@ For this course there are three assignments. The first two assignments are relat
 Note that github records the time at which you submit your assignment.
 
 Each assignment is submitted two times. In particular, to get a pass on assignments 1 and 2, you need to do the following for each assignment:
-- finish and submit the assignment before the deadline:
+- finish and submit the assignment before the deadline (see [[*Lecture schedule][Lecture schedule]] above)
   - present and explain the python code that you use;
   - you do not necessarily fail if you cannot solve the problem (completely);
   - use the notebook to report what you tried, what you googled, what worked and what did not work and explain why;

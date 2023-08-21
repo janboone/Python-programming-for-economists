@@ -47,7 +47,6 @@
    :END:
 
 - when you finish this course, you can
-
   - solve models in Python
   - do simulations in Python
   - create a file or notebook like [[https://github.com/janboone/Python-programming-for-economists/blob/master/economics_notebook.ipynb][this]]
@@ -59,9 +58,8 @@
    :END:
 
 - helps you to present economics in a way that is
-
-   -  understandable and
-   -  reproducible
+  - understandable and
+  - reproducible
 
 - gives a good starting point to write your thesis
 - check [[file:index.org][the website]] and Canvas for relevant information
@@ -77,6 +75,7 @@
 - Gender economics taught by Mery Ferrando:
   - helps you to understand gender economics and
   - what we have in mind for the final assignment
+- This course used to be called Applied Economic Analysis; hence you may occasionally find references to AEA
 
 
 * Office and Excel
@@ -146,8 +145,9 @@
     \end{equation}
 #+END_EXAMPLE
 
--  if you need something, just google; e.g. google "latex phi" or
-   google "latex empty set" etc.
+- if you need something, just google; e.g. google "latex phi" or
+  google "latex empty set" etc.
+- students write their thesis in $\LaTeX$ using [[https://www.overleaf.com/][Overleaf]]
 
 * What do you need?
   :PROPERTIES:
@@ -174,7 +174,6 @@
    :END:
 
 - github allows you to
-
   - publish web pages
   - work "in the cloud" with version control
   - collaborate in the cloud
@@ -191,7 +190,7 @@
   :CUSTOM_ID: rules-of-the-game
   :END:
 
-** to learn python we use [[https://www.datacamp.com/home][datacamp]], [[https://janboone.github.io/applied-economics/pagescreencasts.html][screencasts]] and lectures:
+** to learn python we use [[https://www.datacamp.com/home][datacamp]], [[https://janboone.github.io/Python-programming-for-economists/pagescreencasts.html][screencasts]] and lectures:
 
   - you need to finish the datacamp courses and screencasts in time
   - otherwise you will be lost during the lectures
@@ -226,13 +225,36 @@
   - finish the initial assignment (see below) before the deadline
   - attend the career services workshops
   - [[file:index.org::#final_assignment][Final Assignment]]
-  - [[file:index.org::#deadlines][Deadlines]] for the final assignment
+  - [[file:index.org::#Deadlines][Deadlines]] for the final assignment
 
-
-* Initial Assignment
+* Assignments
   :PROPERTIES:
   :CUSTOM_ID: assignment
   :END:
 
-+ follow and finish the steps under [[file:index.org::#initial_assignment][Initial Assignment]]
-+ type your first Python and markdow at the [[https://jupyterlab.uvt.nl/][jupyter lab server]] and follow along with the screencast: [[file:pagescreencasts.org::#Short_introduction_to_JupyterLab][Short introduction to JupyterLab]]
+** Initial Assignment  
+- follow and finish the steps under [[file:index.org::#initial_assignment][Initial Assignment]]
+- type your first Python and markdow at the [[https://jupyterlab.uvt.nl/][jupyter lab server]] and follow along with the screencast: [[file:pagescreencasts.org::#Short_introduction_to_JupyterLab][Short introduction to JupyterLab]]
+
+
+** Bonus point assignments
+- assignments can be viewed here: https://github.com/janboone/python_assignments
+- assignments 1 and 2 have deadlines *before* the lectures in the [[file:index.org::#lecture_schedule][Lecture schedule]]
+- in this lecture, we will discuss the assignment
+- then you add to the assignment what you have learned from the assignment and what you got wrong the first time
+- we grade both assignments after the deadline of the 2nd assignment
+- note that github keeps track of the date on which you submit
+- if you get a pass on both assignments, you receive a bonus point for the final assignment
+- what we are looking for in assignments 1 and 2 is that you are up-to-date with the course and can google a bit to find (new) python commands
+
+
+** Doing the assignments
+- you can do the assignments on your own or together with 1 other student
+- you *cannot* change team during the semester
+- before assignment 1 we will post a link to github classroom with the assignments
+- this is the moment where you create your team
+- before the deadline you submit your assignment via github classroom
+- assignments 1 and 2 you submit *two times*
+- the final assignment you submit only once
+- when submitting your first assignment, you fill in the google form (link will be on Canvas)
+- see [[file:index.org::*Assignments][Assignments]] for details

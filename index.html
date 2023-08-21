@@ -9,27 +9,38 @@
 <meta name="author" content="Jan Boone" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -57,27 +68,27 @@ This year the course is taught by:
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#screencasts">Screencasts</a></li>
-<li><a href="#org21a9e36">Organisation of the course</a>
+<li><a href="#orgd5f7335">Organisation of the course</a>
 <ul>
-<li><a href="#org2f656f9">we will use the following format:</a></li>
+<li><a href="#org6125d3d">we will use the following format:</a></li>
 <li><a href="#lecture_schedule">Lecture schedule</a></li>
-<li><a href="#orgc9830c2">First Lecture</a></li>
-<li><a href="#org48cd787">Datacamp</a></li>
+<li><a href="#orgf426630">First Lecture</a></li>
+<li><a href="#orgf98aacc">Datacamp</a></li>
 <li><a href="#Deadlines">Deadlines</a></li>
-<li><a href="#org9c95073">Questions</a></li>
+<li><a href="#orgddfb382">Questions</a></li>
 </ul>
 </li>
-<li><a href="#org3c88657">Assignments</a>
+<li><a href="#org53e9550">Assignments</a>
 <ul>
-<li><a href="#org5ed69bd">Submitting assignments</a></li>
+<li><a href="#org61ca9e1">Submitting assignments</a></li>
 <li><a href="#final_assignment">Final Assignment</a></li>
-<li><a href="#org44d1465">what we are looking for</a></li>
-<li><a href="#orgc566444">resit of final assignment</a></li>
+<li><a href="#org812116a">what we are looking for</a></li>
+<li><a href="#orgf67a1cb">resit of final assignment</a></li>
 </ul>
 </li>
-<li><a href="#orgf1bd293">Python as programming language</a>
+<li><a href="#org9fdeb7d">Python as programming language</a>
 <ul>
-<li><a href="#org74f7a1b">Jupyter notebooks</a></li>
+<li><a href="#orgec5674a">Jupyter notebooks</a></li>
 </ul>
 </li>
 </ul>
@@ -96,17 +107,17 @@ For this course a series of screencasts is available. The screencasts can be fou
 </div>
 
 
-<div id="outline-container-org21a9e36" class="outline-2">
-<h2 id="org21a9e36">Organisation of the course</h2>
-<div class="outline-text-2" id="text-org21a9e36">
+<div id="outline-container-orgd5f7335" class="outline-2">
+<h2 id="orgd5f7335">Organisation of the course</h2>
+<div class="outline-text-2" id="text-orgd5f7335">
 <p>
 Since we have recorded screencasts, we will not repeat these during the lectures. The lectures are meant for interaction (only).
 </p>
 </div>
 
-<div id="outline-container-org2f656f9" class="outline-3">
-<h3 id="org2f656f9">we will use the following format:</h3>
-<div class="outline-text-3" id="text-org2f656f9">
+<div id="outline-container-org6125d3d" class="outline-3">
+<h3 id="org6125d3d">we will use the following format:</h3>
+<div class="outline-text-3" id="text-org6125d3d">
 <ul class="org-ul">
 <li>in the python lectures we focus on answering your questions;</li>
 <li>in order to prepare these answers, it is useful if you create an issue via <a href="https://github.com/janboone/Python-programming-for-economists/issues">this link</a>;
@@ -154,17 +165,281 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
 <div id="outline-container-lecture_schedule" class="outline-3">
 <h3 id="lecture_schedule">Lecture schedule</h3>
 <div class="outline-text-3" id="text-lecture_schedule">
-<p>
-TBA
-</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">day</th>
+<th scope="col" class="org-right">date</th>
+<th scope="col" class="org-right">time</th>
+<th scope="col" class="org-left">staff</th>
+<th scope="col" class="org-left">room</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Datacamp</th>
+<th scope="col" class="org-left">assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-09-01</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Intro python, markdown, github, jupyterlab</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-09-08</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Lists, functions and numpy</td>
+<td class="org-left">Intro (1-4)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Mon</td>
+<td class="org-right">2023-09-11</td>
+<td class="org-right">12:45-14:30</td>
+<td class="org-left">Joyce and Ben</td>
+<td class="org-left">Cube 218</td>
+<td class="org-left">Plenary Career Session: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-09-15</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Matplotlib, dictionaries, Pandas</td>
+<td class="org-left">Intermediate (1,2)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Mon</td>
+<td class="org-right">2023-09-18</td>
+<td class="org-right">12:45-16:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 16</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Mon</td>
+<td class="org-right">2023-09-18</td>
+<td class="org-right">12:45-16:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 106</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Tue</td>
+<td class="org-right">2023-09-19</td>
+<td class="org-right">14:45-18:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 10</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Tue</td>
+<td class="org-right">2023-09-19</td>
+<td class="org-right">14:45-18:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 110</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Thu</td>
+<td class="org-right">2023-09-21</td>
+<td class="org-right">12:45-16:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 112</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Thu</td>
+<td class="org-right">2023-09-21</td>
+<td class="org-right">12:45-16:30</td>
+<td class="org-left">workshops</td>
+<td class="org-left">MDZ 106</td>
+<td class="org-left">Career workshops: see Canvas for details</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-09-22</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">CZ 114</td>
+<td class="org-left">Booleans, if statements, loops</td>
+<td class="org-left">Intermediate (3,4,5)</td>
+<td class="org-left">assignment 1 (first time)</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-09-29</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Mery</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">gender economics</td>
+<td class="org-left">pandas (1,2)</td>
+<td class="org-left">assignment 1 (second time)</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-10-13</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">canceled</td>
+<td class="org-left">pandas (3,4)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-10-20</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">AZ 201</td>
+<td class="org-left">pandas: DataFrame, groupby, selection</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-10-27</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">The market and Asymmetric information</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-11-03</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">canceled</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-11-10</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Financial crisis</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-11-17</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Empirical research</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">assignment 2 (first time)</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-11-24</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Healthcare and regulation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">assignment 2 (second time)</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-12-01</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Notebook gender economics and Q&amp;A</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fri</td>
+<td class="org-right">2023-12-08</td>
+<td class="org-right">10:45-12:30</td>
+<td class="org-left">Jan</td>
+<td class="org-left">Cube 217</td>
+<td class="org-left">Reserve</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
 
 
-<div id="outline-container-orgc9830c2" class="outline-3">
-<h3 id="orgc9830c2">First Lecture</h3>
-<div class="outline-text-3" id="text-orgc9830c2">
+
+
+<div id="outline-container-orgf426630" class="outline-3">
+<h3 id="orgf426630">First Lecture</h3>
+<div class="outline-text-3" id="text-orgf426630">
 <p>
 <a href="./Introduction_Lecture.html#introduction">Introduction Lecture</a>
 </p>
@@ -202,13 +477,22 @@ git clone https://github.com/janboone/Python-programming-for-economists.git
 <li>then press the Shift key and Enter key at the same time</li>
 <li>this creates a folder on the server `Python-programming-for-economists` that contains the material for the course.</li>
 <li>Note: you can only run this command once. If you run it again, you get an error since the folder already exists.</li>
+<li>If you want to see the assignments in jupyter lab, you can also type:</li>
 </ul>
+<div class="org-src-container">
+<pre class="src src-shell">%%bash
+
+git clone https://github.com/janboone/python_assignments
+</pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-org23dba1d" class="outline-4">
-<h4 id="org23dba1d">Assignments</h4>
-<div class="outline-text-4" id="text-org23dba1d">
+
+
+<div id="outline-container-org69a1d8d" class="outline-4">
+<h4 id="org69a1d8d">Assignments</h4>
+<div class="outline-text-4" id="text-org69a1d8d">
 <p>
 For this course there are three assignments: two of these are voluntary (assignments 1 and 2), the final assignment is mandatory.
 </p>
@@ -221,9 +505,9 @@ For this course there are three assignments: two of these are voluntary (assignm
 </div>
 </div>
 
-<div id="outline-container-org48cd787" class="outline-3">
-<h3 id="org48cd787">Datacamp</h3>
-<div class="outline-text-3" id="text-org48cd787">
+<div id="outline-container-orgf98aacc" class="outline-3">
+<h3 id="orgf98aacc">Datacamp</h3>
+<div class="outline-text-3" id="text-orgf98aacc">
 <p>
 You can get access to Datacamp via the <a href="https://www.tilburguniversity.edu/students/skills/programming">university website</a>.
 </p>
@@ -258,7 +542,7 @@ It is up to you how to combine the Datacamp courses with the <a href="./pagescre
 </ul>
 
 <p>
-Follow the instructions below on how to submit an assignment on github and fill in the google form etc.
+Follow the instructions below and on Canvas explaining how to submit an assignment on github and fill in the google form etc.
 </p>
 
 <p>
@@ -269,9 +553,9 @@ Also note the rules for the resit of the final assignment in case you submitted 
 
 
 
-<div id="outline-container-org9c95073" class="outline-3">
-<h3 id="org9c95073">Questions</h3>
-<div class="outline-text-3" id="text-org9c95073">
+<div id="outline-container-orgddfb382" class="outline-3">
+<h3 id="orgddfb382">Questions</h3>
+<div class="outline-text-3" id="text-orgddfb382">
 <p>
 If you have questions/comments about this course, go to the <a href="https://github.com/janboone/Python-programming-for-economists/issues">issues page</a>
 open a new issue (with the green "New issue" button) and type your
@@ -312,9 +596,9 @@ to the earlier issue and leave a comment in that "conversation".
 </div>
 </div>
 
-<div id="outline-container-org3c88657" class="outline-2">
-<h2 id="org3c88657">Assignments</h2>
-<div class="outline-text-2" id="text-org3c88657">
+<div id="outline-container-org53e9550" class="outline-2">
+<h2 id="org53e9550">Assignments</h2>
+<div class="outline-text-2" id="text-org53e9550">
 <p>
 For this course there are three assignments. The first two assignments are relatively small programming assignments. You can find them in this repository: <a href="https://github.com/janboone/python_assignments">https://github.com/janboone/python_assignments</a>: <code>assignment_1.ipynb, assignment_2.ipynb</code>. If you finish both assignments before their deadlines and done a good job (get a pass on both assignments), you earn one bonus point for the final assignment. You get either no bonus point or one point (we do not grade 0.38 bonus point&#x2026;).
 </p>
@@ -327,7 +611,7 @@ Note that github records the time at which you submit your assignment.
 Each assignment is submitted two times. In particular, to get a pass on assignments 1 and 2, you need to do the following for each assignment:
 </p>
 <ul class="org-ul">
-<li>finish and submit the assignment before the deadline:
+<li>finish and submit the assignment before the deadline (see <a href="#lecture_schedule">Lecture schedule</a> above)
 <ul class="org-ul">
 <li>present and explain the python code that you use;</li>
 <li>you do not necessarily fail if you cannot solve the problem (completely);</li>
@@ -368,9 +652,9 @@ Note that you can do the assignments alone or with at max. one other student (i.
 </p>
 </div>
 
-<div id="outline-container-org5ed69bd" class="outline-3">
-<h3 id="org5ed69bd">Submitting assignments</h3>
-<div class="outline-text-3" id="text-org5ed69bd">
+<div id="outline-container-org61ca9e1" class="outline-3">
+<h3 id="org61ca9e1">Submitting assignments</h3>
+<div class="outline-text-3" id="text-org61ca9e1">
 <p>
 Assignment 1 and 2 and the final assignment are all submitted using github classroom:
 </p>
@@ -397,9 +681,9 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 </div>
 </div>
 
-<div id="outline-container-org44d1465" class="outline-3">
-<h3 id="org44d1465">what we are looking for</h3>
-<div class="outline-text-3" id="text-org44d1465">
+<div id="outline-container-org812116a" class="outline-3">
+<h3 id="org812116a">what we are looking for</h3>
+<div class="outline-text-3" id="text-org812116a">
 <p>
 The idea of the final assignment is that you report your findings in a transparent way that can easily be verified/reproduced by others. The intended audience is your fellow students. They should be able to understand the code you write together with the explanations that you give for this code.
 </p>
@@ -449,9 +733,9 @@ Remark:
 </div>
 
 
-<div id="outline-container-orgc566444" class="outline-3">
-<h3 id="orgc566444">resit of final assignment</h3>
-<div class="outline-text-3" id="text-orgc566444">
+<div id="outline-container-orgf67a1cb" class="outline-3">
+<h3 id="orgf67a1cb">resit of final assignment</h3>
+<div class="outline-text-3" id="text-orgf67a1cb">
 <p>
 The resit of the final assignment needs to start from a new paper compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
 </p>
@@ -464,9 +748,9 @@ Otherwise, follow the procedure above on how to submit the assignment and fill i
 </div>
 
 
-<div id="outline-container-orgf1bd293" class="outline-2">
-<h2 id="orgf1bd293">Python as programming language</h2>
-<div class="outline-text-2" id="text-orgf1bd293">
+<div id="outline-container-org9fdeb7d" class="outline-2">
+<h2 id="org9fdeb7d">Python as programming language</h2>
+<div class="outline-text-2" id="text-org9fdeb7d">
 <p>
 We use Python as programming language. A fair question is:
 why Python? The non-scientific answer is: because we like it a lot.
@@ -494,13 +778,13 @@ Resources for python:
 </ul>
 </div>
 
-<div id="outline-container-org74f7a1b" class="outline-3">
-<h3 id="org74f7a1b">Jupyter notebooks</h3>
-<div class="outline-text-3" id="text-org74f7a1b">
+<div id="outline-container-orgec5674a" class="outline-3">
+<h3 id="orgec5674a">Jupyter notebooks</h3>
+<div class="outline-text-3" id="text-orgec5674a">
 </div>
-<div id="outline-container-orgf61be43" class="outline-4">
-<h4 id="orgf61be43">Markdown</h4>
-<div class="outline-text-4" id="text-orgf61be43">
+<div id="outline-container-orga54808e" class="outline-4">
+<h4 id="orga54808e">Markdown</h4>
+<div class="outline-text-4" id="text-orga54808e">
 <p>
 For the assignment it is useful to know a bit of markdown. You can
 either google "markdown tutorial" or use one of the following websites:
@@ -513,9 +797,9 @@ either google "markdown tutorial" or use one of the following websites:
 </div>
 </div>
 
-<div id="outline-container-orge193641" class="outline-4">
-<h4 id="orge193641">\(\LaTeX\)</h4>
-<div class="outline-text-4" id="text-orge193641">
+<div id="outline-container-orge98f5d6" class="outline-4">
+<h4 id="orge98f5d6">\(\LaTeX\)</h4>
+<div class="outline-text-4" id="text-orge98f5d6">
 <p>
 For the python assignment it is useful to familiarize yourself with
 \(\LaTeX\). Note that you do not need to type a whole document in \(\LaTeX\) (so

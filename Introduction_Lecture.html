@@ -19,27 +19,38 @@
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -49,13 +60,13 @@
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#org8d5699e">Overview of the course</a></li>
+<li><a href="#org5e32e69">Overview of the course</a></li>
 <li><a href="#office-excel-and-word">Office and Excel</a></li>
 <li><a href="#open-source-word-processing">Open source word processing</a></li>
 <li><a href="#what-do-you-need">What do you need?</a></li>
 <li><a href="#working-in-the-cloud">Working in the cloud</a></li>
 <li><a href="#rules-of-the-game">Rules of the game</a></li>
-<li><a href="#assignment">Initial Assignment</a></li>
+<li><a href="#assignment">Assignments</a></li>
 </ul>
 </div>
 </div>
@@ -111,7 +122,6 @@
 <div class="outline-text-3" id="text-examples">
 <ul class="org-ul">
 <li>when you finish this course, you can
-
 <ul class="org-ul">
 <li>solve models in Python</li>
 <li>do simulations in Python</li>
@@ -127,7 +137,6 @@
 <div class="outline-text-3" id="text-finishing-the-course">
 <ul class="org-ul">
 <li>helps you to present economics in a way that is
-
 <ul class="org-ul">
 <li>understandable and</li>
 <li>reproducible</li>
@@ -140,9 +149,9 @@
 </div>
 </div>
 
-<div id="outline-container-org8d5699e" class="outline-2">
-<h2 id="org8d5699e">Overview of the course</h2>
-<div class="outline-text-2" id="text-org8d5699e">
+<div id="outline-container-org5e32e69" class="outline-2">
+<h2 id="org5e32e69">Overview of the course</h2>
+<div class="outline-text-2" id="text-org5e32e69">
 <ul class="org-ul">
 <li>Python (most of the time)
 <ul class="org-ul">
@@ -159,6 +168,7 @@
 <li>helps you to understand gender economics and</li>
 <li>what we have in mind for the final assignment</li>
 </ul></li>
+<li>This course used to be called Applied Economic Analysis; hence you may occasionally find references to AEA</li>
 </ul>
 </div>
 </div>
@@ -169,9 +179,9 @@
 <div class="outline-text-2" id="text-office-excel-and-word">
 </div>
 
-<div id="outline-container-org994bca4" class="outline-3">
-<h3 id="org994bca4">Excel is great for programming?</h3>
-<div class="outline-text-3" id="text-org994bca4">
+<div id="outline-container-org229b7cf" class="outline-3">
+<h3 id="org229b7cf">Excel is great for programming?</h3>
+<div class="outline-text-3" id="text-org229b7cf">
 <ul class="org-ul">
 <li>indeed, simple things can be done in excel</li>
 <li>e.g. keep track of your grades and calculate the average</li>
@@ -200,7 +210,7 @@
 <li>examples are:</li>
 </ul>
 
-<pre class="example" id="org17a5dd1">
+<pre class="example" id="org829c8d6">
 
 # this is a heading
 
@@ -231,7 +241,7 @@
 <li>you can guess what the following will do:</li>
 </ul>
 
-<pre class="example" id="orgd0e8256">
+<pre class="example" id="org18875dc">
 $x^2$, $\beta$, $\sqrt{9}$, $\frac{1}{2}$, $\bar x$
 
 \begin{equation}
@@ -244,6 +254,7 @@ a^2 + b^2 = c^2
 <ul class="org-ul">
 <li>if you need something, just google; e.g. google "latex phi" or
 google "latex empty set" etc.</li>
+<li>students write their thesis in \(\LaTeX\) using <a href="https://www.overleaf.com/">Overleaf</a></li>
 </ul>
 </div>
 </div>
@@ -276,7 +287,6 @@ google "latex empty set" etc.</li>
 <div class="outline-text-3" id="text-github">
 <ul class="org-ul">
 <li>github allows you to
-
 <ul class="org-ul">
 <li>publish web pages</li>
 <li>work "in the cloud" with version control</li>
@@ -299,9 +309,9 @@ google "latex empty set" etc.</li>
 <div class="outline-text-2" id="text-rules-of-the-game">
 </div>
 
-<div id="outline-container-org6629f8a" class="outline-3">
-<h3 id="org6629f8a">to learn python we use <a href="https://www.datacamp.com/home">datacamp</a>, <a href="https://janboone.github.io/applied-economics/pagescreencasts.html">screencasts</a> and lectures:</h3>
-<div class="outline-text-3" id="text-org6629f8a">
+<div id="outline-container-orgd9e55fc" class="outline-3">
+<h3 id="orgd9e55fc">to learn python we use <a href="https://www.datacamp.com/home">datacamp</a>, <a href="https://janboone.github.io/Python-programming-for-economists/pagescreencasts.html">screencasts</a> and lectures:</h3>
+<div class="outline-text-3" id="text-orgd9e55fc">
 <ul class="org-ul">
 <li>you need to finish the datacamp courses and screencasts in time</li>
 <li>otherwise you will be lost during the lectures</li>
@@ -316,9 +326,9 @@ google "latex empty set" etc.</li>
 </div>
 
 
-<div id="outline-container-orgada6e42" class="outline-3">
-<h3 id="orgada6e42">lecture format</h3>
-<div class="outline-text-3" id="text-orgada6e42">
+<div id="outline-container-org4b0b3f1" class="outline-3">
+<h3 id="org4b0b3f1">lecture format</h3>
+<div class="outline-text-3" id="text-org4b0b3f1">
 <ul class="org-ul">
 <li>in the lectures we will answer questions that you ask us</li>
 <li>in order to prepare these answers, it is useful if you create a github issue
@@ -334,9 +344,9 @@ google "latex empty set" etc.</li>
 </div>
 </div>
 
-<div id="outline-container-org8c50782" class="outline-3">
-<h3 id="org8c50782">suggested workflow</h3>
-<div class="outline-text-3" id="text-org8c50782">
+<div id="outline-container-org7150699" class="outline-3">
+<h3 id="org7150699">suggested workflow</h3>
+<div class="outline-text-3" id="text-org7150699">
 <ul class="org-ul">
 <li>follow the Datacamp courses and make notes of what you learn at Datacamp in a notebook on the jupyterlab server
 <ul class="org-ul">
@@ -350,27 +360,67 @@ google "latex empty set" etc.</li>
 </div>
 </div>
 
-<div id="outline-container-org3b6b910" class="outline-3">
-<h3 id="org3b6b910">to get a grade for this course:</h3>
-<div class="outline-text-3" id="text-org3b6b910">
+<div id="outline-container-org3bc75a1" class="outline-3">
+<h3 id="org3bc75a1">to get a grade for this course:</h3>
+<div class="outline-text-3" id="text-org3bc75a1">
 <ul class="org-ul">
 <li>finish the initial assignment (see below) before the deadline</li>
 <li>attend the career services workshops</li>
 <li><a href="index.html#final_assignment">Final Assignment</a></li>
-<li><a href="index.html#deadlines">Deadlines</a> for the final assignment</li>
+<li><a href="index.html#Deadlines">Deadlines</a> for the final assignment</li>
 </ul>
 </div>
 </div>
 </div>
 
-
 <div id="outline-container-assignment" class="outline-2">
-<h2 id="assignment">Initial Assignment</h2>
+<h2 id="assignment">Assignments</h2>
 <div class="outline-text-2" id="text-assignment">
+</div>
+
+<div id="outline-container-org21bb226" class="outline-3">
+<h3 id="org21bb226">Initial Assignment</h3>
+<div class="outline-text-3" id="text-org21bb226">
 <ul class="org-ul">
 <li>follow and finish the steps under <a href="index.html#initial_assignment">Initial Assignment</a></li>
 <li>type your first Python and markdow at the <a href="https://jupyterlab.uvt.nl/">jupyter lab server</a> and follow along with the screencast: <a href="pagescreencasts.html#Short_introduction_to_JupyterLab">Short introduction to JupyterLab</a></li>
 </ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9d737f9" class="outline-3">
+<h3 id="org9d737f9">Bonus point assignments</h3>
+<div class="outline-text-3" id="text-org9d737f9">
+<ul class="org-ul">
+<li>assignments can be viewed here: <a href="https://github.com/janboone/python_assignments">https://github.com/janboone/python_assignments</a></li>
+<li>assignments 1 and 2 have deadlines <b>before</b> the lectures in the <a href="index.html#lecture_schedule">Lecture schedule</a></li>
+<li>in this lecture, we will discuss the assignment</li>
+<li>then you add to the assignment what you have learned from the assignment and what you got wrong the first time</li>
+<li>we grade both assignments after the deadline of the 2nd assignment</li>
+<li>note that github keeps track of the date on which you submit</li>
+<li>if you get a pass on both assignments, you receive a bonus point for the final assignment</li>
+<li>what we are looking for in assignments 1 and 2 is that you are up-to-date with the course and can google a bit to find (new) python commands</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgacff6a8" class="outline-3">
+<h3 id="orgacff6a8">Doing the assignments</h3>
+<div class="outline-text-3" id="text-orgacff6a8">
+<ul class="org-ul">
+<li>you can do the assignments on your own or together with 1 other student</li>
+<li>you <b>cannot</b> change team during the semester</li>
+<li>before assignment 1 we will post a link to github classroom with the assignments</li>
+<li>this is the moment where you create your team</li>
+<li>before the deadline you submit your assignment via github classroom</li>
+<li>assignments 1 and 2 you submit <b>two times</b></li>
+<li>the final assignment you submit only once</li>
+<li>when submitting your first assignment, you fill in the google form (link will be on Canvas)</li>
+<li>see <a href="index.html#org69a1d8d">Assignments</a> for details</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
