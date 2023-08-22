@@ -76,10 +76,8 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
 | Thu | 2023-09-21 | 12:45-16:30 | workshops     | MDZ 106  | Career workshops: see Canvas for details       |                      |                            |
 | Fri | 2023-09-22 | 10:45-12:30 | Jan           | CZ 114   | Booleans, if statements, loops                 | Intermediate (3,4,5) | assignment 1 (first time)  |
 | Fri | 2023-09-29 | 10:45-12:30 | Mery          | Cube 217 | gender economics                               | pandas (1,2)         | assignment 1 (second time) |
-| Fri | 2023-10-13 | 10:45-12:30 |               |          | canceled                                       | pandas (3,4)         |                            |
-| Fri | 2023-10-20 | 10:45-12:30 | Jan           | AZ 201   | pandas: DataFrame, groupby, selection          |                      |                            |
+| Fri | 2023-10-20 | 10:45-12:30 | Jan           | AZ 201   | pandas: DataFrame, groupby, selection          | pandas (3,4)         |                            |
 | Fri | 2023-10-27 | 10:45-12:30 | Jan           | Cube 217 | The market and Asymmetric information          |                      |                            |
-| Fri | 2023-11-03 | 10:45-12:30 |               |          | canceled                                       |                      |                            |
 | Fri | 2023-11-10 | 10:45-12:30 | Jan           | Cube 217 | Financial crisis                               |                      |                            |
 | Fri | 2023-11-17 | 10:45-12:30 | Jan           | Cube 217 | Empirical research                             |                      | assignment 2 (first time)  |
 | Fri | 2023-11-24 | 10:45-12:30 | Jan           | Cube 217 | Healthcare and regulation                      |                      | assignment 2 (second time) |
