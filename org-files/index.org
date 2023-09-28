@@ -4,6 +4,7 @@
 #+OPTIONS: toc:2 timestamp:nil toc:nil todo:nil
 #+EXPORT_EXCLUDE_TAGS: noexport
 
+Items moved to the trash
 This website contains the material for the MSc course Methods: Python programming for economists.
 
 **This website is under construction for 2023/2024**
@@ -83,7 +84,7 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
 | Fri | 2023-11-17 | 10:45-12:30 | Jan           | Cube 217 | Empirical research                             |                      | assignment 2 (first time)  |
 | Fri | 2023-11-24 | 10:45-12:30 | Jan           | Cube 217 | Healthcare and regulation                      |                      | assignment 2 (second time) |
 | Fri | 2023-12-01 | 10:45-12:30 | Jan           | Cube 217 | Notebook gender economics and Q&A              |                      |                            |
-| Fri | 2023-12-08 | 10:45-12:30 | Jan           | Cube 217 | Reserve                                        |                      |                            |
+| Fri | 2023-12-08 | 10:45-12:30 | Jan           | CZ 007   | Reserve                                        |                      |                            |
 
 
 
