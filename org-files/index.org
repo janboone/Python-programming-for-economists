@@ -4,16 +4,16 @@
 #+OPTIONS: toc:2 timestamp:nil toc:nil todo:nil
 #+EXPORT_EXCLUDE_TAGS: noexport
 
-Items moved to the trash
 This website contains the material for the MSc course Methods: Python programming for economists.
 
-**This website is under construction for 2023/2024**
+**This website is under construction for 2024/2025**
 
 This year the course is taught by:
 + Jan Boone
-+ Sarp Cebeci
++ Özgün Balaban
 + Mery Ferrando
 + Joyce Ladenstein
++ Shaye Olij
 
 ------------
 #+TOC: headlines 2
@@ -54,7 +54,7 @@ A suggested workflow to learn programming efficiently is:
 + if you still cannot figure it out, create an issue on github to ask us
 + we will answer your questions in class
 
-In November there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. These notebooks are then discussed in a following lecture. The notebooks will teach you something about gender economics and Python. At the same time, they show you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
+In September there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. This notebook is then discussed in a following lecture. The notebook will teach you something about gender economics and Python. At the same time, they show you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
 
 *Remark:* We have been teaching this course for a couple of years now. Every year there are a number of students who attend the lectures without preparing anything and watch the screencasts without trying to program themselves. We live in a free country and you choose how to spend your time. However, we do feel the need to warn you that this strategy does not work well. You actually end up spending far more time on finishing the course than when you follow the planning we suggest below. The reason is as follows: learning a programming language is frustrating. You learn by making mistakes and then trying to figure out what goes wrong. When you make these mistakes during the semester, you are well covered: we are there to help you. When you make these mistakes for the first time when trying to finish your assignment before the deadline, you are in trouble. We will try to help you but not within an hour, or within a day. And because you need to finish before the deadline, you have to figure everything out by yourself under time pressure. Not a pleasant experience and one you can easily avoid. But the choice is yours.
 
@@ -64,31 +64,24 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
    :END:
 
 
-| day |       date |        time | staff         | room     | Topic                                          | Datacamp             | assignment                 |
-|-----+------------+-------------+---------------+----------+------------------------------------------------+----------------------+----------------------------|
-| Fri | 2023-09-01 | 10:45-12:30 | Jan           | Cube 217 | Intro python, markdown, github, jupyterlab     |                      |                            |
-| Fri | 2023-09-08 | 10:45-12:30 | Jan           | Cube 217 | Lists, functions and numpy                     | Intro (1-4)          |                            |
-| Mon | 2023-09-11 | 12:45-14:30 | Joyce and Ben | Cube 218 | Plenary Career Session: see Canvas for details |                      |                            |
-| Fri | 2023-09-15 | 10:45-12:30 | Jan           | Cube 217 | Matplotlib, dictionaries, Pandas               | Intermediate (1,2)   |                            |
-| Mon | 2023-09-18 | 12:45-16:30 | workshops     | MDZ 16   | Career workshops: see Canvas for details       |                      |                            |
-| Mon | 2023-09-18 | 12:45-16:30 | workshops     | MDZ 106  | Career workshops: see Canvas for details       |                      |                            |
-| Tue | 2023-09-19 | 14:45-18:30 | workshops     | MDZ 10   | Career workshops: see Canvas for details       |                      |                            |
-| Tue | 2023-09-19 | 14:45-18:30 | workshops     | MDZ 110  | Career workshops: see Canvas for details       |                      |                            |
-| Thu | 2023-09-21 | 12:45-16:30 | workshops     | MDZ 112  | Career workshops: see Canvas for details       |                      |                            |
-| Thu | 2023-09-21 | 12:45-16:30 | workshops     | MDZ 106  | Career workshops: see Canvas for details       |                      |                            |
-| Fri | 2023-09-22 | 10:45-12:30 | Jan           | CZ 114   | Booleans, if statements, loops                 | Intermediate (3,4,5) | assignment 1 (first time)  |
-| Fri | 2023-09-29 | 10:45-12:30 | Mery          | Cube 217 | gender economics                               | pandas (1,2)         | assignment 1 (second time) |
-| Fri | 2023-10-20 | 10:45-12:30 | Jan           | AZ 201   | pandas: DataFrame, groupby, selection          | pandas (3,4)         |                            |
-| Fri | 2023-10-27 | 10:45-12:30 | Jan           | Cube 217 | The market and Asymmetric information          |                      |                            |
-| Fri | 2023-11-10 | 10:45-12:30 | Jan           | Cube 217 | Financial crisis                               |                      |                            |
-| Fri | 2023-11-17 | 10:45-12:30 | Jan           | Cube 217 | Empirical research                             |                      | assignment 2 (first time)  |
-| Fri | 2023-11-24 | 10:45-12:30 | Jan           | Cube 217 | Healthcare and regulation                      |                      | assignment 2 (second time) |
-| Fri | 2023-12-01 | 10:45-12:30 | Jan           | Cube 217 | Notebook gender economics and Q&A              |                      |                            |
-| Fri | 2023-12-08 | 10:45-12:30 | Jan           | CZ 007   | Reserve                                        |                      |                            |
+| day |       date |        time | staff      | room            | topic                                          | datacamp             | assignment                 |
+|-----+------------+-------------+------------+-----------------+------------------------------------------------+----------------------+----------------------------|
+| Fri | 2024-09-06 | 10:45-12:30 | Jan        | Cube 216        | Intro python, markdown, github, jupyterlab     |                      |                            |
+| Fri | 2024-09-13 | 10:45-12:30 | Joyce, Jan | Cube 216        | Career Development, lists, functions and numpy | Intro (1-4)          |                            |
+| Fri | 2024-09-20 | 10:45-12:30 | Jan        | Cube 216        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |                            |
+| Fri | 2024-09-27 | 10:45-12:30 | Mery       | Cube 216        | gender economics                               | Intermediate (3,4,5) |                            |
+| Thu | 2024-10-17 | 10:45-12:30 | Jan        | CZ 7            | Booleans, if statements, loops                 | pandas (1,2)         | assignment 1 (first time)  |
+| Thu | 2024-10-24 | 10:45-12:30 | Jan        | CZ 7            | Pandas: dataframe, groupby, selection          | pandas (3,4)         | assignment 1 (second time) |
+| Thu | 2024-10-31 | 12:45-14:30 | Jan        | WZ 101          | The market and asymmetric information          |                      |                            |
+| Fri | 2024-11-08 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            |                      |                            |
+| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      | assignment 2 (first time)  |
+| Fri | 2024-11-22 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 2)            |                      | assignment 2 (second time) |
+| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      |                            |
+| Fri | 2024-12-06 | 10:45-12:30 | Jan        | CZ 114          | Reserve                                        |                      |                            |
+| Mon | 2025-01-06 |             |            |                 | DEADLINE final assignment                      |                      |                            |
 
-
-
-
+   
+If you have programmed with python before, there is no need to attend the introduction to python lectures. In this case, attend the first lecture, the lectures by Joyce and Mery and then join the python lectures again when we start with "The market and asymmetric information".
 
 ** First Lecture
 
@@ -101,7 +94,7 @@ In November there is a lecture on gender economics. In the lecture Mery will dis
 
 Do the following three steps:
 + create a github account on [[https://github.com/][github]] (you need this account to submit your final assignment)
-  + we advise you to do this before **Friday September 15, 2023**
+  + we advise you to do this before **Friday September 13, 2024**
 + go to
   + [[https://jupyterlab.uvt.nl/][jupyter lab]]
     + IT suggests that you use the Firefox browser to access jupyter lab
@@ -132,6 +125,14 @@ For this course there are three assignments: two of these are voluntary (assignm
 - you can view the assignments in this repository: https://github.com/janboone/python_assignments
 - instructions for the assignments can be found below.
 
+** Career Development part of the course
+
+To get a grade for this course, you need to pass the Career Development part of this course.
+
+For details on Career Development, see the Canvas page and [[file:img/Syllabus_Career_Development_2024-2025.pdf][this document]].
+
+
+
 ** Datacamp
 
 You can get access to Datacamp via the [[https://www.tilburguniversity.edu/students/skills/programming][university website]].
@@ -146,14 +147,20 @@ These courses teach you the basic Python syntax. In the lectures and notebook fo
 
 It is up to you how to combine the Datacamp courses with the [[file:./pagescreencasts.org][Screencasts]]. We suggest to finish the Datacamp Intro course first. As there is no economics on Datacamp, some students prefer to start with the screencasts after the Intro. Others prefer to finish more Datacamp courses before they start on the screencasts. Just see what works for you. But make sure you follow the planning above, otherwise you might get lost if you are too far behind and the lectures will not be as useful to you.
 
+Most students like Datacamp to get used to the python syntax. A minority of students really dislike Datacamp. If you do not like it either, you can also read [[https://greenteapress.com/wp/think-python-3rd-edition/][Think Python]]. You can buy the book or read the free online version. The jupyter notebooks can be found on [[https://github.com/AllenDowney/ThinkPython/tree/v3][github]]. You can clone this repository and work with the notebooks. You can also find some wonderful presentations on Youtube by the author Allen Downey.
+
 ** Deadlines
    :PROPERTIES:
    :CUSTOM_ID: Deadlines
    :END:
 
 - The deadlines for assignments 1 and 2 are in the lecture schedule above.
-- The deadline for the *final python assignment* is: Monday January 8th, 2024. Your grade is determined by this final assignment and a bonus point if you get a "pass" on assignments 1 and 2.
-- The resit deadline for the python assignment is: Monday May 13th, 2024. Let us know by email that you have submitted your assignment for the resit.
+- The deadline for the *final python assignment* is: Monday January 6th, 2025. 
+- The resit deadline for the python assignment is: Monday May 12th, 2025. Let us know by email that you have submitted your assignment for the resit.
+- Your grade is determined by:
+  - a "pass" on the Career Services assignments;
+  - final assignment;
+  - a bonus point if you get a "pass" on assignments 1 and 2.
 
 Follow the instructions below and on Canvas explaining how to submit an assignment on github and fill in the google form etc.
 
