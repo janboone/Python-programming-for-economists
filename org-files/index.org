@@ -30,9 +30,22 @@ For this course a series of screencasts is available. The screencasts can be fou
 
 * Organisation of the course
 
-Since we have recorded screencasts, we will not repeat these during the lectures. The lectures are meant for interaction (only).
+The course consists of a Career Development part and a python programming part. We discuss both briefly in this section.
 
-** we will use the following format:
+** Career Development part of the course
+
+Career development activities (workshops and career events) are part of the course ‘Methods: Python Programming’. The goal of this career development part of the course is to help students from the Master Economics transition into their careers after graduation. The focus is on personal growth and development and provides practical tools to be well prepared for the job application process.
+
+In both semester 1 and semester 2, workshop(s) will be offered by Student Career Services. To pass the course ‘Methods: Python Programming’, you must participate in at least 1 workshop of your choice and at least 1 career event. You will receive a partial grade once you have completed the Python programming part of the course. At the end of the academic year, you will be assessed whether you have met the set criteria of the career development part of the course through a pass or fail. Only with a positive grade for the Python programming part of the course and a pass for the career development part of the course you have passed the course ‘Methods: Python Programming’..
+
+For more information and for an overview of workshops and career events offered throughout the year check the [[https://tilburguniversity.instructure.com/courses/17415/modules][‘Career Development for MSc Economics’ Canvas page]].
+
+
+
+
+** For the python part we will use the following format:
+
+Since we have recorded screencasts, we will not repeat these during the lectures. The lectures are meant for interaction (only).
 
 + in the python lectures we focus on answering your questions;
 + in order to prepare these answers, it is useful if you create an issue via [[https://github.com/janboone/Python-programming-for-economists/issues][this link]];
@@ -68,17 +81,20 @@ In September there is a lecture on gender economics. In the lecture Mery will di
 |-----+------------+-------------+------------+-----------------+------------------------------------------------+----------------------+----------------------------|
 | Fri | 2024-09-06 | 10:45-12:30 | Jan        | Cube 216        | Intro python, markdown, github, jupyterlab     |                      |                            |
 | Fri | 2024-09-13 | 10:45-12:30 | Joyce, Jan | Cube 216        | Career Development, lists, functions and numpy | Intro (1-4)          |                            |
-| Fri | 2024-09-20 | 10:45-12:30 | Jan        | Cube 216        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |                            |
+| Fri | 2024-09-20 | 12:45-14:30 | Özgün      | Cube 215        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |                            |
 | Fri | 2024-09-27 | 10:45-12:30 | Mery       | Cube 216        | gender economics                               | Intermediate (3,4,5) |                            |
-| Thu | 2024-10-17 | 10:45-12:30 | Jan        | CZ 7            | Booleans, if statements, loops                 | pandas (1,2)         | assignment 1 (first time)  |
-| Thu | 2024-10-24 | 10:45-12:30 | Jan        | CZ 7            | Pandas: dataframe, groupby, selection          | pandas (3,4)         | assignment 1 (second time) |
-| Thu | 2024-10-31 | 12:45-14:30 | Jan        | WZ 101          | The market and asymmetric information          |                      |                            |
-| Fri | 2024-11-08 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            |                      |                            |
-| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      | assignment 2 (first time)  |
-| Fri | 2024-11-22 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 2)            |                      | assignment 2 (second time) |
-| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      |                            |
+| Thu | 2024-10-17 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 1)          | pandas (1,2)         |                            |
+| Thu | 2024-10-24 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            | pandas (3,4)         |                            |
+| Thu | 2024-10-31 | 12:45-14:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 2)          |                      |                            |
+| Fri | 2024-11-01 | 14:45-16:30 | Özgün      | Cube 215        | Booleans, if statements, loops                 |                      |                            |
+| Fri | 2024-11-08 | 10:45-12:30 | Jan        | Cube 216        | Pandas: dataframe, groupby, selection          |                      | assignment 1 (first time)  |
+| Fri | 2024-11-14 | 12:45-14:30 | Joyce      | Cube 15         | Workshop ‘finding purpose’ (part 2)            |                      |                            |
+| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | The market and asymmetric information          |                      | assignment 1 (second time) |
+| Fri | 2024-11-22 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      | assignment 2 (first time)  |
+| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      | assignment 2 (second time) |
 | Fri | 2024-12-06 | 10:45-12:30 | Jan        | CZ 114          | Reserve                                        |                      |                            |
 | Mon | 2025-01-06 |             |            |                 | DEADLINE final assignment                      |                      |                            |
+
 
    
 If you have programmed with python before, there is no need to attend the introduction to python lectures. In this case, attend the first lecture, the lectures by Joyce and Mery and then join the python lectures again when we start with "The market and asymmetric information".
@@ -124,14 +140,6 @@ For this course there are three assignments: two of these are voluntary (assignm
 
 - you can view the assignments in this repository: https://github.com/janboone/python_assignments
 - instructions for the assignments can be found below.
-
-** Career Development part of the course
-
-To get a grade for this course, you need to pass the Career Development part of this course.
-
-For details on Career Development, see the Canvas page and [[file:img/Syllabus_Career_Development_2024-2025.pdf][this document]].
-
-
 
 ** Datacamp
 
@@ -240,13 +248,13 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 *** relevant links:
 
 **** TODO each year renew classroom links for the new year
-- [ ] each year change notebooks for assignments 1 and 2 in repos.
+- [X] each year change notebooks for assignments 1 and 2 in repos.
   - https://github.com/janboone/python_assignments
-- [ ] set deadline in github classroom
+- [X] set deadline in github classroom
 - [ ] add github classroom assignment with the template repos. for 2023/4:
-  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2023-2024
-  - https://classroom.github.com/a/f1Q9zG5b
-  - My team_jb repos. in 2023/4: https://github.com/TiSEM/assignments-2023-2024-team_jb
+  - https://classroom.github.com/a/3S3h5SAr
+  - https://github.com/TiSEM/tisem-python-for-economists-assignments-2024-2025-python_assignments
+  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2024-2025
 
 
 **** TODO google form
@@ -315,10 +323,12 @@ The following ingredients will be important when we evaluate your final assignme
 + When you use information (e.g. a literature reference), create a link to this information. The reader then only needs to click to find the relevant information.
 + Describe your (small) extension of the model.
 + Explain how you move from the analytical equations of the paper to Python code.
-+ Solve for the equilibrium using Python.
++ Use some *optimization methods* (e.g. agents maximize utility or firms minimize costs).
++ Solve for an *equilibrium* using Python (using fixed points).
 + Simulate outcomes by using different values for parameters and save the outcomes of the simulations in a pandas dataframe.
 + Explain your code, the reader --think of your fellow students-- must be able to easily follow what you are doing.
-+ Present graphs of your simulation results.
++ Explain your code in Markdown blocks, not as comments in code blocks.
++ Present graphs of your simulation results using =matplotlib=.
 + Discuss what the figures show (e.g. $x$ is increasing in $y$) and explain the economic intuition for this relation (between $x$ and $y$).
 + Present a clear conclusion/answer to your question.
 + Finish with a brief *discussion* of your results.
