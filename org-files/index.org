@@ -92,7 +92,7 @@ In September there is a lecture on gender economics. In the lecture Mery will di
 | Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | The market and asymmetric information          |                      | assignment 1 (second time) |
 | Fri | 2024-11-22 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      | assignment 2 (first time)  |
 | Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      | assignment 2 (second time) |
-| Fri | 2024-12-06 | 10:45-12:30 | Jan        | CZ 114          | Reserve                                        |                      |                            |
+| Fri | 2024-12-06 | 10:45-12:30 | Özgün/Jan  | CZ 114          | Reserve                                        |                      |                            |
 | Mon | 2025-01-06 |             |            |                 | DEADLINE final assignment                      |                      |                            |
 
 
@@ -251,14 +251,15 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 - [X] each year change notebooks for assignments 1 and 2 in repos.
   - https://github.com/janboone/python_assignments
 - [X] set deadline in github classroom
-- [ ] add github classroom assignment with the template repos. for 2023/4:
-  - https://classroom.github.com/a/3S3h5SAr
+- [ ] add github classroom assignment with the template repos. for 2024/5:
+  - https://forms.gle/WaAEKJzAmGYjtju86
   - https://github.com/TiSEM/tisem-python-for-economists-assignments-2024-2025-python_assignments
   - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2024-2025
+  - invite link: https://classroom.github.com/a/3S3h5SAr
 
 
 **** TODO google form
-- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/Z592VroMaWyGW73YA (this is the link for 2023/2024)
+- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/WaAEKJzAmGYjtju86 (this is the link for 2024/2025)
 - [ ] in the google form adjust the format of the assignment address for the new year
 - [ ] change link to the classroom assignment and google form below
 
@@ -271,7 +272,7 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 
 Dear students,
 
-The link for the python assignments (template) is: https://classroom.github.com/a/f1Q9zG5b (this is the link for 2023/2024)
+The link for the python assignments (template) is: https://classroom.github.com/a/3S3h5SAr (this is the link for 2024/2025)
 
 You can do the assignments on your own or with (at max.) one other student. You make all three assignments with the same team (either all 3 on your own or with the same fellow student).
 
@@ -283,7 +284,7 @@ When you finish your assignment:
 
 2. push it onto your assignment's github repository using github classroom web interface
 
-3. fill in the following google form: https://forms.gle/Z592VroMaWyGW73YA (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once; if you give us your details for the first assignment, there is not need to do this again for the second or final assignment).
+3. fill in the following google form: https://forms.gle/WaAEKJzAmGYjtju86 (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once; if you give us your details for the first assignment, there is not need to do this again for the second or final assignment).
 
 We need the information from the google form to link your assignment to your student number which is needed for the exam administration.
 
