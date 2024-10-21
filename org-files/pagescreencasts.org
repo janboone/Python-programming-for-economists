@@ -52,6 +52,34 @@ Things you should be familiar with is the syntax of Python (e.g. the role of spa
 + scipy: scientific python
 + matplotlib: to make plots
 
+
+*** new version of =pymc=
+  :PROPERTIES:
+  :CUSTOM_ID: new_pymc
+  :END:
+
+The new version of =pymc= is imported as =import pymc as pm=; no longer as =import pymc3 as pm=. This has a number of implications:
+- in the video and notebook we use =import pymc3 as pm= but this will give an error when you run it on the jupyterlab server; hence use =pymc= instead of =pymc3=
+- the syntax for drawing samples from a distribution in =pymc= has changed:
+  - =pm.Normal.dist(0,1).random(size=10)= will given an error
+  - now use the following two lines:
+
+#+begin_src python
+x = pm.Normal.dist(0,1)
+pm.draw(x, draws=10)
+#+end_src
+
+See [[https://www.pymc-labs.com/blog-posts/simulating-data-with-pymc/][this blog]] for more information.
+
+or use the numpy library:
+
+#+begin_src python
+import numpy as np
+np.random.normal(0,1,10)
+#+end_src
+
+
+
 * Short introduction to JupyterLab
   :PROPERTIES:
   :CUSTOM_ID: Short_introduction_to_JupyterLab
@@ -145,6 +173,9 @@ Questions you should be able to answer before continuing:
 + what is the welfare maximizing way to allocate $m$ products among $n>m$ consumers?
 + how can you calculate the Lagrange multiplier in the optimization problem at the end of the video using python?
 + why do we get an error if we would use ~tf.random.normal(50,10,2)~? hint: use ~tf.random.normal?~
+
+**Note** that due to a new version of =pymc= on the server, the correct import statement now is =import pymc as pm=; using =pymc3= will give an error.
+
 
 *** market outcome
 
@@ -272,9 +303,17 @@ Questions you should be able to answer:
 [[yt:saST6igsR6Y]]
 
 Topics we cover in the video:
-+ we use ~pymc3~ for random draws from a log-normal distribution 
 + the government maximizes welfare over marginal tax rates $\tau$ while each agent in the economy maximizes work effort for a given $\tau$
   + we have an optimization problem "over" optimization problems
++ we use ~pymc~ for random draws from a log-normal distribution
++ note that because =pymc3= on the server is replaced by the newer version =pymc=, the new syntax to draw samples from a log-normal distribution is as follows:
+
+#+begin_src python
+γ = pm.draw(pm.Lognormal.dist(mu=0.0,sigma=0.5), draws=50)
+γ
+#+end_src
+
+
 
 Questions you should be able to answer:
 + what will be the optimal tax rate with $\rho=1$ (you will verify this in the notebook)
@@ -348,6 +387,21 @@ Topics we cover in this video:
 + distribution and standard deviation of a sample mean
 + simulating a hypothesis test
 
+
+**Note** that in the notebook we use =samples = pm.Normal.dist(mu,sd).random(size=(number_of_samples,n))= in a code block. Due to the new version of =pymc= this code should now be:
+
+#+begin_src python
+mu = 1000
+sd = 100
+number_of_samples=250
+
+def moments(n):
+    samples = pm.draw(pm.Normal.dist(mu=1000,sigma=100,shape=(number_of_samples,n)))
+    mus = samples.mean(axis=1)
+    std = mus.std()
+    return [mus,std]
+#+end_src
+
 Questions you should be able to answer:
 + what is the "statistical name" for ~np.std(mus)~ in the video?
 + what is the idea behind the hypothesis test in the video?
@@ -356,7 +410,7 @@ Questions you should be able to answer:
 
 * Regulation in healthcare markets
 
-In this lecture we analyze Dutch healthcare data from [[https://www.vektis.nl/open-data][Vektis]] using ~pandas~, ~matplotlib~ and ~pymc3~.
+In this lecture we analyze Dutch healthcare data from [[https://www.vektis.nl/open-data][Vektis]] using ~pandas~, ~matplotlib~ and ~pymc~.
 
 ** getting the data ready
 
@@ -383,20 +437,64 @@ Questions you should be able to answer:
 
 ** plot and model
 
-This screencast is not meant as an introduction into Bayesian analysis and ~pymc3~. It just shows that this can be done in Python. The notebook gives a bit more detail and some references in case the video "wets your appetite".
+This screencast is not meant as an introduction into Bayesian analysis and ~pymc~. It just shows that this can be done in Python. The notebook gives a bit more detail and some references in case the video "wets your appetite".
 
 [[yt:xfWdNgC6ckw]]
 
 Topics we cover in this video:
 + plot average log expenditure across age for both women and men;
-+ create a simple Bayesian model of age-fixed effects using ~pymc3~;
++ create a simple Bayesian model of age-fixed effects using ~pymc~;
 + sample from the posterior distribution of the model;
 + plot predicted and observed expenditures for women against age.
+
+To avoid errors, the definition of the function =get_data_into_shape= should be changed. In particular, the line =df['age'] = pd.to_numeric(df['age']).astype(int)= is different from what is in the notebook.
+
+#+begin_src python
+def get_data_into_shape(df):
+    df['health_expenditure_under_deductible'] = df[cost_categories_under_deductible].sum(axis=1)
+    df = df.rename({
+        'GESLACHT':'sex',
+        'LEEFTIJDSKLASSE':'age',
+        'AANTAL_BSN':'number_citizens',
+        'KOSTEN_MEDISCH_SPECIALISTISCHE_ZORG':'hospital_care',
+        'KOSTEN_FARMACIE':'pharmaceuticals',
+        'KOSTEN_TWEEDELIJNS_GGZ':'mental_care',
+        'KOSTEN_HUISARTS_INSCHRIJFTARIEF':'GP_capitation',
+        'KOSTEN_HUISARTS_CONSULT':'GP_fee_for_service',
+        'KOSTEN_HUISARTS_OVERIG':'GP_other',
+        'KOSTEN_MONDZORG':'dental care',
+        'KOSTEN_PARAMEDISCHE_ZORG_FYSIOTHERAPIE':'physiotherapy',
+        'KOSTEN_KRAAMZORG':'maternity_care',
+        'KOSTEN_VERLOSKUNDIGE_ZORG':'obstetrics'
+    }, axis='columns')
+    df.drop(['AANTAL_VERZEKERDEJAREN',
+             'KOSTEN_HULPMIDDELEN',
+             'KOSTEN_PARAMEDISCHE_ZORG_OVERIG',
+             'KOSTEN_ZIEKENVERVOER_ZITTEND',
+             'KOSTEN_ZIEKENVERVOER_LIGGEND',
+             'KOSTEN_GRENSOVERSCHRIJDENDE_ZORG',
+             'KOSTEN_OVERIG',
+             'KOSTEN_EERSTELIJNS_ONDERSTEUNING'],inplace=True,axis=1)
+    df.drop(df.index[[0]], inplace=True)
+    df['sex'] = df['sex'].astype('category')
+    df['age'] = df['age'].astype('category')
+    df['costs_per_head']=df['health_expenditure_under_deductible']/df['number_citizens']
+    df['log_costs_per_head']=np.log(1+df['health_expenditure_under_deductible']/df['number_citizens'])
+    df = df[(df['age'] != '90+')]
+    df['age'] = pd.to_numeric(df['age']).astype(int) # this line needs to be adjusted compared to the definition in the notebook
+    return df
+#+end_src
+
+The use of pandas' =query= method then becomes:
+
+#+begin_src python
+df_2014.query('sex=="M" & age==30')['log_costs_per_head'].hist(bins=50)
+#+end_src
 
 
 Questions you should be able to answer:
 + plot average expenditure (averaged across gender) against age;
-+ do the ~pymc3~ model for men instead of women.
++ do the ~pymc~ model for men instead of women.
 
 ** upload data on the university server
    :PROPERTIES:
