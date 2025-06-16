@@ -6,14 +6,12 @@
 
 This website contains the material for the MSc course Methods: Python programming for economists.
 
-**This website is under construction for 2024/2025**
+**This website is under construction for 2025/2026**
 
 This year the course is taught by:
 + Jan Boone
-+ Özgün Balaban
 + Mery Ferrando
 + Joyce Ladenstein
-+ Shaye Olij
 
 ------------
 #+TOC: headlines 2
@@ -36,10 +34,9 @@ The course consists of a Career Development part and a python programming part. 
 
 Career development activities (workshops and career events) are part of the course ‘Methods: Python Programming’. The goal of this career development part of the course is to help students from the Master Economics transition into their careers after graduation. The focus is on personal growth and development and provides practical tools to be well prepared for the job application process.
 
-In both semester 1 and semester 2, workshop(s) will be offered by Student Career Services. To pass the course ‘Methods: Python Programming’, you must participate in at least 1 workshop of your choice and at least 1 career event. You will receive a partial grade once you have completed the Python programming part of the course. At the end of the academic year, you will be assessed whether you have met the set criteria of the career development part of the course through a pass or fail. Only with a positive grade for the Python programming part of the course and a pass for the career development part of the course you have passed the course ‘Methods: Python Programming’..
+In both semester 1 and semester 2, workshop(s) will be offered by Student Career Services. To pass the course ‘Methods: Python Programming’, you must participate in at least 1 workshop of your choice and at least 1 career event. You will receive a partial grade once you have completed the Python programming part of the course. At the end of the academic year, you will be assessed whether you have met the set criteria of the career development part of the course through a pass or fail. Only with a positive grade for the Python programming part of the course and a pass for the career development part of the course you have passed the course ‘Methods: Python Programming’.
 
-For more information and for an overview of workshops and career events offered throughout the year check the [[https://tilburguniversity.instructure.com/courses/17415/modules][‘Career Development for MSc Economics’ Canvas page]].
-
+For more information and for an overview of workshops and career events offered throughout the year check the [[https://tilburguniversity.instructure.com/courses/17415/modules][‘Career Development for MSc Economics’ Canvas page]] and [[file:img/Syllabus_Career_Development_2025_2026.pdf][this file.]]
 
 
 
@@ -58,16 +55,19 @@ Since we have recorded screencasts, we will not repeat these during the lectures
   + hence, finish the sections in the week before they are discussed in class
   + if you can solve everything yourself, there is no need to attend the lecture (but you are, of course, welcome to do so)
   + this is one of the advantages of programming: you can see for yourself whether it works or not.
++ alternatively, you can ask questions to the [[https://programmingforeconomists.tilburgai.nl/][chatbot]]
+  + note that this is still experimental (no rights can be derived etc. etc.)
+  + give us your feedback to improve the chatbot
 
 A suggested workflow to learn programming efficiently is:
 + follow the Datacamp courses and make notes of what you learn at Datacamp in a notebook on the jupyterlab server
   + in this way it is easy to refer back to useful code snippets that you see on Datacamp
-+ go through the jupyter notebook for the lecture and try to answer the questions and assignments
++ go through the jupyter notebook for the lecture and try to answer the questions
 + if you get stuck with a problem, watch the corresponding screencast for this part. It gives hints and ways to solve the questions in the notebook
-+ if you still cannot figure it out, create an issue on github to ask us
++ if you still cannot figure it out, ask the chatbot or create an issue on github to ask us
 + we will answer your questions in class
 
-In September there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. This notebook is then discussed in a following lecture. The notebook will teach you something about gender economics and Python. At the same time, they show you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
+In September there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. This notebook is then discussed in a following lecture. The notebook will teach you something about gender economics and Python. At the same time, it shows you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
 
 *Remark:* We have been teaching this course for a couple of years now. Every year there are a number of students who attend the lectures without preparing anything and watch the screencasts without trying to program themselves. We live in a free country and you choose how to spend your time. However, we do feel the need to warn you that this strategy does not work well. You actually end up spending far more time on finishing the course than when you follow the planning we suggest below. The reason is as follows: learning a programming language is frustrating. You learn by making mistakes and then trying to figure out what goes wrong. When you make these mistakes during the semester, you are well covered: we are there to help you. When you make these mistakes for the first time when trying to finish your assignment before the deadline, you are in trouble. We will try to help you but not within an hour, or within a day. And because you need to finish before the deadline, you have to figure everything out by yourself under time pressure. Not a pleasant experience and one you can easily avoid. But the choice is yours.
 
@@ -76,24 +76,29 @@ In September there is a lecture on gender economics. In the lecture Mery will di
    :CUSTOM_ID:       lecture_schedule
    :END:
 
+*To be added*
 
-| day |       date |        time | staff      | room            | topic                                          | datacamp             | assignment                 |
-|-----+------------+-------------+------------+-----------------+------------------------------------------------+----------------------+----------------------------|
-| Fri | 2024-09-06 | 10:45-12:30 | Jan        | Cube 216        | Intro python, markdown, github, jupyterlab     |                      |                            |
-| Fri | 2024-09-13 | 10:45-12:30 | Joyce, Jan | Cube 216        | Career Development, lists, functions and numpy | Intro (1-4)          |                            |
-| Fri | 2024-09-20 | 12:45-14:30 | Özgün      | Cube 215        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |                            |
-| Fri | 2024-09-27 | 10:45-12:30 | Mery       | Cube 216        | gender economics                               | Intermediate (3,4,5) |                            |
-| Thu | 2024-10-17 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 1)          | pandas (1,2)         |                            |
-| Thu | 2024-10-24 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            | pandas (3,4)         |                            |
-| Thu | 2024-10-31 | 12:45-14:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 2)          |                      |                            |
-| Fri | 2024-11-01 | 14:45-16:30 | Özgün      | Cube 215        | Booleans, if statements, loops                 |                      |                            |
-| Fri | 2024-11-08 | 10:45-12:30 | Jan        | Cube 216        | Pandas: dataframe, groupby, selection          |                      | assignment 1 (first time)  |
-| Fri | 2024-11-14 | 12:45-14:30 | Joyce      | Cube 15         | Workshop ‘finding purpose’ (part 2)            |                      |                            |
-| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | The market and asymmetric information          |                      | assignment 1 (second time) |
-| Fri | 2024-11-22 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      | assignment 2 (first time)  |
-| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      | assignment 2 (second time) |
-| Fri | 2024-12-06 | 10:45-12:30 | Özgün/Jan  | CZ 114          | Reserve                                        |                      |                            |
-| Mon | 2025-01-06 |             |            |                 | DEADLINE final assignment                      |                      |                            |
+** old lecture schedule :noexport:
+| day |       date |        time | staff      | room            | topic                                          | datacamp             |
+|-----+------------+-------------+------------+-----------------+------------------------------------------------+----------------------|
+| Fri | 2024-09-06 | 10:45-12:30 | Jan        | Cube 216        | Intro python, markdown, github, jupyterlab     |                      |
+| Fri | 2024-09-13 | 10:45-12:30 | Joyce, Jan | Cube 216        | Career Development, lists, functions and numpy | Intro (1-4)          |
+| Fri | 2024-09-20 | 12:45-14:30 | Özgün      | Cube 215        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |
+| Fri | 2024-09-27 | 10:45-12:30 | Mery       | Cube 216        | gender economics                               | Intermediate (3,4,5) |
+| Thu | 2024-10-17 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 1)          | pandas (1,2)         |
+| Thu | 2024-10-24 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            | pandas (3,4)         |
+| Thu | 2024-10-31 | 12:45-14:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 2)          |                      |
+| Fri | 2024-11-01 | 14:45-16:30 | Özgün      | Cube 215        | Booleans, if statements, loops                 |                      |
+| Fri | 2024-11-08 | 10:45-12:30 | Jan        | Cube 216        | Pandas: dataframe, groupby, selection          |                      |
+| Fri | 2024-11-14 | 12:45-14:30 | Joyce      | Cube 15         | Workshop ‘finding purpose’ (part 2)            |                      |
+| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | The market and asymmetric information          |                      |
+| Fri | 2024-11-22 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      |
+| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      |
+| Fri | 2024-12-06 | 10:45-12:30 | Özgün/Jan  | CZ 114          | Reserve                                        |                      |
+
+
+| Mon | 2026-01-05 |             |            |                 | DEADLINE final assignment                      |                      |
+| Mon | 2026-05-11 |             |            |                 | DEADLINE resit final assignment                |                      |
 
 
    
@@ -110,7 +115,7 @@ If you have programmed with python before, there is no need to attend the introd
 
 Do the following three steps:
 + create a github account on [[https://github.com/][github]] (you need this account to submit your final assignment)
-  + we advise you to do this before **Friday September 13, 2024**
+  + we advise you to do this before **Thursday September 25, 2025**
 + go to
   + [[https://jupyterlab.uvt.nl/][jupyter lab]]
     + IT suggests that you use the Firefox browser to access jupyter lab
@@ -125,21 +130,15 @@ git clone https://github.com/janboone/Python-programming-for-economists.git
 + then press the Shift key and Enter key at the same time
 + this creates a folder on the server `Python-programming-for-economists` that contains the material for the course.
 + Note: you can only run this command once. If you run it again, you get an error since the folder already exists.
-+ If you want to see the assignments in jupyter lab, you can also type:
++ If you want to see the final assignment in jupyter lab, you can also type:
 #+BEGIN_SRC shell
 %%bash
 
 git clone https://github.com/janboone/python_assignments
 #+END_SRC
 
-  
-
-*** Assignments
-
-For this course there are three assignments: two of these are voluntary (assignments 1 and 2), the final assignment is mandatory.
-
-- you can view the assignments in this repository: https://github.com/janboone/python_assignments
-- instructions for the assignments can be found below.
+- you can view the final assignment in this repository: https://github.com/janboone/python_assignments
+- instructions for the assignment can be found below.
 
 ** Datacamp
 
@@ -162,13 +161,11 @@ Most students like Datacamp to get used to the python syntax. A minority of stud
    :CUSTOM_ID: Deadlines
    :END:
 
-- The deadlines for assignments 1 and 2 are in the lecture schedule above.
-- The deadline for the *final python assignment* is: Monday January 6th, 2025. 
-- The resit deadline for the python assignment is: Monday May 12th, 2025. Let us know by email that you have submitted your assignment for the resit.
+- The deadline for the *final python assignment* is: Monday January 5th, 2026. 
+- The resit deadline for the python assignment is: Monday May 11th, 2026. Let us know by email that you have submitted your assignment for the resit.
 - Your grade is determined by:
   - a "pass" on the Career Services assignments;
-  - final assignment;
-  - a bonus point if you get a "pass" on assignments 1 and 2.
+  - final assignment.
 
 Follow the instructions below and on Canvas explaining how to submit an assignment on github and fill in the google form etc.
 
@@ -181,7 +178,7 @@ Also note the rules for the resit of the final assignment in case you submitted 
  If you have questions/comments about this course, go to the [[https://github.com/janboone/Python-programming-for-economists/issues][issues page]]
  open a new issue (with the green "New issue" button) and type your
  question. Use a title that is informative (e.g. not "question", but
- "question about the second assignment"). Go to the next box ("Leave a comment")
+ "question about the final assignment"). Go to the next box ("Leave a comment")
  and type your question. Then click on "Submit new issue". We will
  answer your question as quickly as possible.
 
@@ -194,7 +191,7 @@ Also note the rules for the resit of the final assignment in case you submitted 
  + we answer your question more quickly than when you email us
  + you increase your knowledge of github!
 
- Only when you need to include privately sensitive information ("my cat
+ Only when you need to include privately sensitive information ("my parrot
  has passed away"), you can send an email.
 
  In order to post issues, you need to create a github account (which
@@ -205,42 +202,18 @@ Also note the rules for the resit of the final assignment in case you submitted 
 
 * Assignments
 
-For this course there are three assignments. The first two assignments are relatively small programming assignments. You can find them in this repository: https://github.com/janboone/python_assignments: =assignment_1.ipynb, assignment_2.ipynb=. If you finish both assignments before their deadlines and done a good job (get a pass on both assignments), you earn one bonus point for the final assignment. You get either no bonus point or one point (we do not grade 0.38 bonus point...).
+For this course there is one final assignment. You can find it in this repository: https://github.com/janboone/python_assignments.
 
-Note that github records the time at which you submit your assignment.
-
-Each assignment is submitted two times. In particular, to get a pass on assignments 1 and 2, you need to do the following for each assignment:
-- finish and submit the assignment before the deadline (see [[*Lecture schedule][Lecture schedule]] above)
-  - present and explain the python code that you use;
-  - you do not necessarily fail if you cannot solve the problem (completely);
-  - use the notebook to report what you tried, what you googled, what worked and what did not work and explain why;
-  - submit the assignment on your team's github classroom page;
-- after the assignment is discussed in class:
-  - complete the sections:
-    - What did you get wrong the first time and why?
-    - What did you learn from this assignment?
-  - and submit the assignment again on github.
-- we grade both assignments after assignment 2 has been discussed in class and submitted by you again.
-
-
-The idea of assignments 1 and 2 is the following. These are challenging programming assignments. You need to think about the problem, google for the relevant python code and explain the code that you use. Even if you do not succeed, you can still explain to us what you tried and why it did (or did not) work. Give us the code that you have and explain to us what the code does or is supposed to do.
-
-This resembles the way you will use python in practice. There will not be a step-by-step guide of the things you need to do. Mostly you will face a (sometimes vague) problem, and need to figure out how programming can help you to solve this.
-
-The =assignment_1.ipynb= notebook starts with an example assignment that we solve for you to give you an idea of what we expect.
-
-The final assignment is more involved as we explain below.
-
-Note that you can do the assignments alone or with at max. one other student (i.e. max group size is 2). Further, the assignments that you do, you do with the same team (i.e. either alone or with the *same* fellow student).
+Note that you can do the assignment alone or with at max. one other student (i.e. max group size is 2).
 
 ** Submitting assignments
 
-Assignment 1 and 2 and the final assignment are all submitted using github classroom:
-- on Canvas we will give you the link to the github repos. with the assignment notebooks;
+The final assignment is submitted using github classroom:
+- on Canvas we will give you the link to the github repos. with the assignment notebook;
 - instructions on how to work with github classroom can be found [[file:./Manual_students.pdf][here]]
-- to submit your assignments:
-  + do not change the name of the assignment notebooks
-  + when you submit your first assignment, fill in the google form where the link to the form is on Canvas
+- to submit your assignment:
+  + do not change the name of the assignment notebook
+  + when you submit your final assignment, fill in the google form where the link to the form is on Canvas
   + push the assignment notebook to your team's github classroom repository
 
 
@@ -248,18 +221,15 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 *** relevant links:
 
 **** TODO each year renew classroom links for the new year
-- [X] each year change notebooks for assignments 1 and 2 in repos.
-  - https://github.com/janboone/python_assignments
 - [X] set deadline in github classroom
-- [ ] add github classroom assignment with the template repos. for 2024/5:
-  - https://forms.gle/WaAEKJzAmGYjtju86
-  - https://github.com/TiSEM/tisem-python-for-economists-assignments-2024-2025-python_assignments
-  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2024-2025
-  - invite link: https://classroom.github.com/a/3S3h5SAr
+- [ ] add github classroom assignment with the template repos. for 2025/6:
+  - https://forms.gle/4oaPJ2APQArAQrzx9
+  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2025-2026
+  - invite link: https://classroom.github.com/a/AJx5NX7k
 
 
 **** TODO google form
-- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/WaAEKJzAmGYjtju86 (this is the link for 2024/2025)
+- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/4oaPJ2APQArAQrzx9 (this is the link for 2025/2026)
 - [ ] in the google form adjust the format of the assignment address for the new year
 - [ ] change link to the classroom assignment and google form below
 
@@ -272,7 +242,7 @@ Assignment 1 and 2 and the final assignment are all submitted using github class
 
 Dear students,
 
-The link for the python assignments (template) is: https://classroom.github.com/a/3S3h5SAr (this is the link for 2024/2025)
+The link for the python assignments (template) is: https://classroom.github.com/a/AJx5NX7k (this is the link for 2025/2026)
 
 You can do the assignments on your own or with (at max.) one other student. You make all three assignments with the same team (either all 3 on your own or with the same fellow student).
 
@@ -284,7 +254,7 @@ When you finish your assignment:
 
 2. push it onto your assignment's github repository using github classroom web interface
 
-3. fill in the following google form: https://forms.gle/WaAEKJzAmGYjtju86 (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once; if you give us your details for the first assignment, there is not need to do this again for the second or final assignment).
+3. fill in the following google form: https://forms.gle/4oaPJ2APQArAQrzx9 (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once).
 
 We need the information from the google form to link your assignment to your student number which is needed for the exam administration.
 
@@ -311,7 +281,7 @@ The idea of the final assignment is that you report your findings in a transpare
 
 The following ingredients will be important when we evaluate your final assignment:
 
-+ Start from a theory paper; e.g. one you have read for another course.
++ Start from a *theory* (i.e. not empirical) paper; e.g. one you have read for another course.
 + Briefly describe what the paper does and what the main results are.
 + Then formulate a clear and transparent *question* that cannot be immediately answered by the paper.
   + Extend the paper's model (a bit) using the fact that you will simulate the model and do not need to provide an analytical solution.
@@ -335,7 +305,7 @@ The following ingredients will be important when we evaluate your final assignme
 + Finish with a brief *discussion* of your results.
 
 Remark:
-+ you can copy code from the web; but
++ you can copy code from the web or an LLM; but
   + make sure that you explain the code that you use so that another student of the course understands it and can use it;
   + give the reference of the code that you copy.
 
@@ -354,7 +324,7 @@ why Python? The non-scientific answer is: because we like it a lot.
 
 You can also check the following links:
 - https://www.datacamp.com/community/blog/python-scientific-computing-case
-- https://github.com/jupyter/jupyter/wiki
+- https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 
 
 Resources for python:
@@ -389,7 +359,6 @@ a^2 + b^2 = c^2
 
 Google "latex tutorial" or go to pages like:
 
-+ [[http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf]]
 + [[https://www.latex-tutorial.com/tutorials/amsmath/]]
 + [[http://www.andy-roberts.net/writing/latex/mathematics_1]]
 

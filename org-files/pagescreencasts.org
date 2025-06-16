@@ -168,6 +168,7 @@ Topics we cover in this video:
 + use slicing to select a subset of entries in a vector $x$, e.g. ~x[:5]~
 + use ~format~ to format the output in a print statement
 + sum entries in a vector
++ in the notebook we set the plot style with the statement =plt.style.use('seaborn')=; in the new version of matplotlib this gives an error. The correct syntax now is: =plt.style.use('seaborn-v0_8')=
 
 Questions you should be able to answer before continuing:
 + what is the welfare maximizing way to allocate $m$ products among $n>m$ consumers?
