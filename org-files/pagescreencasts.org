@@ -69,6 +69,13 @@ x = pm.Normal.dist(0,1)
 pm.draw(x, draws=10)
 #+end_src
 
+Or if you want to do this in one line:
+
+#+begin_src example
+pm.draw(pm.Normal.dist(0,1), draws=10)
+#+end_src
+
+
 See [[https://www.pymc-labs.com/blog-posts/simulating-data-with-pymc/][this blog]] for more information.
 
 or use the numpy library:
@@ -358,13 +365,15 @@ Questions you should be able to answer:
 
 Topics we cover in this video:
 + use of API [[https://wbdata.readthedocs.io/en/stable/][wbdata]] to access World Bank's databases
-+ use of ~wb.search_indicators~ to find indicators on a certain topic
++ use of ~wb.get_indicators(query="gdp per capita")~ to find indicators on a certain topic
+  + *note* that due to a new version of the API, using ~wb.search_indicators~ no longer works
 + create a dictionary of indicators and column names and then download these data into a pandas' dataframe
 + we do this for two sets of indicators and then use ~pd.merge~ to merge these dataframes
 
 Questions you should be able to answer:
 + use ~pd.merge?~ to find out what ~how~ and ~suffixes~ can do in a ~pd.merge~ statement
 + use the wbdata documentation to find the different themes on which the World bank has data
+
 
 ** hacker statistics
 
@@ -397,7 +406,7 @@ sd = 100
 number_of_samples=250
 
 def moments(n):
-    samples = pm.draw(pm.Normal.dist(mu=1000,sigma=100,shape=(number_of_samples,n)))
+    samples = pm.draw(pm.Normal.dist(mu,sd,shape=n),draws=number_of_samples)
     mus = samples.mean(axis=1)
     std = mus.std()
     return [mus,std]
