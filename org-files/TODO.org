@@ -1,3 +1,0 @@
-* Gender final assignment notebook
-
-In section Python code we mention =pymc= library; should be numpy

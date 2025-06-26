@@ -8,7 +8,219 @@
 <title>Methods: Python programming for economists</title>
 <meta name="author" content="Jan Boone" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<link rel="stylesheet" href="./css/Latex.css">
+<link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+
+<script src="http://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "showall");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
 <script>
   window.MathJax = {
     tex: {
@@ -45,6 +257,47 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Methods: Python programming for economists</h1>
+<div id="table-of-contents-1" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents-1" role="doc-toc">
+<ul>
+<li><a href="#screencasts">1. Screencasts</a></li>
+<li><a href="#org9255237">2. Organisation of the course</a>
+<ul>
+<li><a href="#orgbd677c9">2.1. Career Development part of the course</a></li>
+<li><a href="#org76a43ea">2.2. For the python part we will use the following format:</a></li>
+<li><a href="#lecture_schedule">2.3. Lecture schedule</a></li>
+<li><a href="#org05bd41d">2.4. First Lecture</a>
+<ul>
+<li><a href="#initial_assignment">Initial Assignment</a></li>
+</ul>
+</li>
+<li><a href="#orgd644ee9">2.5. Datacamp</a></li>
+<li><a href="#Deadlines">2.6. Deadlines</a></li>
+<li><a href="#orgf46917c">2.7. Questions</a></li>
+</ul>
+</li>
+<li><a href="#orge67784e">3. Assignments</a>
+<ul>
+<li><a href="#orge3cd11b">3.1. Submitting assignments</a></li>
+<li><a href="#final_assignment">3.2. Final Assignment</a></li>
+<li><a href="#org39a73be">3.3. what we are looking for</a></li>
+<li><a href="#orgfacd78f">3.4. resit of final assignment</a></li>
+</ul>
+</li>
+<li><a href="#orgbc78ce8">4. Python as programming language</a>
+<ul>
+<li><a href="#orge393ad2">4.1. Jupyter notebooks</a>
+<ul>
+<li><a href="#org3f9d524">Markdown</a></li>
+<li><a href="#orgbde711a">\(\LaTeX\)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 <p>
 This website contains the material for the MSc course Methods: Python programming for economists.
 </p>
@@ -67,29 +320,29 @@ This year the course is taught by:
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#screencasts">Screencasts</a></li>
-<li><a href="#org2068764">Organisation of the course</a>
+<li><a href="#screencasts">1. Screencasts</a></li>
+<li><a href="#org9255237">2. Organisation of the course</a>
 <ul>
-<li><a href="#orgcdc055a">Career Development part of the course</a></li>
-<li><a href="#orgdcb32f6">For the python part we will use the following format:</a></li>
-<li><a href="#lecture_schedule">Lecture schedule</a></li>
-<li><a href="#orgd6d8297">First Lecture</a></li>
-<li><a href="#org587aa4b">Datacamp</a></li>
-<li><a href="#Deadlines">Deadlines</a></li>
-<li><a href="#org5f9ff28">Questions</a></li>
+<li><a href="#orgbd677c9">2.1. Career Development part of the course</a></li>
+<li><a href="#org76a43ea">2.2. For the python part we will use the following format:</a></li>
+<li><a href="#lecture_schedule">2.3. Lecture schedule</a></li>
+<li><a href="#org05bd41d">2.4. First Lecture</a></li>
+<li><a href="#orgd644ee9">2.5. Datacamp</a></li>
+<li><a href="#Deadlines">2.6. Deadlines</a></li>
+<li><a href="#orgf46917c">2.7. Questions</a></li>
 </ul>
 </li>
-<li><a href="#orge5356c4">Assignments</a>
+<li><a href="#orge67784e">3. Assignments</a>
 <ul>
-<li><a href="#orgdb233ae">Submitting assignments</a></li>
-<li><a href="#final_assignment">Final Assignment</a></li>
-<li><a href="#orgf387365">what we are looking for</a></li>
-<li><a href="#org26f60ab">resit of final assignment</a></li>
+<li><a href="#orge3cd11b">3.1. Submitting assignments</a></li>
+<li><a href="#final_assignment">3.2. Final Assignment</a></li>
+<li><a href="#org39a73be">3.3. what we are looking for</a></li>
+<li><a href="#orgfacd78f">3.4. resit of final assignment</a></li>
 </ul>
 </li>
-<li><a href="#org3831b71">Python as programming language</a>
+<li><a href="#orgbc78ce8">4. Python as programming language</a>
 <ul>
-<li><a href="#org49ea485">Jupyter notebooks</a></li>
+<li><a href="#orge393ad2">4.1. Jupyter notebooks</a></li>
 </ul>
 </li>
 </ul>
@@ -98,23 +351,23 @@ This year the course is taught by:
 
 <hr />
 <div id="outline-container-screencasts" class="outline-2">
-<h2 id="screencasts">Screencasts</h2>
+<h2 id="screencasts"><span class="section-number-2">1.</span> Screencasts</h2>
 <div class="outline-text-2" id="text-screencasts">
 <p>
 For this course a series of screencasts is available. The screencasts can be found on this <a href="./pagescreencasts.html">webpage.</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org2068764" class="outline-2">
-<h2 id="org2068764">Organisation of the course</h2>
-<div class="outline-text-2" id="text-org2068764">
+<div id="outline-container-org9255237" class="outline-2">
+<h2 id="org9255237"><span class="section-number-2">2.</span> Organisation of the course</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 The course consists of a Career Development part and a python programming part. We discuss both briefly in this section.
 </p>
 </div>
-<div id="outline-container-orgcdc055a" class="outline-3">
-<h3 id="orgcdc055a">Career Development part of the course</h3>
-<div class="outline-text-3" id="text-orgcdc055a">
+<div id="outline-container-orgbd677c9" class="outline-3">
+<h3 id="orgbd677c9"><span class="section-number-3">2.1.</span> Career Development part of the course</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Career development activities (workshops and career events) are part of the course ‘Methods: Python Programming’. The goal of this career development part of the course is to help students from the Master Economics transition into their careers after graduation. The focus is on personal growth and development and provides practical tools to be well prepared for the job application process.
 </p>
@@ -128,9 +381,9 @@ For more information and for an overview of workshops and career events offered 
 </p>
 </div>
 </div>
-<div id="outline-container-orgdcb32f6" class="outline-3">
-<h3 id="orgdcb32f6">For the python part we will use the following format:</h3>
-<div class="outline-text-3" id="text-orgdcb32f6">
+<div id="outline-container-org76a43ea" class="outline-3">
+<h3 id="org76a43ea"><span class="section-number-3">2.2.</span> For the python part we will use the following format:</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 Since we have recorded screencasts, we will not repeat these during the lectures. The lectures are meant for interaction (only).
 </p>
@@ -139,10 +392,10 @@ Since we have recorded screencasts, we will not repeat these during the lectures
 <li>in the python lectures we focus on answering your questions;</li>
 <li>in order to prepare these answers, it is useful if you create an issue via <a href="https://github.com/janboone/Python-programming-for-economists/issues">this link</a>;
 <ul class="org-ul">
-<li>using the link, create an "issue" where you explain what your question is: what did you try and why did it not work?
+<li>using the link, create an &ldquo;issue&rdquo; where you explain what your question is: what did you try and why did it not work?
 <ul class="org-ul">
-<li>hence not a something like "I do not know the answer to: <b>Question</b> Calculate the total welfare that this planner can achieve. Denote this value <code>max_welfare</code>."</li>
-<li>but "I tried to calculate total welfare in the following way &#x2026; but then I get the following error &#x2026;"</li>
+<li>hence not a something like &ldquo;I do not know the answer to: <b>Question</b> Calculate the total welfare that this planner can achieve. Denote this value <code>max_welfare</code>.&rdquo;</li>
+<li>but &ldquo;I tried to calculate total welfare in the following way &#x2026; but then I get the following error &#x2026;&rdquo;</li>
 <li>describing your question like this, helps you better understand what your problem is</li>
 <li>and it helps us to answer the question in class.</li>
 </ul></li>
@@ -184,16 +437,16 @@ In September there is a lecture on gender economics. In the lecture Mery will di
 </div>
 </div>
 <div id="outline-container-lecture_schedule" class="outline-3">
-<h3 id="lecture_schedule">Lecture schedule</h3>
+<h3 id="lecture_schedule"><span class="section-number-3">2.3.</span> Lecture schedule</h3>
 <div class="outline-text-3" id="text-lecture_schedule">
 <p>
 <b>To be added</b>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd6d8297" class="outline-3">
-<h3 id="orgd6d8297">First Lecture</h3>
-<div class="outline-text-3" id="text-orgd6d8297">
+<div id="outline-container-org05bd41d" class="outline-3">
+<h3 id="org05bd41d"><span class="section-number-3">2.4.</span> First Lecture</h3>
+<div class="outline-text-3" id="text-2-4">
 <p>
 <a href="./Introduction_Lecture.html#introduction">Introduction Lecture</a>
 </p>
@@ -215,7 +468,7 @@ Do the following three steps:
 <ul class="org-ul">
 <li>IT suggests that you use the Firefox browser to access jupyter lab</li>
 <li>sometimes it helps to access jupyter lab with an incognito/private window</li>
-<li>or &#x2013;if all else fails&#x2013; you can use <a href="https://colab.research.google.com/">google's colab</a></li>
+<li>or &#x2013;if all else fails&#x2013; you can use <a href="https://colab.research.google.com/">google&rsquo;s colab</a></li>
 </ul></li>
 </ul></li>
 <li>create a new python notebook and type the following code in the first cell:</li>
@@ -246,9 +499,9 @@ git clone https://github.com/janboone/python_assignments
 </div>
 </div>
 </div>
-<div id="outline-container-org587aa4b" class="outline-3">
-<h3 id="org587aa4b">Datacamp</h3>
-<div class="outline-text-3" id="text-org587aa4b">
+<div id="outline-container-orgd644ee9" class="outline-3">
+<h3 id="orgd644ee9"><span class="section-number-3">2.5.</span> Datacamp</h3>
+<div class="outline-text-3" id="text-2-5">
 <p>
 You can get access to Datacamp via the <a href="https://www.tilburguniversity.edu/students/skills/programming">university website</a>.
 </p>
@@ -277,14 +530,14 @@ Most students like Datacamp to get used to the python syntax. A minority of stud
 </div>
 </div>
 <div id="outline-container-Deadlines" class="outline-3">
-<h3 id="Deadlines">Deadlines</h3>
+<h3 id="Deadlines"><span class="section-number-3">2.6.</span> Deadlines</h3>
 <div class="outline-text-3" id="text-Deadlines">
 <ul class="org-ul">
 <li>The deadline for the <b>final python assignment</b> is: Monday January 5th, 2026.</li>
 <li>The resit deadline for the python assignment is: Monday May 11th, 2026. Let us know by email that you have submitted your assignment for the resit.</li>
 <li>Your grade is determined by:
 <ul class="org-ul">
-<li>a "pass" on the Career Services assignments;</li>
+<li>a &ldquo;pass&rdquo; on the Career Services assignments;</li>
 <li>final assignment.</li>
 </ul></li>
 </ul>
@@ -298,15 +551,15 @@ Also note the rules for the resit of the final assignment in case you submitted 
 </p>
 </div>
 </div>
-<div id="outline-container-org5f9ff28" class="outline-3">
-<h3 id="org5f9ff28">Questions</h3>
-<div class="outline-text-3" id="text-org5f9ff28">
+<div id="outline-container-orgf46917c" class="outline-3">
+<h3 id="orgf46917c"><span class="section-number-3">2.7.</span> Questions</h3>
+<div class="outline-text-3" id="text-2-7">
 <p>
 If you have questions/comments about this course, go to the <a href="https://github.com/janboone/Python-programming-for-economists/issues">issues page</a>
-open a new issue (with the green "New issue" button) and type your
-question. Use a title that is informative (e.g. not "question", but
-"question about the final assignment"). Go to the next box ("Leave a comment")
-and type your question. Then click on "Submit new issue". We will
+open a new issue (with the green &ldquo;New issue&rdquo; button) and type your
+question. Use a title that is informative (e.g. not &ldquo;question&rdquo;, but
+&ldquo;question about the final assignment&rdquo;). Go to the next box (&ldquo;Leave a comment&rdquo;)
+and type your question. Then click on &ldquo;Submit new issue&rdquo;. We will
 answer your question as quickly as possible.
 </p>
 
@@ -324,8 +577,8 @@ asked/answered before on the issue page</li>
 </ul>
 
 <p>
-Only when you need to include privately sensitive information ("my parrot
-has passed away"), you can send an email.
+Only when you need to include privately sensitive information (&ldquo;my parrot
+has passed away&rdquo;), you can send an email.
 </p>
 
 <p>
@@ -335,14 +588,14 @@ you need anyway to follow this course).
 
 <p>
 Note that if your question is related to another issue, you can react
-to the earlier issue and leave a comment in that "conversation".
+to the earlier issue and leave a comment in that &ldquo;conversation&rdquo;.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orge5356c4" class="outline-2">
-<h2 id="orge5356c4">Assignments</h2>
-<div class="outline-text-2" id="text-orge5356c4">
+<div id="outline-container-orge67784e" class="outline-2">
+<h2 id="orge67784e"><span class="section-number-2">3.</span> Assignments</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 For this course there is one final assignment. You can find it in this repository: <a href="https://github.com/janboone/python_assignments">https://github.com/janboone/python_assignments</a>.
 </p>
@@ -351,9 +604,9 @@ For this course there is one final assignment. You can find it in this repositor
 Note that you can do the assignment alone or with at max. one other student (i.e. max group size is 2).
 </p>
 </div>
-<div id="outline-container-orgdb233ae" class="outline-3">
-<h3 id="orgdb233ae">Submitting assignments</h3>
-<div class="outline-text-3" id="text-orgdb233ae">
+<div id="outline-container-orge3cd11b" class="outline-3">
+<h3 id="orge3cd11b"><span class="section-number-3">3.1.</span> Submitting assignments</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 The final assignment is submitted using github classroom:
 </p>
@@ -364,22 +617,22 @@ The final assignment is submitted using github classroom:
 <ul class="org-ul">
 <li>do not change the name of the assignment notebook</li>
 <li>when you submit your final assignment, fill in the google form where the link to the form is on Canvas</li>
-<li>push the assignment notebook to your team's github classroom repository</li>
+<li>push the assignment notebook to your team&rsquo;s github classroom repository</li>
 </ul></li>
 </ul>
 </div>
 </div>
 <div id="outline-container-final_assignment" class="outline-3">
-<h3 id="final_assignment">Final Assignment</h3>
+<h3 id="final_assignment"><span class="section-number-3">3.2.</span> Final Assignment</h3>
 <div class="outline-text-3" id="text-final_assignment">
 <ul class="org-ul">
-<li>for the deadlines of the final assignment, see <a href="#Deadlines">Deadlines</a> above</li>
+<li>for the deadlines of the final assignment, see <a href="#Deadlines">2.6</a> above</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf387365" class="outline-3">
-<h3 id="orgf387365">what we are looking for</h3>
-<div class="outline-text-3" id="text-orgf387365">
+<div id="outline-container-org39a73be" class="outline-3">
+<h3 id="org39a73be"><span class="section-number-3">3.3.</span> what we are looking for</h3>
+<div class="outline-text-3" id="text-3-3">
 <p>
 The idea of the final assignment is that you report your findings in a transparent way that can easily be verified/reproduced by others. The intended audience is your fellow students. They should be able to understand the code you write together with the explanations that you give for this code.
 </p>
@@ -393,7 +646,7 @@ The following ingredients will be important when we evaluate your final assignme
 <li>Briefly describe what the paper does and what the main results are.</li>
 <li>Then formulate a clear and transparent <b>question</b> that cannot be immediately answered by the paper.
 <ul class="org-ul">
-<li>Extend the paper's model (a bit) using the fact that you will simulate the model and do not need to provide an analytical solution.
+<li>Extend the paper&rsquo;s model (a bit) using the fact that you will simulate the model and do not need to provide an analytical solution.
 <ul class="org-ul">
 <li>note: we do not expect a major extension of the model; just a small change and use simulations to show how results differ due to this adaptation of the model.</li>
 <li>hint: choose a question/extension where you can show off your programming skills!</li>
@@ -424,14 +677,15 @@ Remark:
 <li>you can copy code from the web or an LLM; but
 <ul class="org-ul">
 <li>make sure that you explain the code that you use so that another student of the course understands it and can use it;</li>
-<li>give the reference of the code that you copy.</li>
+<li>give the reference of the code that you copy</li>
+<li>explain the economics of your results yourself; do not rely on the <a href="LLM.html">LLM</a> only.</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org26f60ab" class="outline-3">
-<h3 id="org26f60ab">resit of final assignment</h3>
-<div class="outline-text-3" id="text-org26f60ab">
+<div id="outline-container-orgfacd78f" class="outline-3">
+<h3 id="orgfacd78f"><span class="section-number-3">3.4.</span> resit of final assignment</h3>
+<div class="outline-text-3" id="text-3-4">
 <p>
 The resit of the final assignment needs to start from a new paper compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
 </p>
@@ -442,9 +696,9 @@ Otherwise, follow the procedure above on how to submit the assignment and fill i
 </div>
 </div>
 </div>
-<div id="outline-container-org3831b71" class="outline-2">
-<h2 id="org3831b71">Python as programming language</h2>
-<div class="outline-text-2" id="text-org3831b71">
+<div id="outline-container-orgbc78ce8" class="outline-2">
+<h2 id="orgbc78ce8"><span class="section-number-2">4.</span> Python as programming language</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 We use Python as programming language. A fair question is:
 why Python? The non-scientific answer is: because we like it a lot.
@@ -471,16 +725,16 @@ Resources for python:
 <li><a href="https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-">https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-</a> (video lectures on a number of python topics)</li>
 </ul>
 </div>
-<div id="outline-container-org49ea485" class="outline-3">
-<h3 id="org49ea485">Jupyter notebooks</h3>
-<div class="outline-text-3" id="text-org49ea485">
+<div id="outline-container-orge393ad2" class="outline-3">
+<h3 id="orge393ad2"><span class="section-number-3">4.1.</span> Jupyter notebooks</h3>
+<div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org4b1b880" class="outline-4">
-<h4 id="org4b1b880">Markdown</h4>
-<div class="outline-text-4" id="text-org4b1b880">
+<div id="outline-container-org3f9d524" class="outline-4">
+<h4 id="org3f9d524">Markdown</h4>
+<div class="outline-text-4" id="text-org3f9d524">
 <p>
 For the assignment it is useful to know a bit of markdown. You can
-either google "markdown tutorial" or use one of the following websites:
+either google &ldquo;markdown tutorial&rdquo; or use one of the following websites:
 </p>
 
 <ul class="org-ul">
@@ -489,13 +743,13 @@ either google "markdown tutorial" or use one of the following websites:
 </ul>
 </div>
 </div>
-<div id="outline-container-org835d54e" class="outline-4">
-<h4 id="org835d54e">\(\LaTeX\)</h4>
-<div class="outline-text-4" id="text-org835d54e">
+<div id="outline-container-orgbde711a" class="outline-4">
+<h4 id="orgbde711a">\(\LaTeX\)</h4>
+<div class="outline-text-4" id="text-orgbde711a">
 <p>
 For the python assignment it is useful to familiarize yourself with
 \(\LaTeX\). Note that you do not need to type a whole document in \(\LaTeX\) (so
-don't worry about preambles etc.), you just need to know how to type
+don&rsquo;t worry about preambles etc.), you just need to know how to type
 \(x^2\), \(\alpha,\beta\) or have math displayed like
 </p>
 
@@ -504,7 +758,7 @@ a^2 + b^2 = c^2
 \end{equation}
 
 <p>
-Google "latex tutorial" or go to pages like:
+Google &ldquo;latex tutorial&rdquo; or go to pages like:
 </p>
 
 <ul class="org-ul">
@@ -522,6 +776,7 @@ and focus on typesetting.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Jan Boone</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
