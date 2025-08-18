@@ -21,6 +21,7 @@ This website contains the material for the MSc course Methods: Python programmin
 
 This year the course is taught by:
 + Jan Boone
++ Baris Demiral
 + Mery Ferrando
 + Joyce Ladenstein
 
@@ -87,30 +88,25 @@ In September there is a lecture on gender economics. In the lecture Mery will di
    :CUSTOM_ID:       lecture_schedule
    :END:
 
-*To be added*
 
-** old lecture schedule :noexport:
-| day |       date |        time | staff      | room            | topic                                          | datacamp             |
-|-----+------------+-------------+------------+-----------------+------------------------------------------------+----------------------|
-| Fri | 2024-09-06 | 10:45-12:30 | Jan        | Cube 216        | Intro python, markdown, github, jupyterlab     |                      |
-| Fri | 2024-09-13 | 10:45-12:30 | Joyce, Jan | Cube 216        | Career Development, lists, functions and numpy | Intro (1-4)          |
-| Fri | 2024-09-20 | 12:45-14:30 | Özgün      | Cube 215        | Matplotlib, dictionaries, numpy arrays, pandas | Intermediate (1,2)   |
-| Fri | 2024-09-27 | 10:45-12:30 | Mery       | Cube 216        | gender economics                               | Intermediate (3,4,5) |
-| Thu | 2024-10-17 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 1)          | pandas (1,2)         |
-| Thu | 2024-10-24 | 10:45-12:30 | Joyce      | E 219 Cult.tuin | Workshop ‘finding purpose’ (part 1)            | pandas (3,4)         |
-| Thu | 2024-10-31 | 12:45-14:30 | Joyce      | E 219 Cult.tuin | Workshop 'stress management' (part 2)          |                      |
-| Fri | 2024-11-01 | 14:45-16:30 | Özgün      | Cube 215        | Booleans, if statements, loops                 |                      |
-| Fri | 2024-11-08 | 10:45-12:30 | Jan        | Cube 216        | Pandas: dataframe, groupby, selection          |                      |
-| Fri | 2024-11-14 | 12:45-14:30 | Joyce      | Cube 15         | Workshop ‘finding purpose’ (part 2)            |                      |
-| Fri | 2024-11-15 | 10:45-12:30 | Jan        | Cube 216        | The market and asymmetric information          |                      |
-| Fri | 2024-11-22 | 10:45-12:30 | Jan        | Cube 216        | Financial crisis, Empirical research           |                      |
-| Fri | 2024-11-29 | 10:45-12:30 | Jan        | Cube 216        | Notebook gender economics and Q&A              |                      |
-| Fri | 2024-12-06 | 10:45-12:30 | Özgün/Jan  | CZ 114          | Reserve                                        |                      |
-
-
-| Mon | 2026-01-05 |             |            |                 | DEADLINE final assignment                      |                      |
-| Mon | 2026-05-11 |             |            |                 | DEADLINE resit final assignment                |                      |
-
+|       date |        time | staff | room     | topic                                                          | datacamp             |
+|------------+-------------+-------+----------+----------------------------------------------------------------+----------------------|
+| 2025-09-04 | 10:45-12:30 | Jan   | MKZ 111  | Intro python, markdown, github, jupyterlab, lists, functions   |                      |
+| 2025-09-11 | 10:45-12:30 | Joyce | CZ 112   | Intro Career Development                                       | Intro (1-4)          |
+| 2025-09-18 | 10:45-12:30 | Jan   | CZ 112   | Matplotlib, dictionaries, numpy arrays, pandas                 | Intermediate (1,2)   |
+| 2025-09-25 | 10:45-12:30 | Jan   | AZ 201   | Pandas: dataframe, groupby, selection, if statements, Booleans | Intermediate (3,4,5) |
+| 2025-10-09 | 10:45-12:30 | Joyce | Cube 21  | Workshop 'stress management' (part 1)                          | pandas (1,2)         |
+| 2025-10-15 | 10:45-12:30 | Joyce | CZ 9     | Career Perspectives with alumni                                | pandas (3,4)         |
+| 2025-10-16 | 10:45-12:30 | Mery  | CZ 114   | Gender Economics                                               |                      |
+| 2025-10-23 | 10:45-12:30 | Joyce | Cube 15  | Workshop ‘finding purpose’ (part 1)                            |                      |
+| 2025-10-30 | 10:45-12:30 | Joyce | Cube 213 | Workshop 'stress management' (part 2)                          |                      |
+| 2025-11-06 | 10:45-12:30 | Jan   | CZ 9     | The market and asymmetric information                          |                      |
+| 2025-11-13 | 10:45-12:30 | Joyce | Cube 21  | Workshop ‘finding purpose’ (part 2)                            |                      |
+| 2025-11-20 | 10:45-12:30 | Jan   | CZ 9     | Financial crisis, Empirical research                           |                      |
+| 2025-11-27 | 10:45-12:30 | Jan   | CZ 9     | Notebook gender economics and Q&A                              |                      |
+| 2025-12-04 | 10:45-12:30 | Jan   | CZ 9     | Reserve                                                        |                      |
+| 2026-01-05 |             |       |          | deadline final assignment                                      |                      |
+| 2026-05-11 |             |       |          | deadline resit                                                 |                      |
 
    
 If you have programmed with python before, there is no need to attend the introduction to python lectures. In this case, attend the first lecture, the lectures by Joyce and Mery and then join the python lectures again when we start with "The market and asymmetric information".
