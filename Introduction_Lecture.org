@@ -1,4 +1,4 @@
-#+SETUPFILE: ../org-html-themes/org/theme-bigblow.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-bigblow.setup
 
 #+TITLE: Python for economists
 #+AUTHOR: Jan Boone

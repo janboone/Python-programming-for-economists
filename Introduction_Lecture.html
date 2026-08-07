@@ -8,17 +8,17 @@
 <title>Python for economists</title>
 <meta name="author" content="Jan Boone" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/jquery-ui/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/jquery-scroll/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/jquery-scroll/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/zclip/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/vendor/stickytableheaders/jquery.stickytableheaders.min.js"></script>
 <script>
   window.MathJax = {
     tex: {
@@ -60,7 +60,7 @@
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#org3f8da37">Overview of the course</a></li>
+<li><a href="#orgc27c65b">Overview of the course</a></li>
 <li><a href="#office-excel-and-word">Office and Excel</a></li>
 <li><a href="#open-source-word-processing">Open source word processing</a></li>
 <li><a href="#what-do-you-need">What do you need?</a></li>
@@ -143,9 +143,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org3f8da37" class="outline-2">
-<h2 id="org3f8da37">Overview of the course</h2>
-<div class="outline-text-2" id="text-org3f8da37">
+<div id="outline-container-orgc27c65b" class="outline-2">
+<h2 id="orgc27c65b">Overview of the course</h2>
+<div class="outline-text-2" id="text-orgc27c65b">
 <ul class="org-ul">
 <li>Python (most of the time)
 <ul class="org-ul">
@@ -169,15 +169,15 @@
 <h2 id="office-excel-and-word">Office and Excel</h2>
 <div class="outline-text-2" id="text-office-excel-and-word">
 </div>
-<div id="outline-container-org41bf050" class="outline-3">
-<h3 id="org41bf050">Excel is great for programming?</h3>
-<div class="outline-text-3" id="text-org41bf050">
+<div id="outline-container-orge7bf075" class="outline-3">
+<h3 id="orge7bf075">Excel is great for programming?</h3>
+<div class="outline-text-3" id="text-orge7bf075">
 <ul class="org-ul">
 <li>indeed, simple things can be done in excel</li>
 <li>e.g. keep track of your grades and calculate the average</li>
 <li>but possibilities are limited: it is not a programming language</li>
 <li>however, the main problem is reproducibility</li>
-<li>if you've done a serious project in excel, look at it again in 3 months time&#x2026;</li>
+<li>if you've done a serious project in excel, look at it again in 3 months time&hellip;</li>
 </ul>
 </div>
 </div>
@@ -196,18 +196,18 @@
 <li>examples are:</li>
 </ul>
 
-<pre class="example" id="org28cc666">
+<pre class="example" id="orgf96893e">
 
-# this is a heading
+        # this is a heading
 
-## subheading
+        ## subheading
 
-* first bullet
-* second bullet
+        * first bullet
+        * second bullet
 
-[link text](actual link, e.g. http://www.etc)
+        [link text](actual link, e.g. http://www.etc)
 
-![Alt text for image](/path/to/img.jpg "Optional title")
+        ![Alt text for image](/path/to/img.jpg "Optional title")
 </pre>
 
 <ul class="org-ul">
@@ -226,14 +226,14 @@
 <li>you can guess what the following will do:</li>
 </ul>
 
-<pre class="example" id="org724ec7f">
-$x^2$, $\beta$, $\sqrt{9}$, $\frac{1}{2}$, $\bar x$
+<pre class="example" id="org6c9b1a9">
+    $x^2$, $\beta$, $\sqrt{9}$, $\frac{1}{2}$, $\bar x$
 
-\begin{equation}
+    \begin{equation}
 
-a^2 + b^2 = c^2
+    a^2 + b^2 = c^2
 
-\end{equation}
+    \end{equation}
 </pre>
 
 <ul class="org-ul">
@@ -288,9 +288,9 @@ google "latex empty set" etc.</li>
 <h2 id="rules-of-the-game">Rules of the game</h2>
 <div class="outline-text-2" id="text-rules-of-the-game">
 </div>
-<div id="outline-container-org8370c37" class="outline-3">
-<h3 id="org8370c37">to learn python we use <a href="https://www.datacamp.com/home">datacamp</a>, <a href="https://janboone.github.io/Python-programming-for-economists/pagescreencasts.html">screencasts</a> and lectures:</h3>
-<div class="outline-text-3" id="text-org8370c37">
+<div id="outline-container-org87c8636" class="outline-3">
+<h3 id="org87c8636">to learn python we use <a href="https://www.datacamp.com/home">datacamp</a>, <a href="https://janboone.github.io/Python-programming-for-economists/pagescreencasts.html">screencasts</a> and lectures:</h3>
+<div class="outline-text-3" id="text-org87c8636">
 <ul class="org-ul">
 <li>you need to finish the datacamp courses and screencasts in time</li>
 <li>otherwise you will be lost during the lectures</li>
@@ -303,9 +303,9 @@ google "latex empty set" etc.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7418cbf" class="outline-3">
-<h3 id="org7418cbf">lecture format</h3>
-<div class="outline-text-3" id="text-org7418cbf">
+<div id="outline-container-orgad170c7" class="outline-3">
+<h3 id="orgad170c7">lecture format</h3>
+<div class="outline-text-3" id="text-orgad170c7">
 <ul class="org-ul">
 <li>in the lectures we will answer questions that you ask us</li>
 <li>in order to prepare these answers, it is useful if you create a github issue
@@ -313,16 +313,16 @@ google "latex empty set" etc.</li>
 <li>create an "issue" where you explain what your question is: what did you try and why did it not work?
 <ul class="org-ul">
 <li>hence not something like "I do not know the answer to: <b>Question</b> Calculate the total welfare that this planner can achieve. Denote this value <code>max_welfare</code>."</li>
-<li>but "I tried to calculate total welfare in the following way &#x2026; but then I get the following error &#x2026;"</li>
+<li>but "I tried to calculate total welfare in the following way &hellip; but then I get the following error &hellip;"</li>
 </ul></li>
 </ul></li>
 <li>for us to be able to prepare these answers, submit the issue on the Friday before the week in which we discuss the topic</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org84ee55c" class="outline-3">
-<h3 id="org84ee55c">suggested workflow</h3>
-<div class="outline-text-3" id="text-org84ee55c">
+<div id="outline-container-org2fd4aca" class="outline-3">
+<h3 id="org2fd4aca">suggested workflow</h3>
+<div class="outline-text-3" id="text-org2fd4aca">
 <ul class="org-ul">
 <li>follow the Datacamp courses and make notes of what you learn at Datacamp in a notebook on the jupyterlab server
 <ul class="org-ul">
@@ -340,9 +340,9 @@ google "latex empty set" etc.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org01cd45d" class="outline-3">
-<h3 id="org01cd45d">to get a grade for this course:</h3>
-<div class="outline-text-3" id="text-org01cd45d">
+<div id="outline-container-orga977fda" class="outline-3">
+<h3 id="orga977fda">to get a grade for this course:</h3>
+<div class="outline-text-3" id="text-orga977fda">
 <ul class="org-ul">
 <li>finish the initial assignment (see below) before the deadline</li>
 <li>attend the career services workshops</li>
@@ -356,25 +356,25 @@ google "latex empty set" etc.</li>
 <h2 id="assignment">Assignments</h2>
 <div class="outline-text-2" id="text-assignment">
 </div>
-<div id="outline-container-orgf9732c3" class="outline-3">
-<h3 id="orgf9732c3">Initial Assignment</h3>
-<div class="outline-text-3" id="text-orgf9732c3">
+<div id="outline-container-orgf506550" class="outline-3">
+<h3 id="orgf506550">Initial Assignment</h3>
+<div class="outline-text-3" id="text-orgf506550">
 <ul class="org-ul">
 <li>follow and finish the steps under <a href="index.html#initial_assignment">Initial Assignment</a></li>
 <li>type your first Python and markdow at the <a href="https://jupyterlab.uvt.nl/">jupyter lab server</a> and follow along with the screencast: <a href="pagescreencasts.html#Short_introduction_to_JupyterLab">Short introduction to JupyterLab</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ed6e68" class="outline-3">
-<h3 id="org5ed6e68">Final assignment</h3>
-<div class="outline-text-3" id="text-org5ed6e68">
+<div id="outline-container-org1b36c42" class="outline-3">
+<h3 id="org1b36c42">Final assignment</h3>
+<div class="outline-text-3" id="text-org1b36c42">
 <ul class="org-ul">
 <li>you can do the assignment on your own or together with 1 other student</li>
 <li>before the final assignment we will post a link to github classroom</li>
 <li>this is the moment where you create your team</li>
 <li>before the deadline you submit your assignment via github classroom</li>
 <li>when submitting your assignment, you fill in the google form (link will be on Canvas)</li>
-<li>see <a href="index.html#orgd07d944">Assignments</a> for details</li>
+<li>see <a href="index.html#MissingReference">Assignments</a> for details</li>
 </ul>
 </div>
 </div>
@@ -383,6 +383,7 @@ google "latex empty set" etc.</li>
 <div id="postamble" class="status">
 <p class="date">Date: Dept. of Economics, Tilburg University</p>
 <p class="author">Author: Jan Boone</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

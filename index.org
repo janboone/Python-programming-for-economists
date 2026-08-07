@@ -1,4 +1,4 @@
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-readtheorg.setup
 #+Title: Methods: Python programming for economists
 #+Author: Jan Boone
 #+LANGUAGE: en
@@ -13,15 +13,25 @@
 #+HTML_HEAD: <link rel="stylesheet" href="./css/Latex.css">
 #+HTML_HEAD: <link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+#+HTML_HEAD: <style>
+#+HTML_HEAD: pre.src code {
+#+HTML_HEAD:   background: transparent !important;
+#+HTML_HEAD:   border: none !important;
+#+HTML_HEAD:   box-shadow: none !important;
+#+HTML_HEAD:   padding: 0 !important;
+#+HTML_HEAD: }
+#+HTML_HEAD: pre.src-python code {
+#+HTML_HEAD:   font-size: 1.1em !important;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
 #+EXPORT_EXCLUDE_TAGS: noexport
 
 This website contains the material for the MSc course Methods: Python programming for economists.
 
-**This website is under construction for 2025/2026**
+**This website is under construction for 2026/2027**
 
 This year the course is taught by:
 + Jan Boone
-+ Baris Demiral
 + Mery Ferrando
 + Joyce Ladenstein
 
@@ -30,17 +40,10 @@ This year the course is taught by:
 
 -------
 
-* Screencasts
+* Course Material
   :PROPERTIES:
-  :CUSTOM_ID:       screencasts
+  :CUSTOM_ID:       material
   :END:
-
-For this course a series of screencasts is available. The screencasts can be found on this [[file:./pagescreencasts.org][webpage.]]
-
-
-* Organisation of the course
-
-The course consists of a Career Development part and a python programming part. We discuss both briefly in this section.
 
 ** Career Development part of the course
 
@@ -48,68 +51,79 @@ Career development activities (workshops and career events) are part of the cour
 
 In both semester 1 and semester 2, workshop(s) will be offered by Student Career Services. To pass the course ‘Methods: Python Programming’, you must participate in at least 1 workshop of your choice and at least 1 career event. You will receive a partial grade once you have completed the Python programming part of the course. At the end of the academic year, you will be assessed whether you have met the set criteria of the career development part of the course through a pass or fail. Only with a positive grade for the Python programming part of the course and a pass for the career development part of the course you have passed the course ‘Methods: Python Programming’.
 
-For more information and for an overview of workshops and career events offered throughout the year check the [[https://tilburguniversity.instructure.com/courses/17415/modules][‘Career Development for MSc Economics’ Canvas page]] and [[file:img/Syllabus_Career_Development_2025_2026.pdf][this file.]]
+For more information and for an overview of workshops and career events offered throughout the year check the [[https://tilburguniversity.instructure.com/courses/17415/modules][‘Career Development for MSc Economics’ Canvas page]] and [[file:img/Syllabus_Career_Development_2026_2027.pdf][this file]].
 
 
 
-** For the python part we will use the following format:
+** Python part
+For the Python part of the course, there are three types of materials that we use:
+- the [[https://janboone.github.io/Methods_python_for_economists_lectures/][website with the lectures]]
+- the (free) book by [cite/text/c:@downey-2023-model-simul-python]
+- [[https://app.datacamp.com/][Datacamp]]
 
-Since we have recorded screencasts, we will not repeat these during the lectures. The lectures are meant for interaction (only).
+*** The lectures (mandatory)
 
-+ in the python lectures we focus on answering your questions;
-+ in order to prepare these answers, it is useful if you create an issue via [[https://github.com/janboone/Python-programming-for-economists/issues][this link]];
-  + using the link, create an "issue" where you explain what your question is: what did you try and why did it not work?
-    + hence not a something like "I do not know the answer to: *Question* Calculate the total welfare that this planner can achieve. Denote this value ~max_welfare~."
-    + but "I tried to calculate total welfare in the following way ... but then I get the following error ..."
-    + describing your question like this, helps you better understand what your problem is
-    + and it helps us to answer the question in class.
-+ for us to be able to prepare these answers, submit the issue on the Friday before the week in which we discuss the topic
-  + hence, finish the sections in the week before they are discussed in class
-  + if you can solve everything yourself, there is no need to attend the lecture (but you are, of course, welcome to do so)
-  + this is one of the advantages of programming: you can see for yourself whether it works or not.
-+ alternatively, you can ask questions to the [[https://programmingforeconomists.tilburgai.nl/][chatbot]]
+The [[https://janboone.github.io/Methods_python_for_economists_lectures/][website with the lectures]] are mandatory. Make sure you read the material before each lecture (see [[#lecture_schedule][lecture schedule]] below) and solve the Review Questions at the end of each Lecture.
+
+Learning a programming language requires you to try and program yourself. Just copying the code during the lectures is not going to help you very much; if you are only doing this, it is basically a waste of your time.
+
+The important part of this course you do at home going over the lectures, experimenting with the code and trying to solve the Review Questions. This part will most likely be frustrating because you get errors and you make mistakes (i.e. different results than you would expect) etc. Don't worry, this is normal when you are learning a programming language!
+
+*** [cite:@downey-2023-model-simul-python] (highly recommended)
+
+The lectures are (loosely) based on [cite/text/c:@downey-2023-model-simul-python] which is a great introduction into Python. The book can be found [[https://greenteapress.com/wp/modsimpy/][here]] and the associated notebooks [[https://allendowney.github.io/ModSimPy/][here]]. The book sometimes uses "wrappers" around the Python functions that we will be using and it is targeted at engineering students. But it does explain the idea of modelling in Python very well and it gives you an introduction to =numpy= and =scipy= functions.
+
+*** Datacamp (optional)
+
+If you have never done any programming before, the three courses below from Datacamp will help you get up to speed. I recommend that you do these courses before the start of the semester. If you have programmed before or done some Datacamp courses already, this part is optional.
+
+You can get access to Datacamp via the [[https://www.tilburguniversity.edu/students/skills/programming][university website]].
+
+From Datacamp, you can do the following courses:
+
++ Intro: [[https://www.datacamp.com/courses/intro-to-python-for-data-science]]
++ Intermediate: [[https://www.datacamp.com/courses/intermediate-python-for-data-science]]
++ Pandas: https://learn.datacamp.com/courses/data-manipulation-with-pandas
+
+These courses teach you the basic Python syntax. In our lectures we use parts of Python more specific to economics; e.g. commands to solve equations, equilibria etc. These parts of the course complement each other. It is not the case that all the Python that we use in the lectures, you will first see in Datacamp but most of it is in Allen Downey's book.
+
+Most students like Datacamp to get used to Python syntax. A minority of students really dislike Datacamp. If you do not like it either, you can also read [[https://greenteapress.com/wp/think-python-3rd-edition/][Think Python]] as an introduction to "pure" Python (instead of Downey's modeling and simulation book, mentioned above). You can buy the book or read the free online version. The jupyter notebooks can be found on [[https://github.com/AllenDowney/ThinkPython/tree/v3][github]]. You can clone this repository and work with the notebooks. You can also find some wonderful presentations on Youtube by the author Allen Downey.
+
+
+*** TODO Questions :noexport:
+- also add Joyce's syllabus to the chatbot: https://chatbot.tilburg.ai/chat
+
+You can ask questions to the [[https://programmingforeconomists.tilburgai.nl/][chatbot]]
   + note that this is still experimental (no rights can be derived etc. etc.)
   + give us your feedback to improve the chatbot
 
-A suggested workflow to learn programming efficiently is:
-+ follow the Datacamp courses and make notes of what you learn at Datacamp in a notebook on the jupyterlab server
-  + in this way it is easy to refer back to useful code snippets that you see on Datacamp
-+ go through the jupyter notebook for the lecture and try to answer the questions
-+ if you get stuck with a problem, watch the corresponding screencast for this part. It gives hints and ways to solve the questions in the notebook
-+ if you still cannot figure it out, ask the chatbot or create an issue on github to ask us
-+ we will answer your questions in class
-
+*** TODO example final assignent :noexport:
 In September there is a lecture on gender economics. In the lecture Mery will discuss some papers on this topic. There is a notebook where the models discussed are simulated in Python. This notebook is then discussed in a following lecture. The notebook will teach you something about gender economics and Python. At the same time, it shows you what we expect you to do in the final assignment for this course: take an existing theory paper and solve the model in Python and simulate outcomes of the model.
 
-*Remark:* We have been teaching this course for a couple of years now. Every year there are a number of students who attend the lectures without preparing anything and watch the screencasts without trying to program themselves. We live in a free country and you choose how to spend your time. However, we do feel the need to warn you that this strategy does not work well. You actually end up spending far more time on finishing the course than when you follow the planning we suggest below. The reason is as follows: learning a programming language is frustrating. You learn by making mistakes and then trying to figure out what goes wrong. When you make these mistakes during the semester, you are well covered: we are there to help you. When you make these mistakes for the first time when trying to finish your assignment before the deadline, you are in trouble. We will try to help you but not within an hour, or within a day. And because you need to finish before the deadline, you have to figure everything out by yourself under time pressure. Not a pleasant experience and one you can easily avoid. But the choice is yours.
-
-** Lecture schedule
+* Lecture schedule
    :PROPERTIES:
    :CUSTOM_ID:       lecture_schedule
    :END:
 
+|       date |                time | staff | room         | [[https://janboone.github.io/Methods_python_for_economists_lectures/][lecture]] | Downney |
+|------------+---------------------+-------+--------------+---------+---------|
+| 2026-08-26 |         12:45-14:30 | Joyce | Cube 219     |         |         |
+| 2026-09-01 |         12:45-14:30 | Jan   | Cube 219     |       1 |     1-4 |
+| 2026-09-08 |         12:45-14:30 | Mery  | Cube 219     |         |         |
+| 2026-09-15 |         12:45-14:30 | Jan   | Cube 217     |       2 |     5-8 |
+| 2026-10-12 |         12:45-14:30 | Joyce | Cube 17      |         |         |
+| 2026-10-14 |         14:45-16:30 | Joyce | Cube 213     |         |         |
+| 2026-10-21 |         08:45-10:30 | Jan   | CZ 112       |       3 |   11-14 |
+| 2026-10-28 |         14:45-16:30 | Joyce | Cube 21      |         |         |
+| 2026-11-04 |         12:45-14:30 | Joyce | E 4 Blackbox |         |         |
+| 2026-11-11 |         08:45-10:30 | Jan   | MKZ 111      |       4 |         |
+| 2026-11-19 |         08:45-10:30 | Jan   | MKZ 111      |       5 |         |
+| 2026-11-25 |         10:45-12:30 | Jan   | CZ 9         |       6 |         |
+| 2026-12-02 |         10:45-12:30 | Jan   | Cube 220     |     Q&A |         |
+| 2027-01-04 | deadline assignment |       |              |         |         |
+| 2027-05-10 |      deadline resit |       |              |         |         |
 
-|       date |        time | staff | room     | topic                                                          | datacamp             |
-|------------+-------------+-------+----------+----------------------------------------------------------------+----------------------|
-| 2025-09-04 | 10:45-12:30 | Jan   | MKZ 111  | Intro python, markdown, github, jupyterlab, lists, functions   |                      |
-| 2025-09-11 | 10:45-12:30 | Joyce | CZ 112   | Intro Career Development                                       | Intro (1-4)          |
-| 2025-09-18 | 10:45-12:30 | Jan   | CZ 112   | Matplotlib, dictionaries, numpy arrays, pandas                 | Intermediate (1,2)   |
-| 2025-09-25 | 10:45-12:30 | Jan   | AZ 201   | Pandas: dataframe, groupby, selection, if statements, Booleans | Intermediate (3,4,5) |
-| 2025-10-09 | 10:45-12:30 | Joyce | Cube 21  | Workshop 'stress management' (part 1)                          | pandas (1,2)         |
-| 2025-10-15 | 10:45-12:30 | Joyce | CZ 9     | Career Perspectives with alumni                                | pandas (3,4)         |
-| 2025-10-16 | 10:45-12:30 | Mery  | CZ 114   | Gender Economics                                               |                      |
-| 2025-10-23 | 10:45-12:30 | Joyce | Cube 15  | Workshop ‘finding purpose’ (part 1)                            |                      |
-| 2025-10-30 | 10:45-12:30 | Joyce | Cube 213 | Workshop 'stress management' (part 2)                          |                      |
-| 2025-11-06 | 10:45-12:30 | Jan   | CZ 9     | The market and asymmetric information                          |                      |
-| 2025-11-13 | 10:45-12:30 | Joyce | Cube 21  | Workshop ‘finding purpose’ (part 2)                            |                      |
-| 2025-11-20 | 10:45-12:30 | Jan   | CZ 9     | Financial crisis, Empirical research                           |                      |
-| 2025-11-27 | 10:45-12:30 | Jan   | CZ 9     | Notebook gender economics and Q&A                              |                      |
-| 2025-12-04 | 10:45-12:30 | Jan   | CZ 9     | Reserve                                                        |                      |
-| 2026-01-05 |             |       |          | deadline final assignment                                      |                      |
-| 2026-05-11 |             |       |          | deadline resit                                                 |                      |
 
-   
-If you have programmed with python before, there is no need to attend the introduction to python lectures. In this case, attend the first lecture, the lectures by Joyce and Mery and then join the python lectures again when we start with "The market and asymmetric information".
 
 ** First Lecture
 
@@ -147,74 +161,34 @@ git clone https://github.com/janboone/python_assignments
 - you can view the final assignment in this repository: https://github.com/janboone/python_assignments
 - instructions for the assignment can be found below.
 
-** Datacamp
 
-You can get access to Datacamp via the [[https://www.tilburguniversity.edu/students/skills/programming][university website]].
-
-From Datacamp, do the following courses:
-
-+ Intro: [[https://www.datacamp.com/courses/intro-to-python-for-data-science]]
-+ Intermediate: [[https://www.datacamp.com/courses/intermediate-python-for-data-science]]
-+ Pandas: https://learn.datacamp.com/courses/data-manipulation-with-pandas
-
-These courses teach you the basic Python syntax. In the lectures and notebook for the course, we use parts of Python more specific to economics; e.g. commands to solve equations, equilibria etc. These parts of the course complement each other. It is not the case that all Python that we use, you will first see in Datacamp.
-
-It is up to you how to combine the Datacamp courses with the [[file:./pagescreencasts.org][Screencasts]]. We suggest to finish the Datacamp Intro course first. As there is no economics on Datacamp, some students prefer to start with the screencasts after the Intro. Others prefer to finish more Datacamp courses before they start on the screencasts. Just see what works for you. But make sure you follow the planning above, otherwise you might get lost if you are too far behind and the lectures will not be as useful to you.
-
-Most students like Datacamp to get used to the python syntax. A minority of students really dislike Datacamp. If you do not like it either, you can also read [[https://greenteapress.com/wp/think-python-3rd-edition/][Think Python]]. You can buy the book or read the free online version. The jupyter notebooks can be found on [[https://github.com/AllenDowney/ThinkPython/tree/v3][github]]. You can clone this repository and work with the notebooks. You can also find some wonderful presentations on Youtube by the author Allen Downey.
+- create marimo on jupterlab: [[file:img/Start_Marimo.pdf][how-to]]
 
 ** Deadlines
    :PROPERTIES:
    :CUSTOM_ID: Deadlines
    :END:
 
-- The deadline for the *final python assignment* is: Monday January 5th, 2026. 
-- The resit deadline for the python assignment is: Monday May 11th, 2026. Let us know by email that you have submitted your assignment for the resit.
+- The deadline for the *final python assignment* is: Monday January 4th, 2027. 
+- The resit deadline for the python assignment is: Monday May 10th, 2027.
 - Your grade is determined by:
   - a "pass" on the Career Services assignments;
   - final assignment.
 
-Follow the instructions below and on Canvas explaining how to submit an assignment on github and fill in the google form etc.
+Follow the instructions below and on Canvas explaining how to submit an assignment and fill in the google form etc.
 
-Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot discuss/program the same paper twice for your assignment).
+Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot do an app on the same paper/model twice for your assignment).
 
-
-
-** Questions
-
- If you have questions/comments about this course, go to the [[https://github.com/janboone/Python-programming-for-economists/issues][issues page]]
- open a new issue (with the green "New issue" button) and type your
- question. Use a title that is informative (e.g. not "question", but
- "question about the final assignment"). Go to the next box ("Leave a comment")
- and type your question. Then click on "Submit new issue". We will
- answer your question as quickly as possible.
-
- The advantages of the issue page include:
-
- + if you have a question, other students may have it as well; in this
-   way we answer the questions in a way that everyone can see it. Also
-   before asking the question, you may want to check whether it was
-   asked/answered before on the issue page
- + we answer your question more quickly than when you email us
- + you increase your knowledge of github!
-
- Only when you need to include privately sensitive information ("my parrot
- has passed away"), you can send an email.
-
- In order to post issues, you need to create a github account (which
- you need anyway to follow this course).
-
- Note that if your question is related to another issue, you can react
- to the earlier issue and leave a comment in that "conversation".
 
 * Assignments
 
-For this course there is one final assignment. You can find it in this repository: https://github.com/janboone/python_assignments.
+For this course there is one final assignment. 
 
 Note that you can do the assignment alone or with at max. one other student (i.e. max group size is 2).
 
-** Submitting assignments
-
+** TODO Submitting assignments :noexport:
+- github or gitlab???
+  
 The final assignment is submitted using github classroom:
 - on Canvas we will give you the link to the github repos. with the assignment notebook;
 - instructions on how to work with github classroom can be found [[file:./Manual_students.pdf][here]]
@@ -225,6 +199,9 @@ The final assignment is submitted using github classroom:
 
 
 ** TODO Instructions for submitting final assignment to be put on Canvas :noexport:
+
+**2026/7**: are we going to use github classroom or gitlab.uvt???
+
 *** relevant links:
 
 **** TODO each year renew classroom links for the new year
@@ -249,9 +226,9 @@ The final assignment is submitted using github classroom:
 
 Dear students,
 
-The link for the python assignments (template) is: https://classroom.github.com/a/AJx5NX7k (this is the link for 2025/2026)
+The link for the python assignment (template) is: https://classroom.github.com/a/AJx5NX7k (this is the link for 2025/2026)
 
-You can do the assignments on your own or with (at max.) one other student. You make all three assignments with the same team (either all 3 on your own or with the same fellow student).
+You can do the assignment on your own or with (at max.) one other student. 
 
 When you use the link to the assignment, you will be asked for your team's name. Choose your favorite name!
 
@@ -269,7 +246,7 @@ If you have questions about the assignment or the procedure described above, cre
 
 Then you can see whether other students had the same question (which was already answered) or fellow-students can learn from your question. These issues can be read by anyone, so do not provide any privacy related information.
 
-Good luck with the assignments,
+Good luck with the assignment,
 
 Jan.
 
@@ -284,90 +261,156 @@ Jan.
 
 ** what we are looking for
 
-The idea of the final assignment is that you report your findings in a transparent way that can easily be verified/reproduced by others. The intended audience is your fellow students. They should be able to understand the code you write together with the explanations that you give for this code.
+The idea of the final assignment is that you report on an economic model in a transparent way that can easily be verified/reproduced by others. Think of yourself in, say, two years time where you work in a company, bank, consultancy firm or a ministry. You need to explain an economic "phenomenon" to your colleagues. Since not all your colleagues are necessarily economists, your goal is to create an interactive (marino) app. With this app, colleagues can figure out themselves how certain parameters affect the outcome and how sensitive outcomes are to (other) parameter values.
+
+Since future colleagues is a bit vague, think of the intended audience as your fellow students. They should be able to understand the code you write together with the explanations that you give for this code and for the economics that you are explaining.
 
 The following ingredients will be important when we evaluate your final assignment:
-
-+ Start from a *theory* (i.e. not empirical) paper; e.g. one you have read for another course.
-+ Briefly describe what the paper does and what the main results are.
-+ Then formulate a clear and transparent *question* that cannot be immediately answered by the paper.
-  + Extend the paper's model (a bit) using the fact that you will simulate the model and do not need to provide an analytical solution.
-    + note: we do not expect a major extension of the model; just a small change and use simulations to show how results differ due to this adaptation of the model.
-    + hint: choose a question/extension where you can show off your programming skills!
-+ Briefly *motivate* why this question is interesting.
-+ Give the *answer* that you find (as a preview).
-+ Mention the main *assumptions* that you need to get this answer.
-+ Use $\LaTeX$ to introduce and explain the model of the paper. Describe the main equations (using $\LaTeX$) of the model.
++ The *topic* for the app should come from a *theory* (i.e. not empirical) paper or a theoretical model that you have seen in class for another course
++ Briefly describe what the paper/model does and what the results you want to illustrate with the app
 + When you use information (e.g. a literature reference), create a link to this information. The reader then only needs to click to find the relevant information.
-+ Describe your (small) extension of the model.
++ Then formulate a clear and transparent *research question* that the user will be able to answer using the app
++ Briefly *motivate* why this question is interesting.
++ Use $\LaTeX$ to introduce and explain the model. Describe the main equations (using $\LaTeX$) of the model that you will program in Python.
 + Explain how you move from the analytical equations of the paper to Python code.
-+ Use some *optimization methods* (e.g. agents maximize utility or firms minimize costs).
-+ Solve for an *equilibrium* using Python (using fixed points).
-+ Simulate outcomes by using different values for parameters and save the outcomes of the simulations in a pandas dataframe.
-+ Explain your code, the reader --think of your fellow students-- must be able to easily follow what you are doing.
-+ Explain your code in Markdown blocks, not as comments in code blocks.
-+ Present graphs of your simulation results using =matplotlib=.
++ We will be looking for at the least the following methods in the code:
+  + there agents maximizing payoffs; in the Python code use *optimization methods*
+  + Solve for an *equilibrium* using Python (using fixed points).
+  + Use a parameter sweep (and pandas to store the results) to show how the results are affected by parameter values
++ Explain your code in Markdown blocks, not as comments in code blocks
+  + and note that these explanations make sense in both the edit and app views of the marimo notebook
++ Present interactive graphs of your simulation results using =matplotlib= and marimo sliders
 + Discuss what the figures show (e.g. $x$ is increasing in $y$) and explain the economic intuition for this relation (between $x$ and $y$).
-+ Present a clear conclusion/answer to your question.
-+ Finish with a brief *discussion* of your results.
++ What can the user learn from the app and the interactive outcomes that follow from it
 
-Remark:
+Remark 1:
 + you can copy code from the web or an LLM; but
   + make sure that you explain the code that you use so that another student of the course understands it and can use it;
-  + give the reference of the code that you copy
-  + explain the economics of your results yourself; do not rely on the [[file:LLM.org][LLM]] only.
+  + e.g. if you use functions, libraries that we have not used in the lectures you need to explain these in your notebook
+  + but there is no need to explain what =np.arange= does: we use this extensively in class
+  + give the reference of the code that you copy or acknowledge the use of an LLM
+  + check the code and explain the economics of your results yourself; do not rely on the [[file:LLM.org][LLM]] only.
+
+Remark 2:
++ the apps we create in the lectures do actually not satisfy the criteria for the final assignment:
++ either there is no optimization problem that is solved with python (e.g. in the Cournot example we derived the reaction functions analytically)
++ or there is no equilibrium derived like in the Solow model app
++ the app based on the gender economics lecture does have all the elements that we are looking for in the final assignment
+
+*** TODO improve explanation :noexport:
+
+Suggestions for improving the assignment description
+
+1. Make the grading criteria more explicit
+Right now the ingredients are clear, but students will optimize for what is graded. A rubric helps.
+
+Example breakdown:
+- Economic motivation and research question: 10%
+- Correct explanation of theory/model: 20%
+- Translation from equations to code: 20%
+- Equilibrium computation and optimization: 15%
+- Interactive app design and usability: 15%
+- Interpretation of results/economic intuition: 15%
+- Transparency/reproducibility/citations: 5%
+
+This signals that explanation and understanding matter at least as much as coding.
+
+2. Explicitly require a “model-to-code mapping”
+This is one of the best ways to detect understanding.
+
+Add a required subsection:
+- “From equations to code”
+  - For each key equation:
+    - write the equation,
+    - explain the economic meaning,
+    - explain how it is implemented computationally,
+    - identify the numerical method used.
+
+Example:
+- “Equation (3) defines equilibrium price as a fixed point. In Python we implement this using scipy.optimize.fixed_point because…”
+
+Students who merely paste code struggle here.
+
+
+6. Clarify acceptable use of LLMs
+Currently this is permissive but vague. Make expectations operational.
+
+Example:
+“You may use LLMs as coding assistants, but:
+- you must understand and explain all code submitted;
+- all externally generated code must be acknowledged;
+- inability to explain submitted code during follow-up questions may result in grade penalties;
+- copied code without adaptation or explanation is considered poor academic practice.”
+
+
+Suggestions for improving the template
+
+
+4. Include a validation section
+Require students to verify known analytical cases.
+
+Example:
+- “Check whether the numerical equilibrium matches the analytical solution when parameter α = 0.”
+
+This is excellent for discouraging blind code use.
+
+5. Add structure for parameter sweeps
+Right now only sliders are emphasized. Add an explicit requirement for systematic analysis.
+
+Example:
+#+begin_src python
+results = pd.DataFrame(...)
+#+end_src
+Then ask students to:
+- summarize trends,
+- identify nonlinearities,
+- discuss robustness.
+
+6. Encourage modular coding
+Require at least:
+- one function for payoffs,
+- one function for equilibrium,
+- one simulation function.
+
+This improves readability and exposes whether students understand decomposition.
+
+
+2. Require “why this method?” explanations
+Not:
+- “we used scipy.optimize”
+
+But:
+- “we use root-finding because equilibrium is implicitly defined…”
+
+
+9. Penalize unexplained sophistication
+State explicitly:
+- “Using advanced libraries/methods without explanation will not increase grades.”
+
+This removes incentives to paste impressive but opaque code.
+
+One important broader point
+
+If the assignment mainly rewards “a working app,” LLM use becomes almost impossible to distinguish from understanding. But if the assignment rewards:
+- explanation,
+- economic reasoning,
+- numerical interpretation,
+- validation,
+- extension,
+then LLMs become useful tools rather than substitutes for learning.
+
+That is the equilibrium you probably want.
+
 
 
 ** resit of final assignment
 
-The resit of the final assignment needs to start from a new paper compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
+The resit of the final assignment needs to start from a new paper/model compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
 
-Otherwise, follow the procedure above on how to submit the assignment and fill in the google form (if you have not done so before). Also send us an email that you submitted the assignment for the resit.
-
-
-* Python as programming language
-
-We use Python as programming language. A fair question is:
-why Python? The non-scientific answer is: because we like it a lot.
-
-You can also check the following links:
-- https://www.datacamp.com/community/blog/python-scientific-computing-case
-- https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+Otherwise, follow the procedure above on how to submit the assignment and fill in the google form. 
 
 
-Resources for python:
-
-+ [[https://scipy-lectures.github.io/]]
-+ [[http://www.physics.nyu.edu/pine/pymanual/html/pymanMaster.html]]
-+ https://aeturrell.github.io/coding-for-economists/intro.html (introduction to python with economics in mind)
-+ https://python.quantecon.org/intro.html (fairly advanced economics with python)
-+ [[https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-]] (video lectures on a number of python topics)
-
-** Jupyter notebooks
-
-
-*** Markdown
-
-For the assignment it is useful to know a bit of markdown. You can
-either google "markdown tutorial" or use one of the following websites:
-
-+ [[http://daringfireball.net/projects/markdown/]]
-+ [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]]
-
-*** $\LaTeX$
-
-For the python assignment it is useful to familiarize yourself with
-$\LaTeX$. Note that you do not need to type a whole document in $\LaTeX$ (so
-don't worry about preambles etc.), you just need to know how to type
-$x^2$, $\alpha,\beta$ or have math displayed like
-
-\begin{equation}
-a^2 + b^2 = c^2
-\end{equation}
-
-Google "latex tutorial" or go to pages like:
-
-+ [[https://www.latex-tutorial.com/tutorials/amsmath/]]
-+ [[http://www.andy-roberts.net/writing/latex/mathematics_1]]
-
-and focus on typesetting.
+* Bibliography
+#+cite_export: csl ./chicago-author-date.csl
+#+bibliography:~/Nextcloud2/Literature/references.bib
+#+print_bibliography:
