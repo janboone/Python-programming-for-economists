@@ -1,4 +1,4 @@
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/setup/html-theme-readtheorg.setup
 #+title: Using LLM to program final assignment
 #+LANGUAGE: en
 #+INFOJS_OPT: view:showall toc:t ltoc:t mouse:underline path:http://orgmode.org/org-info.js
@@ -12,6 +12,17 @@
 #+HTML_HEAD: <link rel="stylesheet" href="./css/Latex.css">
 #+HTML_HEAD: <link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+#+HTML_HEAD: <style>
+#+HTML_HEAD: pre.src code {
+#+HTML_HEAD:   background: transparent !important;
+#+HTML_HEAD:   border: none !important;
+#+HTML_HEAD:   box-shadow: none !important;
+#+HTML_HEAD:   padding: 0 !important;
+#+HTML_HEAD: }
+#+HTML_HEAD: pre.src-python code {
+#+HTML_HEAD:   font-size: 1.1em !important;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
 #+EXPORT_EXCLUDE_TAGS: noexport
 
 * Market

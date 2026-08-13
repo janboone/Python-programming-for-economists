@@ -92,6 +92,8 @@ Most students like Datacamp to get used to Python syntax. A minority of students
 
 *** TODO Questions :noexport:
 - also add Joyce's syllabus to the chatbot: https://chatbot.tilburg.ai/chat
+- add index.pdf
+- add gender economics template
 
 You can ask questions to the [[https://programmingforeconomists.tilburgai.nl/][chatbot]]
   + note that this is still experimental (no rights can be derived etc. etc.)
@@ -261,22 +263,23 @@ Jan.
 
 ** what we are looking for
 
-The idea of the final assignment is that you report on an economic model in a transparent way that can easily be verified/reproduced by others. Think of yourself in, say, two years time where you work in a company, bank, consultancy firm or a ministry. You need to explain an economic "phenomenon" to your colleagues. Since not all your colleagues are necessarily economists, your goal is to create an interactive (marino) app. With this app, colleagues can figure out themselves how certain parameters affect the outcome and how sensitive outcomes are to (other) parameter values.
+The idea of the final assignment is that you report on an economic model in a transparent way that can easily be verified/reproduced by others. Think of yourself in, say, two years time where you work in a company, bank, consultancy firm or ministry. You need to explain an economic "phenomenon" to your colleagues. Since not all your colleagues are necessarily economists, your goal is to create an interactive (marimo) app. With this app, colleagues can figure out themselves how certain parameters affect the outcome and how sensitive outcomes are to (other) parameter values.
 
-Since future colleagues is a bit vague, think of the intended audience as your fellow students. They should be able to understand the code you write together with the explanations that you give for this code and for the economics that you are explaining.
+Since future colleagues is a bit vague, think of the intended audience as your fellow students. They should be able to understand the code you write, together with the explanations that you give for this code and for the economics that you are explaining.
 
 The following ingredients will be important when we evaluate your final assignment:
 + The *topic* for the app should come from a *theory* (i.e. not empirical) paper or a theoretical model that you have seen in class for another course
-+ Briefly describe what the paper/model does and what the results you want to illustrate with the app
-+ When you use information (e.g. a literature reference), create a link to this information. The reader then only needs to click to find the relevant information.
++ Briefly describe what the paper/model does and what the results are that you want to illustrate with the app
++ When you use information (e.g. a literature reference), create a (Markdown) link to this information. The reader then only needs to click to find the relevant information.
 + Then formulate a clear and transparent *research question* that the user will be able to answer using the app
 + Briefly *motivate* why this question is interesting.
-+ Use $\LaTeX$ to introduce and explain the model. Describe the main equations (using $\LaTeX$) of the model that you will program in Python.
++ Use $\LaTeX$ to introduce and explain the *model*. Describe the main equations (using $\LaTeX$) of the model that you will program in Python.
 + Explain how you move from the analytical equations of the paper to Python code.
 + We will be looking for at the least the following methods in the code:
-  + there agents maximizing payoffs; in the Python code use *optimization methods*
-  + Solve for an *equilibrium* using Python (using fixed points).
-  + Use a parameter sweep (and pandas to store the results) to show how the results are affected by parameter values
+  + code is interactive, e.g. using sliders,
+  + there agents maximizing payoffs; in the Python code make sure you use *optimization methods*,
+  + solve for an *equilibrium* using Python (with fixed points),
+  + use a parameter sweep (and pandas to store the results) to show how the results are affected by parameter values.
 + Explain your code in Markdown blocks, not as comments in code blocks
   + and note that these explanations make sense in both the edit and app views of the marimo notebook
 + Present interactive graphs of your simulation results using =matplotlib= and marimo sliders
@@ -287,6 +290,7 @@ Remark 1:
 + you can copy code from the web or an LLM; but
   + make sure that you explain the code that you use so that another student of the course understands it and can use it;
   + e.g. if you use functions, libraries that we have not used in the lectures you need to explain these in your notebook
+  + explain special syntax like =f(*my_list)= if you use constructs like this
   + but there is no need to explain what =np.arange= does: we use this extensively in class
   + give the reference of the code that you copy or acknowledge the use of an LLM
   + check the code and explain the economics of your results yourself; do not rely on the [[file:LLM.org][LLM]] only.
