@@ -87,7 +87,7 @@ From Datacamp, you can do the following courses:
 
 These courses teach you the basic Python syntax. In our lectures we use parts of Python more specific to economics; e.g. commands to solve equations, equilibria etc. These parts of the course complement each other. It is not the case that all the Python that we use in the lectures, you will first see in Datacamp but most of it is in Allen Downey's book.
 
-Most students like Datacamp to get used to Python syntax. A minority of students really dislike Datacamp. If you do not like it either, you can also read [[https://greenteapress.com/wp/think-python-3rd-edition/][Think Python]] as an introduction to "pure" Python (instead of Downey's modeling and simulation book, mentioned above). You can buy the book or read the free online version. The jupyter notebooks can be found on [[https://github.com/AllenDowney/ThinkPython/tree/v3][github]]. You can clone this repository and work with the notebooks. You can also find some wonderful presentations on Youtube by the author Allen Downey.
+Most students like Datacamp to get used to Python syntax. A minority of students really dislike Datacamp. If you do not like it, you can also read [[https://greenteapress.com/wp/think-python-3rd-edition/][Think Python]] as an introduction to "pure" Python (instead of Downey's modeling and simulation book, mentioned above). You can buy the book or read the free online version. The jupyter notebooks can be found on [[https://github.com/AllenDowney/ThinkPython/tree/v3][github]]. You can clone this repository and work with the notebooks. You can also find some wonderful presentations on Youtube by the author Allen Downey.
 
 
 *** TODO Questions :noexport:
@@ -107,64 +107,62 @@ In September there is a lecture on gender economics. In the lecture Mery will di
    :CUSTOM_ID:       lecture_schedule
    :END:
 
-|       date |                time | staff | room         | [[https://janboone.github.io/Methods_python_for_economists_lectures/][lecture]] | Downney |
-|------------+---------------------+-------+--------------+---------+---------|
-| 2026-08-26 |         12:45-14:30 | Joyce | Cube 219     |         |         |
-| 2026-09-01 |         12:45-14:30 | Jan   | Cube 219     |       1 |     1-4 |
-| 2026-09-08 |         12:45-14:30 | Mery  | Cube 219     |         |         |
-| 2026-09-15 |         12:45-14:30 | Jan   | Cube 217     |       2 |     5-8 |
-| 2026-10-12 |         12:45-14:30 | Joyce | Cube 17      |         |         |
-| 2026-10-14 |         14:45-16:30 | Joyce | Cube 213     |         |         |
-| 2026-10-21 |         08:45-10:30 | Jan   | CZ 112       |       3 |   11-14 |
-| 2026-10-28 |         14:45-16:30 | Joyce | Cube 21      |         |         |
-| 2026-11-04 |         12:45-14:30 | Joyce | E 4 Blackbox |         |         |
-| 2026-11-11 |         08:45-10:30 | Jan   | MKZ 111      |       4 |         |
-| 2026-11-19 |         08:45-10:30 | Jan   | MKZ 111      |       5 |         |
-| 2026-11-25 |         10:45-12:30 | Jan   | CZ 9         |       6 |         |
-| 2026-12-02 |         10:45-12:30 | Jan   | Cube 220     |     Q&A |         |
-| 2027-01-04 | deadline assignment |       |              |         |         |
-| 2027-05-10 |      deadline resit |       |              |         |         |
+|       date |                time | staff | room         |          [[https://janboone.github.io/Methods_python_for_economists_lectures/][lecture]] | Downney |
+|------------+---------------------+-------+--------------+------------------+---------|
+| 2026-08-26 |         12:45-14:30 | Joyce | Cube 219     |                  |         |
+| 2026-09-01 |         12:45-14:30 | Jan   | Cube 219     |                1 |     1-4 |
+| 2026-09-08 |         12:45-14:30 | Mery  | Cube 219     | gender economics |         |
+| 2026-09-15 |         12:45-14:30 | Jan   | Cube 217     |                2 |     5-8 |
+| 2026-10-12 |         12:45-14:30 | Joyce | Cube 17      |                  |         |
+| 2026-10-14 |         14:45-16:30 | Joyce | Cube 213     |                  |         |
+| 2026-10-21 |         08:45-10:30 | Jan   | CZ 112       |                3 |   11-14 |
+| 2026-10-28 |         14:45-16:30 | Joyce | Cube 21      |                  |         |
+| 2026-11-04 |         12:45-14:30 | Joyce | E 4 Blackbox |                  |         |
+| 2026-11-11 |         08:45-10:30 | Jan   | MKZ 111      |                4 |         |
+| 2026-11-19 |         08:45-10:30 | Jan   | MKZ 111      |                5 |         |
+| 2026-11-25 |         10:45-12:30 | Jan   | CZ 9         |                6 |         |
+| 2026-12-02 |         10:45-12:30 | Jan   | Cube 220     |              Q&A |         |
+| 2027-01-04 | deadline assignment |       |              |                  |         |
+| 2027-05-10 |      deadline resit |       |              |                  |         |
 
 
 
-** First Lecture
+* First Lecture
+- go to
+  - [[https://jupyterlab.uvt.nl/][jupyter lab]]
+    - IT suggests that you use the Firefox browser to access jupyter lab
+    - sometimes it helps to access jupyter lab with an incognito/private window
+  - if you want to install Python and Marimo on your own computer:
+    - first install anaconda: [[https://www.anaconda.com/download]]
+    - then install Marimo: [[https://docs.marimo.io/getting_started/installation/]]
+    - if you do not want to use a virtual environment, you can do
+      ~pip install "marimo[recommended]"~ directly in a terminal
+- create a new python notebook and type the following code in the first cell:
 
-[[file:./Introduction_Lecture.org::#introduction][Introduction Lecture]]
-
-*** Initial Assignment
-    :PROPERTIES:
-    :CUSTOM_ID:       initial_assignment
-    :END:
-
-Do the following three steps:
-+ create a github account on [[https://github.com/][github]] (you need this account to submit your final assignment)
-  + we advise you to do this before **Thursday September 25, 2025**
-+ go to
-  + [[https://jupyterlab.uvt.nl/][jupyter lab]]
-    + IT suggests that you use the Firefox browser to access jupyter lab
-    + sometimes it helps to access jupyter lab with an incognito/private window
-    + or --if all else fails-- you can use [[https://colab.research.google.com/][google's colab]]
-+ create a new python notebook and type the following code in the first cell:
-#+BEGIN_SRC shell
+#+begin_src shell
 %%bash
-
 git clone https://github.com/janboone/Python-programming-for-economists.git
-#+END_SRC
-+ then press the Shift key and Enter key at the same time
-+ this creates a folder on the server `Python-programming-for-economists` that contains the material for the course.
-+ Note: you can only run this command once. If you run it again, you get an error since the folder already exists.
-+ If you want to see the final assignment in jupyter lab, you can also type:
-#+BEGIN_SRC shell
-%%bash
+#+end_src
 
-git clone https://github.com/janboone/python_assignments
-#+END_SRC
+- then press the Shift key and Enter key at the same time
+- this creates a folder on the server ~Python-programming-for-economists~
+  that contains the material for the course.
+  - Note: you can only run this command once. If you run it again, you get an
+    error since the folder already exists.
+- In this folder there is a folder ~data~ that we will use during the lectures
+- and it contains the file ~assignment_template.py~ which contains the template
+  for the final assignment
+- If there is a ``Marimo tile'' on the jupyterlab server, you can click this
+  and are ready to go
+  - if not, you can install Marimo on jupyterlab yourself:
+    [[file:img/Start_Marimo.pdf][how-to]]
+    (we will do this together in class)
+- click the "Marimo tile" and "Create a new notebook"
+  - type ~5 + 5~ and then simultaneously the keys Shift and Enter
+    (or click the Run button of the cell)
+  - Python evaluates the cell and returns ``10''
 
-- you can view the final assignment in this repository: https://github.com/janboone/python_assignments
-- instructions for the assignment can be found below.
 
-
-- create marimo on jupterlab: [[file:img/Start_Marimo.pdf][how-to]]
 
 ** Deadlines
    :PROPERTIES:
@@ -175,16 +173,19 @@ git clone https://github.com/janboone/python_assignments
 - The resit deadline for the python assignment is: Monday May 10th, 2027.
 - Your grade is determined by:
   - a "pass" on the Career Services assignments;
-  - final assignment.
+  - the grade of your final assignment.
 
-Follow the instructions below and on Canvas explaining how to submit an assignment and fill in the google form etc.
+Follow the instructions below and (to be posted) on Canvas explaining how to submit an assignment and fill in the google form.
 
 Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot do an app on the same paper/model twice for your assignment).
 
+* Final Assignment
+  :PROPERTIES:
+  :CUSTOM_ID: final_assignment
+  :END:
 
-* Assignments
 
-For this course there is one final assignment. 
+For this course there is one final assignment. For the deadlines of the final assignment, see [[Deadlines]] above.
 
 Note that you can do the assignment alone or with at max. one other student (i.e. max group size is 2).
 
@@ -253,13 +254,6 @@ Good luck with the assignment,
 Jan.
 
 
-** Final Assignment
-  :PROPERTIES:
-  :CUSTOM_ID: final_assignment
-  :END:
-
-
-- for the deadlines of the final assignment, see [[Deadlines]] above
 
 ** what we are looking for
 
@@ -268,23 +262,40 @@ The idea of the final assignment is that you report on an economic model in a tr
 Since future colleagues is a bit vague, think of the intended audience as your fellow students. They should be able to understand the code you write, together with the explanations that you give for this code and for the economics that you are explaining.
 
 The following ingredients will be important when we evaluate your final assignment:
-+ The *topic* for the app should come from a *theory* (i.e. not empirical) paper or a theoretical model that you have seen in class for another course
-+ Briefly describe what the paper/model does and what the results are that you want to illustrate with the app
-+ When you use information (e.g. a literature reference), create a (Markdown) link to this information. The reader then only needs to click to find the relevant information.
-+ Then formulate a clear and transparent *research question* that the user will be able to answer using the app
-+ Briefly *motivate* why this question is interesting.
-+ Use $\LaTeX$ to introduce and explain the *model*. Describe the main equations (using $\LaTeX$) of the model that you will program in Python.
-+ Explain how you move from the analytical equations of the paper to Python code.
-+ We will be looking for at the least the following methods in the code:
-  + code is interactive, e.g. using sliders,
-  + there agents maximizing payoffs; in the Python code make sure you use *optimization methods*,
-  + solve for an *equilibrium* using Python (with fixed points),
-  + use a parameter sweep (and pandas to store the results) to show how the results are affected by parameter values.
-+ Explain your code in Markdown blocks, not as comments in code blocks
-  + and note that these explanations make sense in both the edit and app views of the marimo notebook
-+ Present interactive graphs of your simulation results using =matplotlib= and marimo sliders
-+ Discuss what the figures show (e.g. $x$ is increasing in $y$) and explain the economic intuition for this relation (between $x$ and $y$).
-+ What can the user learn from the app and the interactive outcomes that follow from it
+- The *topic* for the app should come from a *theory* (i.e. not empirical)
+  paper or a theoretical model that you have seen in class for another course
+- Briefly describe what the paper/model does and what the results are that you
+  want to illustrate with the app
+- When you use information (e.g. a literature reference), create a (Markdown)
+  link to this information. The reader then only needs to click the link to
+  find the relevant information.
+- Then formulate a clear and transparent *research question* that the user will
+  be able to answer using the app
+- Briefly *motivate* why this question is interesting.
+- Use \(\LaTeX\) to introduce and explain the *model*. Describe the main
+  equations (using \(\LaTeX\)) of the model that you will program in Python.
+- Explain how you move from the analytical equations of the paper to Python
+  code.
+- We will be looking for at least the following methods in the code:
+  - code is interactive, e.g. it uses sliders,
+  - there are agents maximizing payoffs; in the Python code make sure you use
+    *optimization methods*,
+  - solve for an *equilibrium* using Python (with fixed points),
+  - use a parameter sweep (and pandas to store the results) to show how the
+    results are affected by parameter values.
+- Hence, we expect (at least) separate functions
+  - to define payoffs,
+  - to calculate equilibrium outcomes,
+  - to simulate outcomes and store the results in a dataframe.
+- Explain your code in Markdown blocks, not as comments in code blocks
+  - and note that these explanations make sense in both the edit and app views
+    of the marimo notebook
+- Present interactive graphs of your simulation results using ~matplotlib~ and
+  marimo sliders
+- Discuss what the figures show (e.g. \(x\) is increasing in \(y\)) and explain
+  the economic intuition for this relation (between \(x\) and \(y\)).
+- What can the user learn from the app and the interactive outcomes that follow
+  from it
 
 Remark 1:
 + you can copy code from the web or an LLM; but
@@ -293,118 +304,13 @@ Remark 1:
   + explain special syntax like =f(*my_list)= if you use constructs like this
   + but there is no need to explain what =np.arange= does: we use this extensively in class
   + give the reference of the code that you copy or acknowledge the use of an LLM
-  + check the code and explain the economics of your results yourself; do not rely on the [[file:LLM.org][LLM]] only.
+  + check the code and explain the economics of your results yourself; do not rely on the LLM only. To illustrate this, look at the page [[file:LLM.org][LLM]]. This page was generated using an LLM. However, if you would copy/paste the answers given by the LLM, you would fail your final assignment. Look at this page critically and find where the LLM's answers are ``less than optimal''.
 
 Remark 2:
 + the apps we create in the lectures do actually not satisfy the criteria for the final assignment:
 + either there is no optimization problem that is solved with python (e.g. in the Cournot example we derived the reaction functions analytically)
-+ or there is no equilibrium derived like in the Solow model app
++ or there is no equilibrium derived (e.g. see the Solow model app)
 + the app based on the gender economics lecture does have all the elements that we are looking for in the final assignment
-
-*** TODO improve explanation :noexport:
-
-Suggestions for improving the assignment description
-
-1. Make the grading criteria more explicit
-Right now the ingredients are clear, but students will optimize for what is graded. A rubric helps.
-
-Example breakdown:
-- Economic motivation and research question: 10%
-- Correct explanation of theory/model: 20%
-- Translation from equations to code: 20%
-- Equilibrium computation and optimization: 15%
-- Interactive app design and usability: 15%
-- Interpretation of results/economic intuition: 15%
-- Transparency/reproducibility/citations: 5%
-
-This signals that explanation and understanding matter at least as much as coding.
-
-2. Explicitly require a “model-to-code mapping”
-This is one of the best ways to detect understanding.
-
-Add a required subsection:
-- “From equations to code”
-  - For each key equation:
-    - write the equation,
-    - explain the economic meaning,
-    - explain how it is implemented computationally,
-    - identify the numerical method used.
-
-Example:
-- “Equation (3) defines equilibrium price as a fixed point. In Python we implement this using scipy.optimize.fixed_point because…”
-
-Students who merely paste code struggle here.
-
-
-6. Clarify acceptable use of LLMs
-Currently this is permissive but vague. Make expectations operational.
-
-Example:
-“You may use LLMs as coding assistants, but:
-- you must understand and explain all code submitted;
-- all externally generated code must be acknowledged;
-- inability to explain submitted code during follow-up questions may result in grade penalties;
-- copied code without adaptation or explanation is considered poor academic practice.”
-
-
-Suggestions for improving the template
-
-
-4. Include a validation section
-Require students to verify known analytical cases.
-
-Example:
-- “Check whether the numerical equilibrium matches the analytical solution when parameter α = 0.”
-
-This is excellent for discouraging blind code use.
-
-5. Add structure for parameter sweeps
-Right now only sliders are emphasized. Add an explicit requirement for systematic analysis.
-
-Example:
-#+begin_src python
-results = pd.DataFrame(...)
-#+end_src
-Then ask students to:
-- summarize trends,
-- identify nonlinearities,
-- discuss robustness.
-
-6. Encourage modular coding
-Require at least:
-- one function for payoffs,
-- one function for equilibrium,
-- one simulation function.
-
-This improves readability and exposes whether students understand decomposition.
-
-
-2. Require “why this method?” explanations
-Not:
-- “we used scipy.optimize”
-
-But:
-- “we use root-finding because equilibrium is implicitly defined…”
-
-
-9. Penalize unexplained sophistication
-State explicitly:
-- “Using advanced libraries/methods without explanation will not increase grades.”
-
-This removes incentives to paste impressive but opaque code.
-
-One important broader point
-
-If the assignment mainly rewards “a working app,” LLM use becomes almost impossible to distinguish from understanding. But if the assignment rewards:
-- explanation,
-- economic reasoning,
-- numerical interpretation,
-- validation,
-- extension,
-then LLMs become useful tools rather than substitutes for learning.
-
-That is the equilibrium you probably want.
-
 
 
 ** resit of final assignment
