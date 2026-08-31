@@ -32,6 +32,7 @@ This website contains the material for the MSc course Methods: Python programmin
 
 This year the course is taught by:
 + Jan Boone
++ Tulio Bouzas
 + Mery Ferrando
 + Joyce Ladenstein
 
