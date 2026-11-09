@@ -131,7 +131,6 @@ In September there is a lecture on gender economics. In the lecture Mery will di
 * First Lecture
 - go to
   - [[https://jupyterlab.uvt.nl/][jupyter lab]]
-    - IT suggests that you use the Firefox browser to access jupyter lab
     - sometimes it helps to access jupyter lab with an incognito/private window
   - if you want to install Python and Marimo on your own computer:
     - first install anaconda: [[https://www.anaconda.com/download]]
@@ -178,6 +177,8 @@ git clone https://github.com/janboone/Python-programming-for-economists.git
 
 Follow the instructions below and (to be posted) on Canvas explaining how to submit an assignment and fill in the google form.
 
+For help with submitting to github, see [[./submitting_assignment.html][this page]].
+
 Also note the rules for the resit of the final assignment in case you submitted an assignment for the first exam opportunity (you cannot do an app on the same paper/model twice for your assignment).
 
 * Final Assignment
@@ -191,37 +192,36 @@ For this course there is one final assignment. For the deadlines of the final as
 Note that you can do the assignment alone or with at max. one other student (i.e. max group size is 2).
 
 ** TODO Submitting assignments :noexport:
-- github or gitlab???
+- github in 2026/2027
+  - walkthrough for students: [[file:submitting_assignment.org]]
+
   
-The final assignment is submitted using github classroom:
+The final assignment is submitted using github
 - on Canvas we will give you the link to the github repos. with the assignment notebook;
-- instructions on how to work with github classroom can be found [[file:./Manual_students.pdf][here]]
+- instructions on how to work with github classroom can be found 
 - to submit your assignment:
   + do not change the name of the assignment notebook
   + when you submit your final assignment, fill in the google form where the link to the form is on Canvas
+    + for 2026/2027: https://forms.gle/6gHGB2NWPpsyMy9L6
   + push the assignment notebook to your team's github classroom repository
 
 
 ** TODO Instructions for submitting final assignment to be put on Canvas :noexport:
 
-**2026/7**: are we going to use github classroom or gitlab.uvt???
+**2026/7**: github
 
 *** relevant links:
 
-**** TODO each year renew classroom links for the new year
-- [X] set deadline in github classroom
+**** TODO each year students create their own github repository
 - [ ] add github classroom assignment with the template repos. for 2025/6:
-  - https://forms.gle/4oaPJ2APQArAQrzx9
-  - https://classroom.github.com/classrooms/16413080-tisem-python-for-economists/assignments/assignments-2025-2026
-  - invite link: https://classroom.github.com/a/AJx5NX7k
 
 
 **** TODO google form
-- [ ] create google form for students to fill in once they finish assignment: https://forms.gle/4oaPJ2APQArAQrzx9 (this is the link for 2025/2026)
-- [ ] in the google form adjust the format of the assignment address for the new year
+- [ ] create google form for students to fill in once they finish assignment: for 2026/2027: https://forms.gle/6gHGB2NWPpsyMy9L6
+- [ ] in the google form adjust the title (top of form) and file name of the form 
 - [ ] change link to the classroom assignment and google form below
 
-- instructions are attached to website (no need to repeat on Canvas): [[file:~/Google Drive/repositories/github/websites/github_classroom_assignments/how_to_use_nbgrader_github_classroom/Manual_students.pdf]]
+- instructions are attached to website (no need to repeat on Canvas): [[./submitting_assignment.html]]
 - show uploading assignment to github classroom during lecture
 
 *** Canvas
@@ -230,19 +230,17 @@ The final assignment is submitted using github classroom:
 
 Dear students,
 
-The link for the python assignment (template) is: https://classroom.github.com/a/AJx5NX7k (this is the link for 2025/2026)
+As you know, for this course there is a final programming assignment.
 
-You can do the assignment on your own or with (at max.) one other student. 
+You can do this programming assignment on your own or with (at max.) one other student. 
 
-When you use the link to the assignment, you will be asked for your team's name. Choose your favorite name!
+When you finish your assignment, you need to take the following steps (there is a link to a walk-through below)
 
-When you finish your assignment:
+1. download your assignment (marimo notebook) from jupyter lab to your computer (e.g. in the folder Downloads)
 
-1. download your assignment (jupyter notebook) from jupyter lab (or google colabs; or check where it is on your computer when using anaconda) to your computer (e.g. in the folder Downloads)
+2. push it onto your assignment's github repository using the github web interface
 
-2. push it onto your assignment's github repository using github classroom web interface
-
-3. fill in the following google form: https://forms.gle/4oaPJ2APQArAQrzx9 (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once).
+3. fill in the following google form: https://forms.gle/6gHGB2NWPpsyMy9L6 (note 1: you need to be logged in with your @tilburguniversity.edu account to access the form; note 2: you only need to fill in the google form once).
 
 We need the information from the google form to link your assignment to your student number which is needed for the exam administration.
 
@@ -318,7 +316,7 @@ Remark 2:
 
 The resit of the final assignment needs to start from a new paper/model compared to the one you handed in before. Simply adjusting your first submission based on our feedback will be not be enough.
 
-Otherwise, follow the procedure above on how to submit the assignment and fill in the google form. 
+Otherwise, follow the procedure above on how to submit the assignment and fill in the google form (also if you filled it in already for your first attempt). 
 
 
 * Bibliography
