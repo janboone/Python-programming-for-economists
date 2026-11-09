@@ -170,6 +170,11 @@ Following these six steps will take approx. fifteen minutes.
 - Your file is added to the repository
 - Github records the commitment date and time; make sure you commit your file before the deadline and do not change it after the deadline.
 
+** Important
+- When we clone your repository from github, your app should work
+- To illustrate, if you load data in your app, these data should be uploaded on github as well
+  - otherwise, a statement like =df = pd.read_csv("./data/my_data.csv")= will give an error and your app does not work
+
 
 
 * Share the repository address

@@ -244,6 +244,8 @@ When you finish your assignment, you need to take the following steps (there is 
 
 We need the information from the google form to link your assignment to your student number which is needed for the exam administration.
 
+A step-by-step walk-through is here: https://janboone.github.io/Python-programming-for-economists/submitting_assignment.html
+
 If you have questions about the assignment or the procedure described above, create an issue on the webpage at: https://github.com/janboone/Python-programming-for-economists/issues
 
 Then you can see whether other students had the same question (which was already answered) or fellow-students can learn from your question. These issues can be read by anyone, so do not provide any privacy related information.
