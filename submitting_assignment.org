@@ -28,7 +28,7 @@
 
 * Introduction
 
-For this course we use Github to submit your assignment. We are aware that most of you have not used Github before. Github may feel unfamiliar, but you only need to follow these steps once. It is simpler than it looks.
+For this course we use [[https://github.com/][Github]] to submit your assignment. We are aware that most of you have not used Github before. Github may feel unfamiliar, but you only need to follow these steps once. It is simpler than it looks.
 
 This file helps you to submit your final assignment. Below we explain the following steps:
 - sign up to get a github account
@@ -58,7 +58,7 @@ Following these six steps will take approx. fifteen minutes.
 
 * Repository python-assignment
 
-- fill in the form:
+- fill in the following form:
 
 #+DOWNLOADED: screenshot @ 2026-11-07 17:06:15
 #+attr_org: :width 800px
@@ -68,7 +68,7 @@ Following these six steps will take approx. fifteen minutes.
   - the Repository name: =python-assignment=
   - give a brief description of the repository
   - Configuration:
-    - visibility: choose =private= (we will upload your grade file on this repository and you probably do not want everyone to see this)
+    - visibility: choose =private= (we will upload your grade file on this repository and you do not want everyone to see this)
     - Add README: =on=
   - do not worry about =.gitignore= nor =license=
 - click Create repository button
@@ -76,7 +76,7 @@ Following these six steps will take approx. fifteen minutes.
 
 * Sharing repository
 
-- Go to Settings which can be found just above the name of the repository =python-assignment=
+- Go to Settings which can be found just above the name of the repository =python-assignment= in the case below:
 
 
 #+DOWNLOADED: screenshot @ 2026-11-07 17:10:43
@@ -92,7 +92,7 @@ Following these six steps will take approx. fifteen minutes.
 [[file:screenshots/Sharing_repository/2026-11-07_17-12-23_screenshot.png]]
 
 - Click on Collaborators in the left column (under General).
-- Under Manage Access, click on Add people
+- Under Manage Access, click on Add people:
 
 
 #+DOWNLOADED: screenshot @ 2026-11-07 17:14:01
@@ -198,9 +198,11 @@ Following these six steps will take approx. fifteen minutes.
 
 
 
-#+DOWNLOADED: screenshot @ 2026-11-09 14:03:58
+#+DOWNLOADED: screenshot @ 2026-11-18 08:25:39
 #+attr_org: :width 800px
-[[file:screenshots/Share_the_repository_address/2026-11-09_14-03-58_screenshot.png]]
+[[file:screenshots/Share_the_repository_address/2026-11-18_08-25-39_screenshot.png]]
+
+
 
 
 - Submit the google form and you are done!
